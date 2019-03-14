@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/alexandrequintart/soft/jsbsim/src/simgear/magvar/coremag.cxx
+cstdio
+-
+cstdlib
+-
+cmath
+-
+coremag.hxx
+/Users/alexandrequintart/soft/jsbsim/src/simgear/magvar/coremag.hxx
+
+/Users/alexandrequintart/soft/jsbsim/src/simgear/magvar/coremag.hxx
+
