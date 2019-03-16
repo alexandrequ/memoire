@@ -35,6 +35,7 @@ src/input_output/CMakeFiles/InputOutput.dir/FGInputSocket.cpp.o
  ../src/models/FGModel.h
  ../src/models/FGOutput.h
  ../src/models/FGPropagate.h
+ ../src/models/gridWAPT.hpp
  ../src/simgear/compiler.h
  ../src/simgear/misc/sg_path.hxx
  ../src/simgear/props/propertyObject.hxx
@@ -195,6 +196,7 @@ src/input_output/CMakeFiles/InputOutput.dir/FGOutputSocket.cpp.o
  ../src/models/FGPropulsion.h
  ../src/models/FGSurface.h
  ../src/models/atmosphere/FGWinds.h
+ ../src/models/gridWAPT.hpp
  ../src/models/propulsion/FGEngine.h
  ../src/models/propulsion/FGForce.h
  ../src/simgear/compiler.h
@@ -245,6 +247,7 @@ src/input_output/CMakeFiles/InputOutput.dir/FGOutputTextFile.cpp.o
  ../src/models/FGPropulsion.h
  ../src/models/FGSurface.h
  ../src/models/atmosphere/FGWinds.h
+ ../src/models/gridWAPT.hpp
  ../src/models/propulsion/FGEngine.h
  ../src/models/propulsion/FGForce.h
  ../src/simgear/compiler.h

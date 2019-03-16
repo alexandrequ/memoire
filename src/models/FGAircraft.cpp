@@ -37,7 +37,7 @@ COMMENTS, REFERENCES,  and NOTES
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 INCLUDES
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
-
+#include <iostream>
 #include "FGAircraft.h"
 #include "FGAuxiliary.h"
 #include "initialization/FGInitialCondition.h"
@@ -92,99 +92,22 @@ bool FGAircraft::InitModel(void)
 
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     
+    
+    
+    // Modifié par Alex
+
+    
     ////////////////////////
     ///  Structure Data  ///
     ////////////////////////
     
+    int num[4];
     
-    Velocity **** dataCreation()
-    {
-        //  Array 4 Dimensions Creation
-        
-        int t = 10, x = 50, y = 50, z = 50;
-        int i, j, k;
-        
-        //  Allocate 4D Array
-        Velocity ****array4D = new Velocity***[t];
-        
-        for(i = 0; i < t; i++)
-        {
-            array4D[i] = new Velocity**[x];
-            
-            for(j = 0; j < x; j++)
-            {
-                array4D[i][j] = new Velocity*[y];
-                
-                for(k = 0; k < y; k++)
-                {
-                    array4D[i][j][k] = new Velocity[z];
-                }
-            }
-        }
-        return array4D;
-    }
-    
-    Velocity **** dataFill( Velocity ****array4D)
-    //  fil array elements
-    {
-        int t = 10, x = 50, y = 50, z = 50;
-        
-        int i, j, k, l;
-        
-        for(l = 0; l < t; l++)
-        {
-            // cout << l << endl;
-            for(i = 0; i < x; i++)
-            {
-                // cout << i << endl;
-                
-                for(j = 0; j < y; j++)
-                {
-                    //  cout << endl;
-                    
-                    for(k = 0; k < z; k++)
-                    {
-                        Velocity vel1;
-                        vel1.u = rand() % 100;
-                        vel1.v = rand() % 100;
-                        vel1.w = rand() % 100;
-                        
-                        array4D[l][i][j][k] = vel1;
-                        //cout << '\t' << array4D[l][i][j][k].u;
-                    }
-                }
-                
-            }
-            
-            //cout << endl << endl;
-        }
-        return array4D;
-    }
-    
-    Velocity **** dataDelete(Velocity ****array4D)
-    //  Deallocate 4D array
-    {
-        double t = 10, x = 50, y = 50;
-        
-        int i, j, l;
-        
-        for(l = 0; l < t; l++)
-        {
-            for(i = 0; i < x; i++)
-            {
-                for(j = 0; j < y; j++)
-                {
-                    delete[] array4D[l][i][j];
-                }
-                
-                delete[] array4D[l][i];
-            }
-            
-            delete[] array4D[i];
-        }
-        delete[] array4D;
-        return 0;
-    }
+    num[0] = 30;
+    num[1] = 30;
+    num[2] = 30;
+    num[3] = 30;
+    MyGrid(num);
     
     
     //////////////////////

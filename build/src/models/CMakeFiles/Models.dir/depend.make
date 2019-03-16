@@ -81,6 +81,7 @@ src/models/CMakeFiles/Models.dir/FGAircraft.cpp.o: ../src/models/FGAircraft.cpp
 src/models/CMakeFiles/Models.dir/FGAircraft.cpp.o: ../src/models/FGAircraft.h
 src/models/CMakeFiles/Models.dir/FGAircraft.cpp.o: ../src/models/FGAuxiliary.h
 src/models/CMakeFiles/Models.dir/FGAircraft.cpp.o: ../src/models/FGModel.h
+src/models/CMakeFiles/Models.dir/FGAircraft.cpp.o: ../src/models/gridWAPT.hpp
 
 src/models/CMakeFiles/Models.dir/FGAtmosphere.cpp.o: ../src/FGFDMExec.h
 src/models/CMakeFiles/Models.dir/FGAtmosphere.cpp.o: ../src/FGJSBBase.h
@@ -657,4 +658,7 @@ src/models/CMakeFiles/Models.dir/FGSurface.cpp.o: ../src/simgear/props/props.hxx
 src/models/CMakeFiles/Models.dir/FGSurface.cpp.o: ../src/simgear/structure/SGReferenced.hxx
 src/models/CMakeFiles/Models.dir/FGSurface.cpp.o: ../src/simgear/structure/SGSharedPtr.hxx
 src/models/CMakeFiles/Models.dir/FGSurface.cpp.o: ../src/models/FGSurface.cpp
+
+src/models/CMakeFiles/Models.dir/gridWAPT.cpp.o: ../src/models/gridWAPT.cpp
+src/models/CMakeFiles/Models.dir/gridWAPT.cpp.o: ../src/models/gridWAPT.hpp
 

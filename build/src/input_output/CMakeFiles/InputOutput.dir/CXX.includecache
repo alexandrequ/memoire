@@ -273,6 +273,8 @@ math/FGMatrix33.h
 ../src/models/math/FGMatrix33.h
 math/FGQuaternion.h
 ../src/models/math/FGQuaternion.h
+gridWAPT.hpp
+../src/models/gridWAPT.hpp
 
 ../src/models/FGAtmosphere.h
 vector
@@ -433,6 +435,10 @@ math/FGMatrix33.h
 ../src/models/atmosphere/math/FGMatrix33.h
 math/FGTable.h
 ../src/models/atmosphere/math/FGTable.h
+
+../src/models/gridWAPT.hpp
+stdio.h
+-
 
 ../src/models/propulsion/FGEngine.h
 vector

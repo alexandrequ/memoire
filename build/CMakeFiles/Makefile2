@@ -129,9 +129,9 @@ src/preinstall: src/simgear/preinstall
 # Target rules for target src/CMakeFiles/libJSBSim.dir
 
 # All Build rule for target.
+src/CMakeFiles/libJSBSim.dir/all: src/math/CMakeFiles/Math.dir/all
 src/CMakeFiles/libJSBSim.dir/all: src/initialization/CMakeFiles/Init.dir/all
 src/CMakeFiles/libJSBSim.dir/all: src/input_output/CMakeFiles/InputOutput.dir/all
-src/CMakeFiles/libJSBSim.dir/all: src/math/CMakeFiles/Math.dir/all
 src/CMakeFiles/libJSBSim.dir/all: src/models/CMakeFiles/Models.dir/all
 src/CMakeFiles/libJSBSim.dir/all: src/models/atmosphere/CMakeFiles/Atmosphere.dir/all
 src/CMakeFiles/libJSBSim.dir/all: src/models/propulsion/CMakeFiles/Propulsion.dir/all

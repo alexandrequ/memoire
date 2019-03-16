@@ -104,6 +104,14 @@ CLASS DOCUMENTATION
 CLASS DECLARATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 
+    
+    typedef struct Velocity {
+        double u ;
+        double v;
+        double w;
+    };
+    
+    
 class FGAircraft : public FGModel {
 public:
   /** Constructor

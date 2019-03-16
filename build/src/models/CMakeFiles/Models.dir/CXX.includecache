@@ -681,6 +681,8 @@ math/FGMatrix33.h
 /Users/alexandrequintart/soft/jsbsim/src/models/math/FGMatrix33.h
 
 /Users/alexandrequintart/soft/jsbsim/src/models/FGAircraft.cpp
+iostream
+-
 FGAircraft.h
 /Users/alexandrequintart/soft/jsbsim/src/models/FGAircraft.h
 FGAuxiliary.h
@@ -703,6 +705,8 @@ math/FGMatrix33.h
 /Users/alexandrequintart/soft/jsbsim/src/models/math/FGMatrix33.h
 math/FGQuaternion.h
 /Users/alexandrequintart/soft/jsbsim/src/models/math/FGQuaternion.h
+gridWAPT.hpp
+/Users/alexandrequintart/soft/jsbsim/src/models/gridWAPT.hpp
 
 /Users/alexandrequintart/soft/jsbsim/src/models/FGAtmosphere.cpp
 iostream
@@ -1093,6 +1097,16 @@ models/FGSurface.h
 /Users/alexandrequintart/soft/jsbsim/src/models/FGSurface.h
 FGFDMExec.h
 /Users/alexandrequintart/soft/jsbsim/src/models/FGFDMExec.h
+
+/Users/alexandrequintart/soft/jsbsim/src/models/gridWAPT.cpp
+gridWAPT.hpp
+/Users/alexandrequintart/soft/jsbsim/src/models/gridWAPT.hpp
+cstdlib
+-
+
+/Users/alexandrequintart/soft/jsbsim/src/models/gridWAPT.hpp
+stdio.h
+-
 
 /Users/alexandrequintart/soft/jsbsim/src/models/propulsion/FGEngine.h
 vector

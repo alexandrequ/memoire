@@ -34,6 +34,7 @@ src/input_output/CMakeFiles/InputOutput.dir/FGInputSocket.cpp.o: ../src/models/F
 src/input_output/CMakeFiles/InputOutput.dir/FGInputSocket.cpp.o: ../src/models/FGModel.h
 src/input_output/CMakeFiles/InputOutput.dir/FGInputSocket.cpp.o: ../src/models/FGOutput.h
 src/input_output/CMakeFiles/InputOutput.dir/FGInputSocket.cpp.o: ../src/models/FGPropagate.h
+src/input_output/CMakeFiles/InputOutput.dir/FGInputSocket.cpp.o: ../src/models/gridWAPT.hpp
 src/input_output/CMakeFiles/InputOutput.dir/FGInputSocket.cpp.o: ../src/simgear/compiler.h
 src/input_output/CMakeFiles/InputOutput.dir/FGInputSocket.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/input_output/CMakeFiles/InputOutput.dir/FGInputSocket.cpp.o: ../src/simgear/props/propertyObject.hxx
@@ -194,6 +195,7 @@ src/input_output/CMakeFiles/InputOutput.dir/FGOutputSocket.cpp.o: ../src/models/
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputSocket.cpp.o: ../src/models/FGPropulsion.h
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputSocket.cpp.o: ../src/models/FGSurface.h
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputSocket.cpp.o: ../src/models/atmosphere/FGWinds.h
+src/input_output/CMakeFiles/InputOutput.dir/FGOutputSocket.cpp.o: ../src/models/gridWAPT.hpp
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputSocket.cpp.o: ../src/models/propulsion/FGEngine.h
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputSocket.cpp.o: ../src/models/propulsion/FGForce.h
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputSocket.cpp.o: ../src/simgear/compiler.h
@@ -244,6 +246,7 @@ src/input_output/CMakeFiles/InputOutput.dir/FGOutputTextFile.cpp.o: ../src/model
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputTextFile.cpp.o: ../src/models/FGPropulsion.h
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputTextFile.cpp.o: ../src/models/FGSurface.h
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputTextFile.cpp.o: ../src/models/atmosphere/FGWinds.h
+src/input_output/CMakeFiles/InputOutput.dir/FGOutputTextFile.cpp.o: ../src/models/gridWAPT.hpp
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputTextFile.cpp.o: ../src/models/propulsion/FGEngine.h
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputTextFile.cpp.o: ../src/models/propulsion/FGForce.h
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputTextFile.cpp.o: ../src/simgear/compiler.h

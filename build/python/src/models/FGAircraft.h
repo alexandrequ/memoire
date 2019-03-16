@@ -45,6 +45,7 @@ INCLUDES
 
 // START : Modif Alex
 #include "math/FGQuaternion.h"
+#include "gridWAPT.hpp"
 // END : Modif Alex
 
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -103,6 +104,14 @@ CLASS DOCUMENTATION
 CLASS DECLARATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 
+    
+    typedef struct Velocity {
+        double u ;
+        double v;
+        double w;
+    };
+    
+    
 class FGAircraft : public FGModel {
 public:
   /** Constructor

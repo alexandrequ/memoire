@@ -6,7 +6,7 @@
 //
 
 #include "gridWAPT.hpp"
-
+#include <cstdlib>
 
 MyGrid::MyGrid(int n[4]){
     
@@ -15,9 +15,9 @@ MyGrid::MyGrid(int n[4]){
     mysize[2] = n[2]; // number of ny
     mysize[3] = n[3]; // number of nz
     
-    mydata[0] = calloc(sizeof(double),n[0]*n[1]*n[2]*n[3]); // u
-    mydata[1] = calloc(sizeof(double),n[0]*n[1]*n[2]*n[3]); // v
-    mydata[3] = calloc(sizeof(double),n[0]*n[1]*n[2]*n[3]); // w
+    mydata[0] = (double*)calloc(sizeof(double),n[0]*n[1]*n[2]*n[3]); // u
+    mydata[1] = (double*)calloc(sizeof(double),n[0]*n[1]*n[2]*n[3]); // v
+    mydata[3] = (double*)calloc(sizeof(double),n[0]*n[1]*n[2]*n[3]); // w
     
 }
 
@@ -30,14 +30,14 @@ MyGrid::~MyGrid(){
 double MyGrid::get(int itime, int i, int j, int k, int dim){
     return mydata[dim][GET_N(itime,i,j,k)];
 }
-double MyGrid::set(int itime, int i, int j, int k, int dim,double val){
+void MyGrid::set(int itime, int i, int j, int k, int dim,double val){
     mydata[dim][GET_N(itime,i,j,k)] = val;
 }
 
 double MyGrid::get(int itime, int i, int j, int k, VelType dim){
     return mydata[dim][GET_N(itime,i,j,k)];
 }
-double MyGrid::set(int itime, int i, int j, int k, VelType dim,double val){
+void MyGrid::set(int itime, int i, int j, int k, VelType dim,double val){
     mydata[dim][GET_N(itime,i,j,k)] = val;
 }
 
