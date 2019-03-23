@@ -1,0 +1,1 @@
+/usr/local/bin/g++-8  -g -Wall -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/FGJSBBaseTest1.dir/FGJSBBaseTest.cpp.o  -o FGJSBBaseTest1 ../../src/libJSBSim.a -lm 

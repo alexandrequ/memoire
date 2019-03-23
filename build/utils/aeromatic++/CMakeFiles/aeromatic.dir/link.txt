@@ -1,1 +1,0 @@
-/usr/local/bin/g++-8   -g -Wall -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/aeromatic.dir/aeromatic.cpp.o  -o aeromatic  libAeromatic++.a 

@@ -14,14 +14,11 @@
 # EXTERNAL cache entries
 ########################
 
-//Dependencies for target
-Aeromatic++_LIB_DEPENDS:STATIC=
-
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
 
-//Choose the type of build, options are: None(CMAKE_CXX_FLAGS or
-// CMAKE_C_FLAGS used) Debug Release RelWithDebInfo MinSizeRel.
+//Choose the type of build, options are: None Debug Release RelWithDebInfo
+// MinSizeRel ...
 CMAKE_BUILD_TYPE:STRING=Debug
 
 //Enable/Disable color output during build.
@@ -30,54 +27,71 @@ CMAKE_COLOR_MAKEFILE:BOOL=ON
 //CXX compiler
 CMAKE_CXX_COMPILER:STRING=/usr/local/bin/g++-8
 
-//Flags used by the compiler during all build types.
+//A wrapper around 'ar' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_CXX_COMPILER_AR:FILEPATH=/usr/local/bin/gcc-ar-8
+
+//A wrapper around 'ranlib' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/usr/local/bin/gcc-ranlib-8
+
+//Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=
 
-//Flags used by the compiler during debug builds.
+//Flags used by the CXX compiler during DEBUG builds.
 CMAKE_CXX_FLAGS_DEBUG:STRING=-g -Wall
 
-//Flags used by the compiler during release builds for minimum
-// size.
+//Flags used by the CXX compiler during MINSIZEREL builds.
 CMAKE_CXX_FLAGS_MINSIZEREL:STRING=-Os -DNDEBUG
 
-//Flags used by the compiler during release builds.
+//Flags used by the CXX compiler during RELEASE builds.
 CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 
-//Flags used by the compiler during release builds with debug info.
+//Flags used by the CXX compiler during RELWITHDEBINFO builds.
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //C compiler
 CMAKE_C_COMPILER:STRING=/usr/local/bin/gcc-8
 
-//Flags used by the compiler during all build types.
+//A wrapper around 'ar' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_C_COMPILER_AR:FILEPATH=/usr/local/bin/gcc-ar-8
+
+//A wrapper around 'ranlib' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_C_COMPILER_RANLIB:FILEPATH=/usr/local/bin/gcc-ranlib-8
+
+//Flags used by the C compiler during all build types.
 CMAKE_C_FLAGS:STRING=
 
-//Flags used by the compiler during debug builds.
+//Flags used by the C compiler during DEBUG builds.
 CMAKE_C_FLAGS_DEBUG:STRING=-g -Wall
 
-//Flags used by the compiler during release builds for minimum
-// size.
+//Flags used by the C compiler during MINSIZEREL builds.
 CMAKE_C_FLAGS_MINSIZEREL:STRING=-Os -DNDEBUG
 
-//Flags used by the compiler during release builds.
+//Flags used by the C compiler during RELEASE builds.
 CMAKE_C_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 
-//Flags used by the compiler during release builds with debug info.
+//Flags used by the C compiler during RELWITHDEBINFO builds.
 CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
-//Flags used by the linker.
+//Executable file format
+CMAKE_EXECUTABLE_FORMAT:STRING=MACHO
+
+//Flags used by the linker during all build types.
 CMAKE_EXE_LINKER_FLAGS:STRING=
 
-//Flags used by the linker during debug builds.
+//Flags used by the linker during DEBUG builds.
 CMAKE_EXE_LINKER_FLAGS_DEBUG:STRING=
 
-//Flags used by the linker during release minsize builds.
+//Flags used by the linker during MINSIZEREL builds.
 CMAKE_EXE_LINKER_FLAGS_MINSIZEREL:STRING=
 
-//Flags used by the linker during release builds.
+//Flags used by the linker during RELEASE builds.
 CMAKE_EXE_LINKER_FLAGS_RELEASE:STRING=
 
-//Flags used by the linker during Release with Debug Info builds.
+//Flags used by the linker during RELWITHDEBINFO builds.
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Enable/Disable output of compile commands during generation.
@@ -90,24 +104,29 @@ CMAKE_INSTALL_NAME_TOOL:FILEPATH=/usr/bin/install_name_tool
 CMAKE_INSTALL_PREFIX:PATH=/Users/alexandrequintart/soft/jsbsim_lib/jsbsim_modif
 
 //Path to a program.
-CMAKE_LINKER:FILEPATH=/Applications/Xcode.app/Contents/Developer/usr/bin/ld
+CMAKE_LINKER:FILEPATH=/usr/bin/ld
 
 //Path to a program.
-CMAKE_MAKE_PROGRAM:FILEPATH=/Applications/Xcode.app/Contents/Developer/usr/bin/make
+CMAKE_MAKE_PROGRAM:FILEPATH=/usr/bin/make
 
-//Flags used by the linker during the creation of modules.
+//Flags used by the linker during the creation of modules during
+// all build types.
 CMAKE_MODULE_LINKER_FLAGS:STRING=
 
-//Flags used by the linker during debug builds.
+//Flags used by the linker during the creation of modules during
+// DEBUG builds.
 CMAKE_MODULE_LINKER_FLAGS_DEBUG:STRING=
 
-//Flags used by the linker during release minsize builds.
+//Flags used by the linker during the creation of modules during
+// MINSIZEREL builds.
 CMAKE_MODULE_LINKER_FLAGS_MINSIZEREL:STRING=
 
-//Flags used by the linker during release builds.
+//Flags used by the linker during the creation of modules during
+// RELEASE builds.
 CMAKE_MODULE_LINKER_FLAGS_RELEASE:STRING=
 
-//Flags used by the linker during Release with Debug Info builds.
+//Flags used by the linker during the creation of modules during
+// RELWITHDEBINFO builds.
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
@@ -131,24 +150,35 @@ CMAKE_OSX_DEPLOYMENT_TARGET:STRING=
 CMAKE_OSX_SYSROOT:STRING=
 
 //Value Computed by CMake
+CMAKE_PROJECT_DESCRIPTION:STATIC=
+
+//Value Computed by CMake
+CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
+
+//Value Computed by CMake
 CMAKE_PROJECT_NAME:STATIC=JSBSim
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
 
-//Flags used by the linker during the creation of dll's.
+//Flags used by the linker during the creation of shared libraries
+// during all build types.
 CMAKE_SHARED_LINKER_FLAGS:STRING=
 
-//Flags used by the linker during debug builds.
+//Flags used by the linker during the creation of shared libraries
+// during DEBUG builds.
 CMAKE_SHARED_LINKER_FLAGS_DEBUG:STRING=
 
-//Flags used by the linker during release minsize builds.
+//Flags used by the linker during the creation of shared libraries
+// during MINSIZEREL builds.
 CMAKE_SHARED_LINKER_FLAGS_MINSIZEREL:STRING=
 
-//Flags used by the linker during release builds.
+//Flags used by the linker during the creation of shared libraries
+// during RELEASE builds.
 CMAKE_SHARED_LINKER_FLAGS_RELEASE:STRING=
 
-//Flags used by the linker during Release with Debug Info builds.
+//Flags used by the linker during the creation of shared libraries
+// during RELWITHDEBINFO builds.
 CMAKE_SHARED_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //If set, runtime paths are not added when installing shared libraries,
@@ -158,19 +188,24 @@ CMAKE_SKIP_INSTALL_RPATH:BOOL=NO
 //If set, runtime paths are not added when using shared libraries.
 CMAKE_SKIP_RPATH:BOOL=NO
 
-//Flags used by the linker during the creation of static libraries.
+//Flags used by the linker during the creation of static libraries
+// during all build types.
 CMAKE_STATIC_LINKER_FLAGS:STRING=
 
-//Flags used by the linker during debug builds.
+//Flags used by the linker during the creation of static libraries
+// during DEBUG builds.
 CMAKE_STATIC_LINKER_FLAGS_DEBUG:STRING=
 
-//Flags used by the linker during release minsize builds.
+//Flags used by the linker during the creation of static libraries
+// during MINSIZEREL builds.
 CMAKE_STATIC_LINKER_FLAGS_MINSIZEREL:STRING=
 
-//Flags used by the linker during release builds.
+//Flags used by the linker during the creation of static libraries
+// during RELEASE builds.
 CMAKE_STATIC_LINKER_FLAGS_RELEASE:STRING=
 
-//Flags used by the linker during Release with Debug Info builds.
+//Flags used by the linker during the creation of static libraries
+// during RELWITHDEBINFO builds.
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
@@ -191,6 +226,9 @@ CPACK_BINARY_DEB:BOOL=OFF
 //Enable to build OSX Drag And Drop package
 CPACK_BINARY_DRAGNDROP:BOOL=OFF
 
+//Enable to build FreeBSD packages
+CPACK_BINARY_FREEBSD:BOOL=OFF
+
 //Enable to build IFW packages
 CPACK_BINARY_IFW:BOOL=OFF
 
@@ -202,6 +240,9 @@ CPACK_BINARY_OSXX11:BOOL=OFF
 
 //Enable to build PackageMaker packages
 CPACK_BINARY_PACKAGEMAKER:BOOL=OFF
+
+//Enable to build productbuild packages
+CPACK_BINARY_PRODUCTBUILD:BOOL=OFF
 
 //Enable to build RPM packages
 CPACK_BINARY_RPM:BOOL=OFF
@@ -217,6 +258,9 @@ CPACK_BINARY_TGZ:BOOL=ON
 
 //Enable to build TXZ packages
 CPACK_BINARY_TXZ:BOOL=OFF
+
+//Enable to build RPM source packages
+CPACK_SOURCE_RPM:BOOL=OFF
 
 //Enable to build TBZ2 source packages
 CPACK_SOURCE_TBZ2:BOOL=ON
@@ -234,31 +278,22 @@ CPACK_SOURCE_TZ:BOOL=ON
 CPACK_SOURCE_ZIP:BOOL=OFF
 
 //Path to a file.
-CXXTEST_INCLUDE_DIR:PATH=CXXTEST_INCLUDE_DIR-NOTFOUND
+CXXTEST_INCLUDE_DIR:PATH=/usr/local/include
 
 //Path to a program.
 CXXTEST_PERL_TESTGEN_EXECUTABLE:FILEPATH=CXXTEST_PERL_TESTGEN_EXECUTABLE-NOTFOUND
 
 //Path to a program.
-CXXTEST_PYTHON_TESTGEN_EXECUTABLE:FILEPATH=CXXTEST_PYTHON_TESTGEN_EXECUTABLE-NOTFOUND
-
-//Create an annotated .html file when compiling *.pyx.
-CYTHON_ANNOTATE:BOOL=OFF
+CXXTEST_PYTHON_TESTGEN_EXECUTABLE:FILEPATH=/usr/local/bin/cxxtestgen
 
 //Path to a program.
-CYTHON_EXECUTABLE:FILEPATH=/Users/alexandrequintart/anaconda3/bin/cython
+CYTHON_EXECUTABLE:FILEPATH=CYTHON_EXECUTABLE-NOTFOUND
 
-//Extra flags to the cython compiler.
-CYTHON_FLAGS:STRING=
-
-//Strip docstrings from the compiled module.
-CYTHON_NO_DOCSTRINGS:BOOL=OFF
-
-//Graphviz Dot tool for using Doxygen
+//Dot tool for use with Doxygen
 DOXYGEN_DOT_EXECUTABLE:FILEPATH=DOXYGEN_DOT_EXECUTABLE-NOTFOUND
 
 //Doxygen documentation generation tool (http://www.doxygen.org)
-DOXYGEN_EXECUTABLE:FILEPATH=DOXYGEN_EXECUTABLE-NOTFOUND
+DOXYGEN_EXECUTABLE:FILEPATH=/usr/local/bin/doxygen
 
 //Set to ON to install the Python module for JSBSim
 INSTALL_PYTHON_MODULE:BOOL=OFF
@@ -276,16 +311,10 @@ LSB_RELEASE_EXECUTABLE:FILEPATH=LSB_RELEASE_EXECUTABLE-NOTFOUND
 PERL_EXECUTABLE:FILEPATH=/usr/bin/perl
 
 //Path to a program.
-PYTHON_EXECUTABLE:FILEPATH=/Users/alexandrequintart/anaconda3/bin/python
+PYTHON_EXECUTABLE:FILEPATH=/usr/local/bin/python
 
-//Path to a file.
-PYTHON_INCLUDE_DIR:PATH=/Users/alexandrequintart/anaconda3/include/python3.7m
-
-//Path to a library.
-PYTHON_LIBRARY:FILEPATH=/Users/alexandrequintart/anaconda3/lib/libpython3.7m.dylib
-
-//Path to a library.
-PYTHON_LIBRARY_DEBUG:FILEPATH=PYTHON_LIBRARY_DEBUG-NOTFOUND
+//Where can one of the python3.7 or python3 libraries be found
+Python_EXECUTABLE:FILEPATH=/usr/local/Frameworks/Python.framework/Versions/3.7/bin/python3.7
 
 //Set to ON to build JSBSim using the system libExpat
 SYSTEM_EXPAT:BOOL=OFF
@@ -305,7 +334,7 @@ CMAKE_CACHEFILE_DIR:INTERNAL=/Users/alexandrequintart/soft/jsbsim/build
 //Major version of cmake used to create the current loaded cache
 CMAKE_CACHE_MAJOR_VERSION:INTERNAL=3
 //Minor version of cmake used to create the current loaded cache
-CMAKE_CACHE_MINOR_VERSION:INTERNAL=5
+CMAKE_CACHE_MINOR_VERSION:INTERNAL=14
 //Patch version of cmake used to create the current loaded cache
 CMAKE_CACHE_PATCH_VERSION:INTERNAL=0
 //ADVANCED property for variable: CMAKE_COLOR_MAKEFILE
@@ -318,6 +347,10 @@ CMAKE_CPACK_COMMAND:INTERNAL=/Applications/CMake.app/Contents/bin/cpack
 CMAKE_CTEST_COMMAND:INTERNAL=/Applications/CMake.app/Contents/bin/ctest
 //ADVANCED property for variable: CMAKE_CXX_COMPILER
 CMAKE_CXX_COMPILER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_CXX_COMPILER_AR
+CMAKE_CXX_COMPILER_AR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_CXX_COMPILER_RANLIB
+CMAKE_CXX_COMPILER_RANLIB-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_FLAGS
 CMAKE_CXX_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_FLAGS_DEBUG
@@ -330,6 +363,10 @@ CMAKE_CXX_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 CMAKE_CXX_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_COMPILER
 CMAKE_C_COMPILER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_COMPILER_AR
+CMAKE_C_COMPILER_AR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_COMPILER_RANLIB
+CMAKE_C_COMPILER_RANLIB-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_FLAGS
 CMAKE_C_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_FLAGS_DEBUG
@@ -342,8 +379,6 @@ CMAKE_C_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 CMAKE_C_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //Path to cache edit program executable.
 CMAKE_EDIT_COMMAND:INTERNAL=/Applications/CMake.app/Contents/bin/ccmake
-//Executable file format
-CMAKE_EXECUTABLE_FORMAT:INTERNAL=Unknown
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS
 CMAKE_EXE_LINKER_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS_DEBUG
@@ -360,6 +395,8 @@ CMAKE_EXPORT_COMPILE_COMMANDS-ADVANCED:INTERNAL=1
 CMAKE_EXTRA_GENERATOR:INTERNAL=
 //Name of generator.
 CMAKE_GENERATOR:INTERNAL=Unix Makefiles
+//Generator instance identifier.
+CMAKE_GENERATOR_INSTANCE:INTERNAL=
 //Name of generator platform.
 CMAKE_GENERATOR_PLATFORM:INTERNAL=
 //Name of generator toolset.
@@ -386,15 +423,17 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=20
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=19
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
 CMAKE_OBJDUMP-ADVANCED:INTERNAL=1
+//Platform information initialized
+CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_RANLIB
 CMAKE_RANLIB-ADVANCED:INTERNAL=1
 //Path to CMake installation.
-CMAKE_ROOT:INTERNAL=/Applications/CMake.app/Contents/share/cmake-3.5
+CMAKE_ROOT:INTERNAL=/Applications/CMake.app/Contents/share/cmake-3.14
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS
 CMAKE_SHARED_LINKER_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS_DEBUG
@@ -431,6 +470,8 @@ CPACK_BINARY_BUNDLE-ADVANCED:INTERNAL=1
 CPACK_BINARY_DEB-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CPACK_BINARY_DRAGNDROP
 CPACK_BINARY_DRAGNDROP-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_BINARY_FREEBSD
+CPACK_BINARY_FREEBSD-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CPACK_BINARY_IFW
 CPACK_BINARY_IFW-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CPACK_BINARY_NSIS
@@ -439,6 +480,8 @@ CPACK_BINARY_NSIS-ADVANCED:INTERNAL=1
 CPACK_BINARY_OSXX11-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CPACK_BINARY_PACKAGEMAKER
 CPACK_BINARY_PACKAGEMAKER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_BINARY_PRODUCTBUILD
+CPACK_BINARY_PRODUCTBUILD-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CPACK_BINARY_RPM
 CPACK_BINARY_RPM-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CPACK_BINARY_STGZ
@@ -449,6 +492,8 @@ CPACK_BINARY_TBZ2-ADVANCED:INTERNAL=1
 CPACK_BINARY_TGZ-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CPACK_BINARY_TXZ
 CPACK_BINARY_TXZ-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_RPM
+CPACK_SOURCE_RPM-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CPACK_SOURCE_TBZ2
 CPACK_SOURCE_TBZ2-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CPACK_SOURCE_TGZ
@@ -459,35 +504,22 @@ CPACK_SOURCE_TXZ-ADVANCED:INTERNAL=1
 CPACK_SOURCE_TZ-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CPACK_SOURCE_ZIP
 CPACK_SOURCE_ZIP-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CYTHON_ANNOTATE
-CYTHON_ANNOTATE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CYTHON_EXECUTABLE
 CYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CYTHON_FLAGS
-CYTHON_FLAGS-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CYTHON_NO_DOCSTRINGS
-CYTHON_NO_DOCSTRINGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: DOXYGEN_DOT_EXECUTABLE
 DOXYGEN_DOT_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: DOXYGEN_EXECUTABLE
 DOXYGEN_EXECUTABLE-ADVANCED:INTERNAL=1
-//Details about finding Cython
-FIND_PACKAGE_MESSAGE_DETAILS_Cython:INTERNAL=[/Users/alexandrequintart/anaconda3/bin/cython][v()]
+//Details about finding CxxTest
+FIND_PACKAGE_MESSAGE_DETAILS_CxxTest:INTERNAL=[/usr/local/include][/usr/local/bin/cxxtestgen][v()]
+//Details about finding Doxygen
+FIND_PACKAGE_MESSAGE_DETAILS_Doxygen:INTERNAL=[/usr/local/bin/doxygen][cfound components:  doxygen missing components:  dot][v1.8.15()]
 //Details about finding PythonInterp
-FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/Users/alexandrequintart/anaconda3/bin/python][v3.7()]
-//Details about finding PythonLibs
-FIND_PACKAGE_MESSAGE_DETAILS_PythonLibs:INTERNAL=[/Users/alexandrequintart/anaconda3/lib/libpython3.7m.dylib][/Users/alexandrequintart/anaconda3/include/python3.7m][v3.7.0()]
+FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/local/bin/python][v2.7.16()]
 //ADVANCED property for variable: PERL_EXECUTABLE
 PERL_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PYTHON_EXECUTABLE
 PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: PYTHON_INCLUDE_DIR
-PYTHON_INCLUDE_DIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: PYTHON_LIBRARY
-PYTHON_LIBRARY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: PYTHON_LIBRARY_DEBUG
-PYTHON_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
-corresponding_pxd_file:INTERNAL=
-header_location:INTERNAL=
-pxd_location:INTERNAL=
+//ADVANCED property for variable: Python_EXECUTABLE
+Python_EXECUTABLE-ADVANCED:INTERNAL=1
 

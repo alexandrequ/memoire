@@ -45,7 +45,8 @@ INCLUDES
 #include "input_output/FGXMLElement.h"
 #define _USE_MATH_DEFINES
 #include <math.h>
-
+#include "gridWAPT.hpp"
+#include <iostream>
 using namespace std;
 
 namespace JSBSim {
@@ -91,29 +92,39 @@ bool FGAircraft::InitModel(void)
 }
 
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    
-    
-    
+
+
+
     // Modifié par Alex
 
-    
+
     ////////////////////////
     ///  Structure Data  ///
     ////////////////////////
-    
-    int num[4];
-    
-    num[0] = 30;
-    num[1] = 30;
-    num[2] = 30;
-    num[3] = 30;
-    MyGrid(num);
-    
-    
+
+
+
+//Remplissage
+void setData(MyGrid data) {
+  cout << "OKLM";
+  for(int t = 0; t<30; t++){
+  for(int i = 0; i<30; i++){
+    for(int j = 0; j<30; j++){
+      for(int k = 0; k<30; k++){
+        for(int l = 1; l<4; l++){
+          double val = rand();
+          data.set(t,i,j,k,l, val);
+          }
+        }
+      }
+    }
+  }
+};
+
     //////////////////////
     ///  Interpolation ///
     //////////////////////
-    
+
     Velocity BilinearInterpolation(Velocity q11, Velocity q12, Velocity q21, Velocity q22, double x1, double x2, double y1, double y2, double x, double y)
     {
         /* q11 = u11 or v11 or w11 ...
@@ -148,33 +159,33 @@ bool FGAircraft::InitModel(void)
                                          );
         return vent;
     }
-    
-    
+
+
     Velocity trilinearInterpolation(Velocity c000, Velocity c001, Velocity c010, Velocity c011, Velocity c101, Velocity c110,Velocity c100, Velocity c111, double x0, double x1, double y0, double y1, double z0, double z1, double x, double y, double z)
     {
-        
+
         Velocity vent;
         double xd, yd, zd, u0, u1, u00, u01, u10, u11, v0, v1, v00, v01, v10, v11, w0, w1, w00, w01, w10, w11;
         xd = (x-x0)/(x1-x0);
         yd = (y-y0)/(y1-y0);
         zd = (z-z0)/(z1-z0);
-        
+
         // Interpolation along x
         u00 = c000.u*(1-xd)+c100.u*xd;
         u01 = c001.u*(1-xd)+c101.u*xd;
         u10 = c010.u*(1-xd)+c110.u*xd;
         u11 = c011.u*(1-xd)+c111.u*xd;
-        
+
         v00 = c000.v*(1-xd)+c100.v*xd;
         v01 = c001.v*(1-xd)+c101.v*xd;
         v10 = c010.v*(1-xd)+c110.v*xd;
         v11 = c011.v*(1-xd)+c111.v*xd;
-        
+
         w00 = c000.w*(1-xd)+c100.w*xd;
         w01 = c001.w*(1-xd)+c101.w*xd;
         w10 = c010.w*(1-xd)+c110.w*xd;
         w11 = c011.w*(1-xd)+c111.w*xd;
-        
+
         // Interpolation along y
         u0 = u00*(1-yd)+u10*yd;
         u1 = u01*(1-yd)+u11*yd;
@@ -182,70 +193,110 @@ bool FGAircraft::InitModel(void)
         v1 = v01*(1-yd)+v11*yd;
         w0 = w00*(1-yd)+w10*yd;
         w1 = w01*(1-yd)+w11*yd;
-        
+
         // Interpolation along z
         vent.u = u0*(1-zd)+u1*zd;
         vent.v = v0*(1-zd)+v1*zd;
         vent.w = w0*(1-zd)+w1*zd;
-        
+
         return vent;
     }
-    
-    Velocity FGAircraft::dataInterpolation(Velocity ****array4D, double time, double x, double y, double z)
+
+    Velocity dataInterpolation(MyGrid data, double time, double x, double y, double z)
     {
         int t =(int) time;
-        
+
         int x0 = (int) x;
         int y0 = (int) y;
         int z0 = (int) z;
-        
+
         int x1 = x0+1;
         int y1 = y0+1;
         int z1 = z0+1;
-        
-        Velocity interp = trilinearInterpolation(array4D[t][x0][y0][z0], array4D[t][x0][y0][z1], array4D[t][x0][y1][z0], array4D[t][x0][y1][z1], array4D[t][x1][y0][z1], array4D[t][x1][y1][z0],array4D[t][x1][y0][z0], array4D[t][x1][y1][z1], x0, x1, y0, y1, z0, z1, x, y, z);
-        
+
+        Velocity c000;
+        c000.u = data.get(t,x0,y0,z0,U);
+        c000.v = data.get(t,x0,y0,z0,V);
+        c000.w = data.get(t,x0,y0,z0,W);
+
+        Velocity c001;
+        c001.u = data.get(t,x0,y0,z1,U);
+        c001.v = data.get(t,x0,y0,z1,V);
+        c001.w = data.get(t,x0,y0,z1,W);
+
+        Velocity c010;
+        c010.u = data.get(t,x0,y1,z0,U);
+        c010.v = data.get(t,x0,y1,z0,V);
+        c010.w = data.get(t,x0,y1,z0,W);
+
+        Velocity c011;
+        c011.u = data.get(t,x0,y1,z1,U);
+        c011.v = data.get(t,x0,y1,z1,V);
+        c011.w = data.get(t,x0,y1,z1,W);
+
+        Velocity c101;
+        c101.u = data.get(t,x1,y0,z1,U);
+        c101.v = data.get(t,x1,y0,z1,V);
+        c101.w = data.get(t,x1,y0,z1,W);
+
+        Velocity c110;
+        c110.u = data.get(t,x1,y1,z0,U);
+        c110.v = data.get(t,x1,y1,z0,V);
+        c110.w = data.get(t,x1,y1,z0,W);
+
+        Velocity c100;
+        c100.u = data.get(t,x1,y0,z0,U);
+        c100.v = data.get(t,x1,y0,z0,V);
+        c100.w = data.get(t,x1,y0,z0,W);
+
+        Velocity c111;
+        c111.u = data.get(t,x1,y1,z1,U);
+        c111.v = data.get(t,x1,y1,z1,V);
+        c111.w = data.get(t,x1,y1,z1,W);
+
+        Velocity interp = trilinearInterpolation(c000, c001, c010, c011, c101, c110,c100, c111, x0, x1, y0, y1, z0, z1, x, y, z);
+
         return interp;
     }
 
     /////////////////////
     ///  Wind Moment  ///
     /////////////////////
-    
-    double  FGAircraft::myMomentFunction( Velocity ****array4D , double t, double xNED, double yNED, double zNED)
+
+    double  FGAircraft::myMomentFunction( MyGrid data, double t, double xNED, double yNED, double zNED)
     {
-        
+        FGAuxiliary* Auxiliary = FDMExec->GetAuxiliary();
+        double alpha = Auxiliary->Getalpha();
         double MomentL;
         double MomentR;
         const double pi = M_PI;
         int inter = 20;
-        double b = GetWingSpan();//in.Wingspan; //FDMExec->Aircraft->GetWingSpan(); // Envergure de l'aile
+        double b = WingSpan;//in.Wingspan; //FDMExec->Aircraft->GetWingSpan(); // Envergure de l'aile
        // double surface = FDMExec->Aircraft->GetWingArea();
-        double alpha = GetAlphaW();
         double phi = GetPhi();
         double psi = GetPsi();
         double theta = GetTheta();
-        double dens = GetDensity();
+        double dens = Density;
         double surf = in.Wingarea/inter;
         double lambda = b*b/in.Wingarea;
-        
+
           orientation = FGQuaternion(phi, theta, psi);
         const FGMatrix33& _Tl2b  = orientation.GetT();     // local to body frame
         const FGMatrix33& _Tb2l  = orientation.GetTInv();  // body to local
-        
+
         // Left wing
         double interLeft = inter/2; //Nmbre d'interval
         Velocity velLeft[inter+1];
         for(int i = 0; i<=interLeft; i++) {
-            
+
             FGColumnVector3 coordBODY(0, -b/2+i*b/inter, 0);
             FGColumnVector3 coordNED = _Tl2b*coordBODY;//transform(0, -b/2+i*b/inter, 0);
             double xWing = coordNED(1);
             double yWing = coordNED(2);
             double zWing = coordNED(3);
-            
-            Velocity vel = dataInterpolation(****array4D, t, xWing, yWing, zWing);
-            
+
+            Velocity vel = dataInterpolation(data, t, xWing, yWing, zWing);
+
             FGColumnVector3 veloNED(vel.u,vel.v,vel.w);
             FGColumnVector3 velL = _Tb2l*veloNED;
             double velRoll = velL(3);
@@ -253,20 +304,20 @@ bool FGAircraft::InitModel(void)
             double LiftL = 0.5*dens*(velRoll)*(velRoll)*surf*CL;
             MomentL = MomentL+LiftL*(-b/2+i*b/(2*inter));
         }
-        
+
         // Right wing
         double interRight = inter/2; //Nmbre d'interval
         Velocity velRight[inter+1];
         for(int i = 0; i<=interRight; i++) {
-            
+
             FGColumnVector3 coordBODY(0, -b/2+i*b/inter, 0);
             FGColumnVector3 coordNED = _Tl2b*coordBODY;//transform(0, -b/2+i*b/inter, 0);
             double xWing = coordNED(1);
             double yWing = coordNED(2);
             double zWing = coordNED(3);
-            
-            Velocity vel = dataInterpolation(array4D, t, xWing, yWing, zWing);
-            
+
+            Velocity vel = dataInterpolation(data, t, xWing, yWing, zWing);
+
             FGColumnVector3 veloNED(vel.u,vel.v,vel.w);
             FGColumnVector3 velR = _Tb2l*veloNED;
             double velRoll = velR(3);
@@ -274,12 +325,12 @@ bool FGAircraft::InitModel(void)
             double LiftR = 0.5*dens*(velRoll)*(velRoll)*surf*CL;
             MomentR = MomentR+LiftR*(i*b/(2*inter));
         }
-        
-        
+
+
         double moment = MomentR-MomentL;
         return moment;
     }
-    
+
         // END : Modifié par Alex
 
 bool FGAircraft::Run(bool Holding)
@@ -300,16 +351,27 @@ bool FGAircraft::Run(bool Holding)
   vMoments += in.GroundMoment;
   vMoments += in.ExternalMoment;
   vMoments += in.BuoyantMoment;
-    
+
     // START : Modifié par Alex
     FGColumnVector3 myMoment;
+
+     FGAuxiliary* Auxiliary = FDMExec->GetAuxiliary();
+    double alpha = Auxiliary->Getalpha();
+
+    double t = FDMExec->GetSimTime();
     
-    double mz = myMomentFunction( Velocity ****array4D , double t, double xNED, double yNED, double zNED)
-    
+    int num[4] ={30,30,30,30};
+    MyGrid data(num);
+
+    double xNED = 1;
+    double yNED = 2;
+    double zNED = 3;
+    double mz = myMomentFunction(data , t, xNED, yNED, zNED);
+
     myMoment(eX) = 0; //mx;
     myMoment(eY) = 0; //my;
     myMoment(eZ) = mz;
-    
+
     vMoments += myMoment;
 
     // END : Modifié par Alex
@@ -317,7 +379,7 @@ bool FGAircraft::Run(bool Holding)
 
   return false;
 }
-    
+
     // END : Modifié par Alex
 
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

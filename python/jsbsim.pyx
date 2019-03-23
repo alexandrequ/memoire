@@ -17,7 +17,7 @@
 
 import os, platform, numpy
 
-__version__='${PROJECT_VERSION}'
+__version__='1.0.0.dev1'
 
 cdef convertToNumpyMat(const c_FGMatrix33& m):
     return numpy.mat([[m.Entry(1, 1), m.Entry(1, 2), m.Entry(1, 3)],

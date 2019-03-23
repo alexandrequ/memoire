@@ -46,6 +46,7 @@ INCLUDES
 // START : Modif Alex
 #include "math/FGQuaternion.h"
 #include "gridWAPT.hpp"
+#include "FGFDMExec.h"
 // END : Modif Alex
 
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -104,14 +105,14 @@ CLASS DOCUMENTATION
 CLASS DECLARATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 
-    
-    typedef struct Velocity {
+
+    typedef struct {
         double u ;
         double v;
         double w;
-    };
-    
-    
+    } Velocity ;
+
+
 class FGAircraft : public FGModel {
 public:
   /** Constructor
@@ -123,7 +124,7 @@ public:
 
   /** Runs the Aircraft model; called by the Executive
       Can pass in a value indicating if the executive is directing the simulation to Hold.
-      @param Holding if true, the executive has been directed to hold the sim from 
+      @param Holding if true, the executive has been directed to hold the sim from
                      advancing time. Some models may ignore this flag, such as the Input
                      model, which may need to be active to listen on a socket for the
                      "Resume" command to be given.
@@ -138,17 +139,17 @@ public:
       @param el a pointer to the element tree
       @return true if successful */
   virtual bool Load(Element* el);
-   
+
     // START : Modif Alex
-    
-    
-    double myMomentFunction( Velocity ****array4D , double t, double xNED, double yNED, double zNED);
-    Velocity dataInterpolation(Velocity ****array4D, double time, double x, double y, double z);
-    
+
+    void setData(MyGrid data);
+    double myMomentFunction( MyGrid data , double t, double xNED, double yNED, double zNED);
+    Velocity dataInterpolation(MyGrid data, double time, double x, double y, double z);
+
     /** Gets the initial orientation
      @return Initial orientation */
     const FGQuaternion& GetOrientation(void) const { return orientation; }
-    
+
      // END : Modif Alex
   /** Gets the aircraft name
       @return the name of the aircraft as a string type */
@@ -186,7 +187,7 @@ public:
 
   void SetWingArea(double S) {WingArea = S;}
 
-    
+
     // START : MODIF ALEX
     double GetPhi(void) const { return phi; }
     double GetPsi(void) const { return psi; }
@@ -194,12 +195,12 @@ public:
      double GetAlphaW(void) const { return alphaw; }
     virtual double GetDensity(void)  const {return Density;}
     // END : MODIF ALEX
-    
+
   void bind(void);
   void unbind(void);
 
   struct Inputs {
-      
+
       // START : MODI ALEX
       double Wingarea;
       double Wingspan;
@@ -225,7 +226,7 @@ private:
   FGColumnVector3 vDXYZcg;
 
   double WingArea, WingSpan, cbar, WingIncidence;
-    
+
     // START : MODIF ALEX
     double alphaw, psi, phi, theta,  Density;
       FGQuaternion orientation;

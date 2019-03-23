@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -695,6 +695,10 @@ input_output/FGXMLElement.h
 /Users/alexandrequintart/soft/jsbsim/src/models/input_output/FGXMLElement.h
 math.h
 -
+gridWAPT.hpp
+/Users/alexandrequintart/soft/jsbsim/src/models/gridWAPT.hpp
+iostream
+-
 
 /Users/alexandrequintart/soft/jsbsim/src/models/FGAircraft.h
 string
@@ -707,6 +711,8 @@ math/FGQuaternion.h
 /Users/alexandrequintart/soft/jsbsim/src/models/math/FGQuaternion.h
 gridWAPT.hpp
 /Users/alexandrequintart/soft/jsbsim/src/models/gridWAPT.hpp
+FGFDMExec.h
+/Users/alexandrequintart/soft/jsbsim/src/models/FGFDMExec.h
 
 /Users/alexandrequintart/soft/jsbsim/src/models/FGAtmosphere.cpp
 iostream
