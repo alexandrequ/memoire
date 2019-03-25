@@ -202,7 +202,7 @@ void setData(MyGrid data) {
         return vent;
     }
 
-    Velocity dataInterpolation(MyGrid data, double time, double x, double y, double z)
+    Velocity FGAircraft::dataInterpolation(MyGrid data, double time, double x, double y, double z)
     {
         int t =(int) time;
 
@@ -259,6 +259,61 @@ void setData(MyGrid data) {
         return interp;
     }
 
+
+    /////////////////////
+    ///    Velocity   ///
+    /////////////////////
+
+      Velocity FGAircraft::myWindFunction( MyGrid data, double t, double xNED, double yNED, double zNED)
+    {
+        Velocity windvel;
+
+        const double pi = M_PI;
+        int inter = 20;
+        double b = WingSpan;//in.Wingspan; //FDMExec->Aircraft->GetWingSpan(); // Envergure de l'aile
+       // double surface = FDMExec->Aircraft->GetWingArea();
+        double phi = GetPhi();
+        double psi = GetPsi();
+        double theta = GetTheta();
+        double dens = Density;
+        double surf = in.Wingarea/inter;
+        double lambda = b*b/in.Wingarea;
+        double dy = b/inter;
+        double integv = 0, integu =0, integw =0 ,oldu =0,oldv=0,oldw=0;
+
+
+                  orientation = FGQuaternion(phi, theta, psi);
+                const FGMatrix33& _Tl2b  = orientation.GetT();     // local to body frame
+                const FGMatrix33& _Tb2l  = orientation.GetTInv();  // body to local
+
+        for(int i = 0; i<=inter; i++) {
+
+
+            FGColumnVector3 coordBODY(0, -b/2+i*b/inter, 0);
+            FGColumnVector3 coordNED = _Tl2b*coordBODY;//transform(0, -b/2+i*b/inter, 0);
+            double xWing = coordNED(1);
+            double yWing = coordNED(2);
+            double zWing = coordNED(3);
+
+            Velocity vel = dataInterpolation(data, t, xWing, yWing, zWing);
+
+            FGColumnVector3 veloNED(vel.u,vel.v,vel.w);
+
+            integu = integu + (oldu + veloNED(1))/2 * dy;
+            integv = integv + (oldv + veloNED(2))/2 * dy;
+            integw = integw + (oldw + veloNED(3))/2 * dy;
+            oldu = veloNED(1);
+            oldu = veloNED(2);
+            oldu = veloNED(3);
+        }
+        windvel.u = integu/b;
+        windvel.v = integv/b;
+        windvel.w = integw/b;
+
+        return windvel;
+      }
+
+
     /////////////////////
     ///  Wind Moment  ///
     /////////////////////
@@ -283,6 +338,10 @@ void setData(MyGrid data) {
           orientation = FGQuaternion(phi, theta, psi);
         const FGMatrix33& _Tl2b  = orientation.GetT();     // local to body frame
         const FGMatrix33& _Tb2l  = orientation.GetTInv();  // body to local
+
+        FGPropagate* Propagate = FDMExec->GetPropagate();
+        const FGMatrix33& Tb2ec = Propagate->GetTec2b();
+
 
         // Left wing
         double interLeft = inter/2; //Nmbre d'interval
@@ -340,18 +399,6 @@ bool FGAircraft::Run(bool Holding)
 
   RunPreFunctions();
 
-  vForces = in.AeroForce;
-  vForces += in.PropForce;
-  vForces += in.GroundForce;
-  vForces += in.ExternalForce;
-  vForces += in.BuoyantForce;
-
-  vMoments = in.AeroMoment;
-  vMoments += in.PropMoment;
-  vMoments += in.GroundMoment;
-  vMoments += in.ExternalMoment;
-  vMoments += in.BuoyantMoment;
-
     // START : Modifié par Alex
     FGColumnVector3 myMoment;
 
@@ -359,9 +406,10 @@ bool FGAircraft::Run(bool Holding)
     double alpha = Auxiliary->Getalpha();
 
     double t = FDMExec->GetSimTime();
-    
+
     int num[4] ={30,30,30,30};
     MyGrid data(num);
+    //  MyGrid data = new Mygrid(num);
 
     double xNED = 1;
     double yNED = 2;
@@ -372,6 +420,27 @@ bool FGAircraft::Run(bool Holding)
     myMoment(eY) = 0; //my;
     myMoment(eZ) = mz;
 
+
+    FGColumnVector3 myWindNED;
+    Velocity windvel = myWindFunction(data , t, xNED, yNED, zNED);
+
+    myWindNED(eNorth) = windvel.u;
+    myWindNED(eEast) = windvel.v;
+    myWindNED(eDown) = windvel.w;
+
+    WakeTotalWindNED = in.TotalWindNED + myWindNED;
+
+    vForces = in.AeroForce;
+    vForces += in.PropForce;
+    vForces += in.GroundForce;
+    vForces += in.ExternalForce;
+    vForces += in.BuoyantForce;
+
+    vMoments = in.AeroMoment;
+    vMoments += in.PropMoment;
+    vMoments += in.GroundMoment;
+    vMoments += in.ExternalMoment;
+    vMoments += in.BuoyantMoment;
     vMoments += myMoment;
 
     // END : Modifié par Alex
@@ -466,7 +535,16 @@ void FGAircraft::bind(void)
   PropertyManager->Tie("metrics/visualrefpoint-x-in", this, eX, (PMF)&FGAircraft::GetXYZvrp);
   PropertyManager->Tie("metrics/visualrefpoint-y-in", this, eY, (PMF)&FGAircraft::GetXYZvrp);
   PropertyManager->Tie("metrics/visualrefpoint-z-in", this, eZ, (PMF)&FGAircraft::GetXYZvrp);
+
+  // Modifié par alex
+
+  // Total, calculated winds (local navigational/geographic frame: N-E-D). Read only.
+  PropertyManager->Tie("atmosphere/total-wind-north-fps", this, eNorth, (PMF)&FGAircraft::GetWakeTotalWindNED);
+  PropertyManager->Tie("atmosphere/total-wind-east-fps",  this, eEast,  (PMF)&FGAircraft::GetWakeTotalWindNED);
+  PropertyManager->Tie("atmosphere/total-wind-down-fps",  this, eDown,  (PMF)&FGAircraft::GetWakeTotalWindNED);
+
 }
+
 
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 //    The bitmasked value choices are as follows:

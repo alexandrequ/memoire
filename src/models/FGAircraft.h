@@ -105,7 +105,6 @@ CLASS DOCUMENTATION
 CLASS DECLARATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 
-
     typedef struct {
         double u ;
         double v;
@@ -145,10 +144,17 @@ public:
     void setData(MyGrid data);
     double myMomentFunction( MyGrid data , double t, double xNED, double yNED, double zNED);
     Velocity dataInterpolation(MyGrid data, double time, double x, double y, double z);
-
+Velocity myWindFunction( MyGrid data, double t, double xNED, double yNED, double zNED);
     /** Gets the initial orientation
      @return Initial orientation */
     const FGQuaternion& GetOrientation(void) const { return orientation; }
+
+    /// Retrieves the total wind components in NED frame.
+    virtual const FGColumnVector3& GetWakeTotalWindNED(void) const { return WakeTotalWindNED; }
+
+    /// Retrieves a total wind component in NED frame.
+    virtual double GetWakeTotalWindNED(int idx) const {return WakeTotalWindNED(idx);}
+
 
      // END : Modif Alex
   /** Gets the aircraft name
@@ -215,6 +221,7 @@ public:
     FGColumnVector3 GroundMoment;
     FGColumnVector3 ExternalMoment;
     FGColumnVector3 BuoyantMoment;
+    FGColumnVector3 TotalWindNED;
   } in;
 
 private:
@@ -228,6 +235,7 @@ private:
   double WingArea, WingSpan, cbar, WingIncidence;
 
     // START : MODIF ALEX
+    FGColumnVector3 WakeTotalWindNED;
     double alphaw, psi, phi, theta,  Density;
       FGQuaternion orientation;
     // START : MODIF ALEX

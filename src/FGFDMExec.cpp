@@ -200,7 +200,7 @@ FGFDMExec::~FGFDMExec()
   ChildFDMList.clear();
 
   PropertyCatalog.clear();
-  
+
   SetGroundCallback(0);
 
   if (FDMctr != 0) (*FDMctr)--;
@@ -386,8 +386,12 @@ void FGFDMExec::LoadInputs(unsigned int idx)
     Auxiliary->in.CosTht       = Propagate->GetCosEuler(eTht);
     Auxiliary->in.SinTht       = Propagate->GetSinEuler(eTht);
     Auxiliary->in.CosPhi       = Propagate->GetCosEuler(ePhi);
+
+    //Modif alex
     Auxiliary->in.SinPhi       = Propagate->GetSinEuler(ePhi);
-    Auxiliary->in.TotalWindNED = Winds->GetTotalWindNED();
+    //Auxiliary->in.TotalWindNED = Winds->GetTotalWindNED();
+    Auxiliary->in.WakeTotalWindNED = Aircraft->GetWakeTotalWindNED();
+    // ENd modif Alex
     Auxiliary->in.TurbPQR      = Winds->GetTurbPQR();
     break;
   case eSystems:

@@ -1,6 +1,6 @@
 //
 //  gridWAPT.cpp
-//  
+//
 //
 //  Created by Alexandre Quintart on 11/03/2019.
 //
@@ -9,16 +9,16 @@
 #include <cstdlib>
 
 MyGrid::MyGrid(int n[4]){
-    
+
     mysize[0] = n[0]; // number of times
     mysize[1] = n[1]; // number of nx
     mysize[2] = n[2]; // number of ny
     mysize[3] = n[3]; // number of nz
-    
+
     mydata[0] = (double*)calloc(sizeof(double),n[0]*n[1]*n[2]*n[3]); // u
     mydata[1] = (double*)calloc(sizeof(double),n[0]*n[1]*n[2]*n[3]); // v
     mydata[3] = (double*)calloc(sizeof(double),n[0]*n[1]*n[2]*n[3]); // w
-    
+
 }
 
 MyGrid::~MyGrid(){

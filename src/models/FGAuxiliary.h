@@ -112,7 +112,7 @@ public:
 
   /** Runs the Auxiliary routines; called by the Executive
       Can pass in a value indicating if the executive is directing the simulation to Hold.
-      @param Holding if true, the executive has been directed to hold the sim from 
+      @param Holding if true, the executive has been directed to hold the sim from
                      advancing time. Some models may ignore this flag, such as the Input
                      model, which may need to be active to listen on a socket for the
                      "Resume" command to be given.
@@ -204,7 +204,7 @@ public:
   double GetVt            (void) const { return Vt;         }
 
   /** Gets the ground speed in feet per second.
-      The magnitude is the square root of the sum of the squares (RSS) of the 
+      The magnitude is the square root of the sum of the squares (RSS) of the
       vehicle north and east velocity components.
       @return The magnitude of the vehicle velocity in the horizontal plane. */
   double GetVground       (void) const { return Vground;    }
@@ -279,7 +279,7 @@ public:
     double SinTht;
     double CosPhi;
     double SinPhi;
-    FGColumnVector3 TotalWindNED;
+    FGColumnVector3 WakeTotalWindNED;
     FGColumnVector3 TurbPQR;
   } in;
 
