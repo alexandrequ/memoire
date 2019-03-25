@@ -107,8 +107,8 @@ bool FGAircraft::InitModel(void)
 //Remplissage
 void setData(MyGrid data) {
   cout << "OKLM";
-  for(int t = 0; t<30; t++){
-  for(int i = 0; i<30; i++){
+  for(int t = 0; t<1; t++){
+  for(int i = 0; i<1; i++){
     for(int j = 0; j<30; j++){
       for(int k = 0; k<30; k++){
         for(int l = 1; l<4; l++){
@@ -120,6 +120,29 @@ void setData(MyGrid data) {
     }
   }
 };
+
+///////////////////////////
+///  Aircraft position  ///
+///////////////////////////
+
+#define WGS84_A		6378137.0		///< major axis
+#define WGS84_E		0.0818191908		///< first eccentricity
+loc latLonAltToEcef(double lat, double lon, double alt)
+{
+  loc pos;
+    double clat = cos(lat); //En radians
+    double slat = sin(lat);
+    double clon = cos(lon);
+    double slon = sin(lon);
+
+    double N = WGS84_A / sqrt(1.0 - WGS84_E * WGS84_E * slat * slat);
+
+    pos.x = (N + alt) * clat * clon;
+    pos.y = (N + alt) * clat * slon;
+    pos.z = (N * (1.0 - WGS84_E * WGS84_E) + alt) * slat;
+
+    return pos;
+}
 
     //////////////////////
     ///  Interpolation ///
@@ -264,7 +287,7 @@ void setData(MyGrid data) {
     ///    Velocity   ///
     /////////////////////
 
-      Velocity FGAircraft::myWindFunction( MyGrid data, double t, double xNED, double yNED, double zNED)
+      Velocity FGAircraft::myWindFunction( MyGrid data, double t, double xECEF, double yECEF, double zECEF)
     {
         Velocity windvel;
 
@@ -282,29 +305,31 @@ void setData(MyGrid data) {
         double integv = 0, integu =0, integw =0 ,oldu =0,oldv=0,oldw=0;
 
 
-                  orientation = FGQuaternion(phi, theta, psi);
-                const FGMatrix33& _Tl2b  = orientation.GetT();     // local to body frame
-                const FGMatrix33& _Tb2l  = orientation.GetTInv();  // body to local
+        FGPropagate* Propagate = FDMExec->GetPropagate();
+        const FGMatrix33& Tec2b = Propagate->GetTec2b();
+        const FGMatrix33& Tb2ec = Propagate->GetTb2ec();
+        const FGMatrix33& Tec2l = Propagate->GetTec2l();
 
         for(int i = 0; i<=inter; i++) {
 
 
             FGColumnVector3 coordBODY(0, -b/2+i*b/inter, 0);
-            FGColumnVector3 coordNED = _Tl2b*coordBODY;//transform(0, -b/2+i*b/inter, 0);
-            double xWing = coordNED(1);
-            double yWing = coordNED(2);
-            double zWing = coordNED(3);
+            FGColumnVector3 coordECEF = Tb2ec*coordBODY;//transform(0, -b/2+i*b/inter, 0);
+            double xWing = coordECEF(1);
+            double yWing = coordECEF(2);
+            double zWing = coordECEF(3);
 
             Velocity vel = dataInterpolation(data, t, xWing, yWing, zWing);
 
-            FGColumnVector3 veloNED(vel.u,vel.v,vel.w);
+            FGColumnVector3 veloECEF(vel.u,vel.v,vel.w);
+            FGColumnVector3 velNED = Tec2l*veloECEF;
 
-            integu = integu + (oldu + veloNED(1))/2 * dy;
-            integv = integv + (oldv + veloNED(2))/2 * dy;
-            integw = integw + (oldw + veloNED(3))/2 * dy;
-            oldu = veloNED(1);
-            oldu = veloNED(2);
-            oldu = veloNED(3);
+            integu = integu + (oldu + velNED(1))/2 * dy;
+            integv = integv + (oldv + velNED(2))/2 * dy;
+            integw = integw + (oldw + velNED(3))/2 * dy;
+            oldu = velNED(1);
+            oldu = velNED(2);
+            oldu = velNED(3);
         }
         windvel.u = integu/b;
         windvel.v = integv/b;
@@ -318,7 +343,7 @@ void setData(MyGrid data) {
     ///  Wind Moment  ///
     /////////////////////
 
-    double  FGAircraft::myMomentFunction( MyGrid data, double t, double xNED, double yNED, double zNED)
+    double  FGAircraft::myMomentFunction( MyGrid data, double t, double xECEF, double yECEF, double zECEF)
     {
         FGAuxiliary* Auxiliary = FDMExec->GetAuxiliary();
         double alpha = Auxiliary->Getalpha();
@@ -335,12 +360,13 @@ void setData(MyGrid data) {
         double surf = in.Wingarea/inter;
         double lambda = b*b/in.Wingarea;
 
-          orientation = FGQuaternion(phi, theta, psi);
-        const FGMatrix33& _Tl2b  = orientation.GetT();     // local to body frame
-        const FGMatrix33& _Tb2l  = orientation.GetTInv();  // body to local
+        //  orientation = FGQuaternion(phi, theta, psi);
+        //const FGMatrix33& _Tl2b  = orientation.GetT();     // local to body frame
+        //const FGMatrix33& _Tb2l  = orientation.GetTInv();  // body to local
 
         FGPropagate* Propagate = FDMExec->GetPropagate();
-        const FGMatrix33& Tb2ec = Propagate->GetTec2b();
+        const FGMatrix33& Tec2b = Propagate->GetTec2b();
+        const FGMatrix33& Tb2ec = Propagate->GetTb2ec();
 
 
         // Left wing
@@ -349,15 +375,15 @@ void setData(MyGrid data) {
         for(int i = 0; i<=interLeft; i++) {
 
             FGColumnVector3 coordBODY(0, -b/2+i*b/inter, 0);
-            FGColumnVector3 coordNED = _Tl2b*coordBODY;//transform(0, -b/2+i*b/inter, 0);
-            double xWing = coordNED(1);
-            double yWing = coordNED(2);
-            double zWing = coordNED(3);
+            FGColumnVector3 coordECEF = Tb2ec*coordBODY;//transform(0, -b/2+i*b/inter, 0);
+            double xWing = coordECEF(1);
+            double yWing = coordECEF(2);
+            double zWing = coordECEF(3);
 
             Velocity vel = dataInterpolation(data, t, xWing, yWing, zWing);
 
-            FGColumnVector3 veloNED(vel.u,vel.v,vel.w);
-            FGColumnVector3 velL = _Tb2l*veloNED;
+            FGColumnVector3 veloECEF(vel.u,vel.v,vel.w);
+            FGColumnVector3 velL = Tec2b*veloECEF;
             double velRoll = velL(3);
             double CL = 2*pi*alpha*lambda/(lambda+2);
             double LiftL = 0.5*dens*(velRoll)*(velRoll)*surf*CL;
@@ -370,15 +396,15 @@ void setData(MyGrid data) {
         for(int i = 0; i<=interRight; i++) {
 
             FGColumnVector3 coordBODY(0, -b/2+i*b/inter, 0);
-            FGColumnVector3 coordNED = _Tl2b*coordBODY;//transform(0, -b/2+i*b/inter, 0);
-            double xWing = coordNED(1);
-            double yWing = coordNED(2);
-            double zWing = coordNED(3);
+            FGColumnVector3 coordECEF = Tb2ec*coordBODY;//transform(0, -b/2+i*b/inter, 0);
+            double xWing = coordECEF(1);
+            double yWing = coordECEF(2);
+            double zWing = coordECEF(3);
 
             Velocity vel = dataInterpolation(data, t, xWing, yWing, zWing);
 
-            FGColumnVector3 veloNED(vel.u,vel.v,vel.w);
-            FGColumnVector3 velR = _Tb2l*veloNED;
+            FGColumnVector3 veloECEF(vel.u,vel.v,vel.w);
+            FGColumnVector3 velR = Tec2b*veloECEF;
             double velRoll = velR(3);
             double CL = 2*pi*alpha*lambda/(lambda+2);
             double LiftR = 0.5*dens*(velRoll)*(velRoll)*surf*CL;
@@ -403,18 +429,27 @@ bool FGAircraft::Run(bool Holding)
     FGColumnVector3 myMoment;
 
      FGAuxiliary* Auxiliary = FDMExec->GetAuxiliary();
+     FGPropagate* Propagate = FDMExec->GetPropagate();
+
     double alpha = Auxiliary->Getalpha();
 
     double t = FDMExec->GetSimTime();
 
-    int num[4] ={30,30,30,30};
+    int num[4] = {30,30,30,30};
     MyGrid data(num);
-    //  MyGrid data = new Mygrid(num);
+    // MyGrid data = new Mygrid(num);
 
-    double xNED = 1;
-    double yNED = 2;
-    double zNED = 3;
-    double mz = myMomentFunction(data , t, xNED, yNED, zNED);
+double lat = Propagate->GetLatitude();
+double lon = Propagate->GetLongitude();
+double alt = Propagate->GetRadius();
+
+    double xECEF, yECEF, zECEF;
+loc pos = latLonAltToEcef(lat, lon, alt);
+  xECEF = pos.x;
+  yECEF = pos.y;
+  zECEF = pos.z;
+
+    double mz = myMomentFunction(data , t, xECEF, yECEF, zECEF);
 
     myMoment(eX) = 0; //mx;
     myMoment(eY) = 0; //my;
@@ -422,7 +457,7 @@ bool FGAircraft::Run(bool Holding)
 
 
     FGColumnVector3 myWindNED;
-    Velocity windvel = myWindFunction(data , t, xNED, yNED, zNED);
+    Velocity windvel = myWindFunction(data , t, xECEF, yECEF, zECEF);
 
     myWindNED(eNorth) = windvel.u;
     myWindNED(eEast) = windvel.v;

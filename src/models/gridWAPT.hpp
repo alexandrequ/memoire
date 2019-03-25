@@ -1,6 +1,6 @@
 //
 //  gridWAPT.hpp
-//  
+//
 //
 //  Created by Alexandre Quintart on 11/03/2019.
 //
@@ -21,7 +21,7 @@
 enum VelType {U=1,V=2,W=3};
 
 class MyGrid{
-    
+
 private:
     int mysize[4];
     // mydata[U,V,W] [ntime * nx * ny * nz]
@@ -34,12 +34,12 @@ public:
     // set and gets
     double get(int itime, int i, int j, int k,int dim);
     void   set(int itime, int i, int j, int k,int dim, double val);
-    
+
     double get(int itime, int i, int j, int k,VelType dim);
     void   set(int itime, int i, int j, int k,VelType dim, double val);
-    
+
     double* getVelocity(VelType dim);
-    
+
 };
 
 

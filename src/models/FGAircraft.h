@@ -111,6 +111,12 @@ CLASS DECLARATION
         double w;
     } Velocity ;
 
+    typedef struct {
+        double x ;
+        double y;
+        double z;
+    } loc;
+
 
 class FGAircraft : public FGModel {
 public:

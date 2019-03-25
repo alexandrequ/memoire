@@ -41,6 +41,6 @@ void MyGrid::set(int itime, int i, int j, int k, VelType dim,double val){
     mydata[dim][GET_N(itime,i,j,k)] = val;
 }
 
-double* MyGrid::getVelocity(VelType dim){
+double* MyGrid::getVelocity(VelType dim){ // double*
     return mydata[dim];
 }
