@@ -35,6 +35,8 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/Users/alexandrequintart/soft/jsbsim/build/src/cmake_install.cmake")
+  include("/Users/alexandrequintart/soft/jsbsim/build/tests/cmake_install.cmake")
+  include("/Users/alexandrequintart/soft/jsbsim/build/python/cmake_install.cmake")
   include("/Users/alexandrequintart/soft/jsbsim/build/tests/unit_tests/cmake_install.cmake")
   include("/Users/alexandrequintart/soft/jsbsim/build/utils/cmake_install.cmake")
 

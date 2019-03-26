@@ -424,6 +424,19 @@ IOStreams/fast:
 .PHONY : IOStreams/fast
 
 #=============================================================================
+# Target rules for targets named PythonJSBSim
+
+# Build rule for target.
+PythonJSBSim: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 PythonJSBSim
+.PHONY : PythonJSBSim
+
+# fast build rule for target.
+PythonJSBSim/fast:
+	$(MAKE) -f python/CMakeFiles/PythonJSBSim.dir/build.make python/CMakeFiles/PythonJSBSim.dir/build
+.PHONY : PythonJSBSim/fast
+
+#=============================================================================
 # Target rules for targets named FGLocationTest1
 
 # Build rule for target.
@@ -560,6 +573,7 @@ help:
 	@echo "... Misc"
 	@echo "... Xml"
 	@echo "... IOStreams"
+	@echo "... PythonJSBSim"
 	@echo "... FGLocationTest1"
 	@echo "... FGQuaternionTest1"
 	@echo "... FGMatrix33Test1"

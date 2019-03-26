@@ -169,7 +169,7 @@ src/preinstall: src/simgear/preinstall
 src/CMakeFiles/JSBSim.dir/all: src/CMakeFiles/libJSBSim.dir/all
 	$(MAKE) -f src/CMakeFiles/JSBSim.dir/build.make src/CMakeFiles/JSBSim.dir/depend
 	$(MAKE) -f src/CMakeFiles/JSBSim.dir/build.make src/CMakeFiles/JSBSim.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/build/CMakeFiles --progress-num=54,55 "Built target JSBSim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/build/CMakeFiles --progress-num=54 "Built target JSBSim"
 .PHONY : src/CMakeFiles/JSBSim.dir/all
 
 # Include target in all.
@@ -227,7 +227,7 @@ all: src/CMakeFiles/libJSBSim.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/libJSBSim.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexandrequintart/soft/jsbsim/build/CMakeFiles 69
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexandrequintart/soft/jsbsim/build/CMakeFiles 70
 	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/libJSBSim.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexandrequintart/soft/jsbsim/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/libJSBSim.dir/rule
@@ -382,7 +382,7 @@ src/math/preinstall:
 src/math/CMakeFiles/Math.dir/all:
 	$(MAKE) -f src/math/CMakeFiles/Math.dir/build.make src/math/CMakeFiles/Math.dir/depend
 	$(MAKE) -f src/math/CMakeFiles/Math.dir/build.make src/math/CMakeFiles/Math.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/build/CMakeFiles --progress-num=56,57,58,59,60,61,62,63,64 "Built target Math"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/build/CMakeFiles --progress-num=56,57,58,59,60,61,62,63 "Built target Math"
 .PHONY : src/math/CMakeFiles/Math.dir/all
 
 # Include target in all.
@@ -392,7 +392,7 @@ all: src/math/CMakeFiles/Math.dir/all
 
 # Build rule for subdir invocation for target.
 src/math/CMakeFiles/Math.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexandrequintart/soft/jsbsim/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexandrequintart/soft/jsbsim/build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 src/math/CMakeFiles/Math.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexandrequintart/soft/jsbsim/build/CMakeFiles 0
 .PHONY : src/math/CMakeFiles/Math.dir/rule
@@ -445,7 +445,7 @@ src/models/preinstall: src/models/flight_control/preinstall
 src/models/CMakeFiles/Models.dir/all:
 	$(MAKE) -f src/models/CMakeFiles/Models.dir/build.make src/models/CMakeFiles/Models.dir/depend
 	$(MAKE) -f src/models/CMakeFiles/Models.dir/build.make src/models/CMakeFiles/Models.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/build/CMakeFiles --progress-num=66,67,68,69,70,71,72,73,74,75,76,77,78,79,80 "Built target Models"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/build/CMakeFiles --progress-num=65,66,67,68,69,70,71,72,73,74,75,76,77,78,79 "Built target Models"
 .PHONY : src/models/CMakeFiles/Models.dir/all
 
 # Include target in all.
@@ -555,7 +555,7 @@ src/models/propulsion/preinstall:
 src/models/propulsion/CMakeFiles/Propulsion.dir/all:
 	$(MAKE) -f src/models/propulsion/CMakeFiles/Propulsion.dir/build.make src/models/propulsion/CMakeFiles/Propulsion.dir/depend
 	$(MAKE) -f src/models/propulsion/CMakeFiles/Propulsion.dir/build.make src/models/propulsion/CMakeFiles/Propulsion.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/build/CMakeFiles --progress-num=82,83,84,85,86,87,88,89,90 "Built target Propulsion"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/build/CMakeFiles --progress-num=81,82,83,84,85,86,87,88,89 "Built target Propulsion"
 .PHONY : src/models/propulsion/CMakeFiles/Propulsion.dir/all
 
 # Include target in all.
@@ -610,7 +610,7 @@ src/models/flight_control/preinstall:
 src/models/flight_control/CMakeFiles/FlightControl.dir/all:
 	$(MAKE) -f src/models/flight_control/CMakeFiles/FlightControl.dir/build.make src/models/flight_control/CMakeFiles/FlightControl.dir/depend
 	$(MAKE) -f src/models/flight_control/CMakeFiles/FlightControl.dir/build.make src/models/flight_control/CMakeFiles/FlightControl.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/build/CMakeFiles --progress-num=28,29,30,31,32,33,34,35,36,37,38,39 "Built target FlightControl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/build/CMakeFiles --progress-num=27,28,29,30,31,32,33,34,35,36,37,38,39 "Built target FlightControl"
 .PHONY : src/models/flight_control/CMakeFiles/FlightControl.dir/all
 
 # Include target in all.
@@ -620,7 +620,7 @@ all: src/models/flight_control/CMakeFiles/FlightControl.dir/all
 
 # Build rule for subdir invocation for target.
 src/models/flight_control/CMakeFiles/FlightControl.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexandrequintart/soft/jsbsim/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexandrequintart/soft/jsbsim/build/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 src/models/flight_control/CMakeFiles/FlightControl.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexandrequintart/soft/jsbsim/build/CMakeFiles 0
 .PHONY : src/models/flight_control/CMakeFiles/FlightControl.dir/rule
@@ -792,7 +792,7 @@ src/simgear/props/preinstall:
 src/simgear/props/CMakeFiles/Properties.dir/all:
 	$(MAKE) -f src/simgear/props/CMakeFiles/Properties.dir/build.make src/simgear/props/CMakeFiles/Properties.dir/depend
 	$(MAKE) -f src/simgear/props/CMakeFiles/Properties.dir/build.make src/simgear/props/CMakeFiles/Properties.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/build/CMakeFiles --progress-num=81 "Built target Properties"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/build/CMakeFiles --progress-num=80 "Built target Properties"
 .PHONY : src/simgear/props/CMakeFiles/Properties.dir/all
 
 # Include target in all.
@@ -847,7 +847,7 @@ src/simgear/magvar/preinstall:
 src/simgear/magvar/CMakeFiles/Magvar.dir/all:
 	$(MAKE) -f src/simgear/magvar/CMakeFiles/Magvar.dir/build.make src/simgear/magvar/CMakeFiles/Magvar.dir/depend
 	$(MAKE) -f src/simgear/magvar/CMakeFiles/Magvar.dir/build.make src/simgear/magvar/CMakeFiles/Magvar.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/build/CMakeFiles --progress-num= "Built target Magvar"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/build/CMakeFiles --progress-num=55 "Built target Magvar"
 .PHONY : src/simgear/magvar/CMakeFiles/Magvar.dir/all
 
 # Include target in all.
@@ -857,7 +857,7 @@ all: src/simgear/magvar/CMakeFiles/Magvar.dir/all
 
 # Build rule for subdir invocation for target.
 src/simgear/magvar/CMakeFiles/Magvar.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexandrequintart/soft/jsbsim/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexandrequintart/soft/jsbsim/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 src/simgear/magvar/CMakeFiles/Magvar.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexandrequintart/soft/jsbsim/build/CMakeFiles 0
 .PHONY : src/simgear/magvar/CMakeFiles/Magvar.dir/rule
@@ -902,7 +902,7 @@ src/simgear/misc/preinstall:
 src/simgear/misc/CMakeFiles/Misc.dir/all:
 	$(MAKE) -f src/simgear/misc/CMakeFiles/Misc.dir/build.make src/simgear/misc/CMakeFiles/Misc.dir/depend
 	$(MAKE) -f src/simgear/misc/CMakeFiles/Misc.dir/build.make src/simgear/misc/CMakeFiles/Misc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/build/CMakeFiles --progress-num=65 "Built target Misc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/build/CMakeFiles --progress-num=64 "Built target Misc"
 .PHONY : src/simgear/misc/CMakeFiles/Misc.dir/all
 
 # Include target in all.
@@ -1043,6 +1043,79 @@ clean: src/simgear/io/iostreams/CMakeFiles/IOStreams.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory tests
+
+# Convenience name for "all" pass in the directory.
+tests/all:
+
+.PHONY : tests/all
+
+# Convenience name for "clean" pass in the directory.
+tests/clean:
+
+.PHONY : tests/clean
+
+# Convenience name for "preinstall" pass in the directory.
+tests/preinstall:
+
+.PHONY : tests/preinstall
+
+#=============================================================================
+# Directory level rules for directory python
+
+# Convenience name for "all" pass in the directory.
+python/all: python/CMakeFiles/PythonJSBSim.dir/all
+
+.PHONY : python/all
+
+# Convenience name for "clean" pass in the directory.
+python/clean: python/CMakeFiles/PythonJSBSim.dir/clean
+
+.PHONY : python/clean
+
+# Convenience name for "preinstall" pass in the directory.
+python/preinstall:
+
+.PHONY : python/preinstall
+
+#=============================================================================
+# Target rules for target python/CMakeFiles/PythonJSBSim.dir
+
+# All Build rule for target.
+python/CMakeFiles/PythonJSBSim.dir/all: src/CMakeFiles/libJSBSim.dir/all
+	$(MAKE) -f python/CMakeFiles/PythonJSBSim.dir/build.make python/CMakeFiles/PythonJSBSim.dir/depend
+	$(MAKE) -f python/CMakeFiles/PythonJSBSim.dir/build.make python/CMakeFiles/PythonJSBSim.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/build/CMakeFiles --progress-num=90,91 "Built target PythonJSBSim"
+.PHONY : python/CMakeFiles/PythonJSBSim.dir/all
+
+# Include target in all.
+all: python/CMakeFiles/PythonJSBSim.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+python/CMakeFiles/PythonJSBSim.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexandrequintart/soft/jsbsim/build/CMakeFiles 72
+	$(MAKE) -f CMakeFiles/Makefile2 python/CMakeFiles/PythonJSBSim.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexandrequintart/soft/jsbsim/build/CMakeFiles 0
+.PHONY : python/CMakeFiles/PythonJSBSim.dir/rule
+
+# Convenience name for target.
+PythonJSBSim: python/CMakeFiles/PythonJSBSim.dir/rule
+
+.PHONY : PythonJSBSim
+
+# clean rule for target.
+python/CMakeFiles/PythonJSBSim.dir/clean:
+	$(MAKE) -f python/CMakeFiles/PythonJSBSim.dir/build.make python/CMakeFiles/PythonJSBSim.dir/clean
+.PHONY : python/CMakeFiles/PythonJSBSim.dir/clean
+
+# clean rule for target.
+clean: python/CMakeFiles/PythonJSBSim.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Directory level rules for directory tests/unit_tests
 
 # Convenience name for "all" pass in the directory.
@@ -1077,7 +1150,7 @@ tests/unit_tests/preinstall:
 tests/unit_tests/CMakeFiles/FGLocationTest1.dir/all: src/CMakeFiles/libJSBSim.dir/all
 	$(MAKE) -f tests/unit_tests/CMakeFiles/FGLocationTest1.dir/build.make tests/unit_tests/CMakeFiles/FGLocationTest1.dir/depend
 	$(MAKE) -f tests/unit_tests/CMakeFiles/FGLocationTest1.dir/build.make tests/unit_tests/CMakeFiles/FGLocationTest1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/build/CMakeFiles --progress-num=21,22,23 "Built target FGLocationTest1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/build/CMakeFiles --progress-num=21,22 "Built target FGLocationTest1"
 .PHONY : tests/unit_tests/CMakeFiles/FGLocationTest1.dir/all
 
 # Include target in all.
@@ -1114,7 +1187,7 @@ clean: tests/unit_tests/CMakeFiles/FGLocationTest1.dir/clean
 tests/unit_tests/CMakeFiles/FGQuaternionTest1.dir/all: src/CMakeFiles/libJSBSim.dir/all
 	$(MAKE) -f tests/unit_tests/CMakeFiles/FGQuaternionTest1.dir/build.make tests/unit_tests/CMakeFiles/FGQuaternionTest1.dir/depend
 	$(MAKE) -f tests/unit_tests/CMakeFiles/FGQuaternionTest1.dir/build.make tests/unit_tests/CMakeFiles/FGQuaternionTest1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/build/CMakeFiles --progress-num=26,27 "Built target FGQuaternionTest1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/build/CMakeFiles --progress-num=25,26 "Built target FGQuaternionTest1"
 .PHONY : tests/unit_tests/CMakeFiles/FGQuaternionTest1.dir/all
 
 # Include target in all.
@@ -1124,7 +1197,7 @@ all: tests/unit_tests/CMakeFiles/FGQuaternionTest1.dir/all
 
 # Build rule for subdir invocation for target.
 tests/unit_tests/CMakeFiles/FGQuaternionTest1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexandrequintart/soft/jsbsim/build/CMakeFiles 71
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexandrequintart/soft/jsbsim/build/CMakeFiles 72
 	$(MAKE) -f CMakeFiles/Makefile2 tests/unit_tests/CMakeFiles/FGQuaternionTest1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexandrequintart/soft/jsbsim/build/CMakeFiles 0
 .PHONY : tests/unit_tests/CMakeFiles/FGQuaternionTest1.dir/rule
@@ -1151,7 +1224,7 @@ clean: tests/unit_tests/CMakeFiles/FGQuaternionTest1.dir/clean
 tests/unit_tests/CMakeFiles/FGMatrix33Test1.dir/all: src/CMakeFiles/libJSBSim.dir/all
 	$(MAKE) -f tests/unit_tests/CMakeFiles/FGMatrix33Test1.dir/build.make tests/unit_tests/CMakeFiles/FGMatrix33Test1.dir/depend
 	$(MAKE) -f tests/unit_tests/CMakeFiles/FGMatrix33Test1.dir/build.make tests/unit_tests/CMakeFiles/FGMatrix33Test1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/build/CMakeFiles --progress-num=24,25 "Built target FGMatrix33Test1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/build/CMakeFiles --progress-num=23,24 "Built target FGMatrix33Test1"
 .PHONY : tests/unit_tests/CMakeFiles/FGMatrix33Test1.dir/all
 
 # Include target in all.
@@ -1161,7 +1234,7 @@ all: tests/unit_tests/CMakeFiles/FGMatrix33Test1.dir/all
 
 # Build rule for subdir invocation for target.
 tests/unit_tests/CMakeFiles/FGMatrix33Test1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexandrequintart/soft/jsbsim/build/CMakeFiles 71
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexandrequintart/soft/jsbsim/build/CMakeFiles 72
 	$(MAKE) -f CMakeFiles/Makefile2 tests/unit_tests/CMakeFiles/FGMatrix33Test1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexandrequintart/soft/jsbsim/build/CMakeFiles 0
 .PHONY : tests/unit_tests/CMakeFiles/FGMatrix33Test1.dir/rule
@@ -1198,7 +1271,7 @@ all: tests/unit_tests/CMakeFiles/FGJSBBaseTest1.dir/all
 
 # Build rule for subdir invocation for target.
 tests/unit_tests/CMakeFiles/FGJSBBaseTest1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexandrequintart/soft/jsbsim/build/CMakeFiles 71
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexandrequintart/soft/jsbsim/build/CMakeFiles 72
 	$(MAKE) -f CMakeFiles/Makefile2 tests/unit_tests/CMakeFiles/FGJSBBaseTest1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexandrequintart/soft/jsbsim/build/CMakeFiles 0
 .PHONY : tests/unit_tests/CMakeFiles/FGJSBBaseTest1.dir/rule
@@ -1225,7 +1298,7 @@ clean: tests/unit_tests/CMakeFiles/FGJSBBaseTest1.dir/clean
 tests/unit_tests/CMakeFiles/StringUtilitiesTest1.dir/all: src/CMakeFiles/libJSBSim.dir/all
 	$(MAKE) -f tests/unit_tests/CMakeFiles/StringUtilitiesTest1.dir/build.make tests/unit_tests/CMakeFiles/StringUtilitiesTest1.dir/depend
 	$(MAKE) -f tests/unit_tests/CMakeFiles/StringUtilitiesTest1.dir/build.make tests/unit_tests/CMakeFiles/StringUtilitiesTest1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/build/CMakeFiles --progress-num=91,92,93 "Built target StringUtilitiesTest1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/build/CMakeFiles --progress-num=92,93 "Built target StringUtilitiesTest1"
 .PHONY : tests/unit_tests/CMakeFiles/StringUtilitiesTest1.dir/all
 
 # Include target in all.
@@ -1272,7 +1345,7 @@ all: tests/unit_tests/CMakeFiles/FGColumnVector3Test1.dir/all
 
 # Build rule for subdir invocation for target.
 tests/unit_tests/CMakeFiles/FGColumnVector3Test1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexandrequintart/soft/jsbsim/build/CMakeFiles 71
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexandrequintart/soft/jsbsim/build/CMakeFiles 72
 	$(MAKE) -f CMakeFiles/Makefile2 tests/unit_tests/CMakeFiles/FGColumnVector3Test1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexandrequintart/soft/jsbsim/build/CMakeFiles 0
 .PHONY : tests/unit_tests/CMakeFiles/FGColumnVector3Test1.dir/rule

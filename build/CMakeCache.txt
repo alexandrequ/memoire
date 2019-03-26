@@ -286,8 +286,17 @@ CXXTEST_PERL_TESTGEN_EXECUTABLE:FILEPATH=CXXTEST_PERL_TESTGEN_EXECUTABLE-NOTFOUN
 //Path to a program.
 CXXTEST_PYTHON_TESTGEN_EXECUTABLE:FILEPATH=/usr/local/bin/cxxtestgen
 
+//Create an annotated .html file when compiling *.pyx.
+CYTHON_ANNOTATE:BOOL=OFF
+
 //Path to a program.
-CYTHON_EXECUTABLE:FILEPATH=CYTHON_EXECUTABLE-NOTFOUND
+CYTHON_EXECUTABLE:FILEPATH=/Users/alexandrequintart/anaconda3/bin/cython
+
+//Extra flags to the cython compiler.
+CYTHON_FLAGS:STRING=
+
+//Strip docstrings from the compiled module.
+CYTHON_NO_DOCSTRINGS:BOOL=OFF
 
 //Dot tool for use with Doxygen
 DOXYGEN_DOT_EXECUTABLE:FILEPATH=DOXYGEN_DOT_EXECUTABLE-NOTFOUND
@@ -311,7 +320,16 @@ LSB_RELEASE_EXECUTABLE:FILEPATH=LSB_RELEASE_EXECUTABLE-NOTFOUND
 PERL_EXECUTABLE:FILEPATH=/usr/bin/perl
 
 //Path to a program.
-PYTHON_EXECUTABLE:FILEPATH=/usr/local/bin/python
+PYTHON_EXECUTABLE:FILEPATH=/Users/alexandrequintart/anaconda3/bin/python
+
+//Path to a file.
+PYTHON_INCLUDE_DIR:PATH=/Users/alexandrequintart/anaconda3/include/python3.7m
+
+//Path to a library.
+PYTHON_LIBRARY:FILEPATH=/Users/alexandrequintart/anaconda3/lib/libpython3.7m.dylib
+
+//Path to a library.
+PYTHON_LIBRARY_DEBUG:FILEPATH=PYTHON_LIBRARY_DEBUG-NOTFOUND
 
 //Where can one of the python3.7 or python3 libraries be found
 Python_EXECUTABLE:FILEPATH=/usr/local/Frameworks/Python.framework/Versions/3.7/bin/python3.7
@@ -423,7 +441,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=19
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=21
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -504,22 +522,41 @@ CPACK_SOURCE_TXZ-ADVANCED:INTERNAL=1
 CPACK_SOURCE_TZ-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CPACK_SOURCE_ZIP
 CPACK_SOURCE_ZIP-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CYTHON_ANNOTATE
+CYTHON_ANNOTATE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CYTHON_EXECUTABLE
 CYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CYTHON_FLAGS
+CYTHON_FLAGS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CYTHON_NO_DOCSTRINGS
+CYTHON_NO_DOCSTRINGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: DOXYGEN_DOT_EXECUTABLE
 DOXYGEN_DOT_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: DOXYGEN_EXECUTABLE
 DOXYGEN_EXECUTABLE-ADVANCED:INTERNAL=1
 //Details about finding CxxTest
 FIND_PACKAGE_MESSAGE_DETAILS_CxxTest:INTERNAL=[/usr/local/include][/usr/local/bin/cxxtestgen][v()]
+//Details about finding Cython
+FIND_PACKAGE_MESSAGE_DETAILS_Cython:INTERNAL=[/Users/alexandrequintart/anaconda3/bin/cython][v()]
 //Details about finding Doxygen
 FIND_PACKAGE_MESSAGE_DETAILS_Doxygen:INTERNAL=[/usr/local/bin/doxygen][cfound components:  doxygen missing components:  dot][v1.8.15()]
 //Details about finding PythonInterp
-FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/local/bin/python][v2.7.16()]
+FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/Users/alexandrequintart/anaconda3/bin/python][v3.7()]
+//Details about finding PythonLibs
+FIND_PACKAGE_MESSAGE_DETAILS_PythonLibs:INTERNAL=[/Users/alexandrequintart/anaconda3/lib/libpython3.7m.dylib][/Users/alexandrequintart/anaconda3/include/python3.7m][v3.7.0()]
 //ADVANCED property for variable: PERL_EXECUTABLE
 PERL_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PYTHON_EXECUTABLE
 PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PYTHON_INCLUDE_DIR
+PYTHON_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PYTHON_LIBRARY
+PYTHON_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PYTHON_LIBRARY_DEBUG
+PYTHON_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Python_EXECUTABLE
 Python_EXECUTABLE-ADVANCED:INTERNAL=1
+corresponding_pxd_file:INTERNAL=
+header_location:INTERNAL=
+pxd_location:INTERNAL=
 
