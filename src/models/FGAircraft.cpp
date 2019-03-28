@@ -117,8 +117,9 @@ void FGAircraft::setData(MyGrid *data) {
     for(int j = 0; j<ny; j++){
       for(int k = 0; k<nz; k++){
         for(int l = 0; l<3; l++){
-          double val = rand();
+          double val = rand() % 100 + 1;
           (*data).set(t,i,j,k,l, val);
+
           }
         }
       }
@@ -230,57 +231,56 @@ loc latLonAltToEcef(double lat, double lon, double alt)
         return vent;
     }
 
-    Velocity FGAircraft::dataInterpolation(MyGrid data, double time, double x, double y, double z)
+    Velocity FGAircraft::dataInterpolation(MyGrid** data, double time, double x, double y, double z)
     {
+
         int t =(int) time;
 
         int x0 = (int) x;
         int y0 = (int) y;
         int z0 = (int) z;
-
         int x1 = x0+1;
         int y1 = y0+1;
         int z1 = z0+1;
 
         Velocity c000;
-        c000.u = data.get(t,x0,y0,z0,U);
-        c000.v = data.get(t,x0,y0,z0,V);
-        c000.w = data.get(t,x0,y0,z0,W);
+        c000.u = (**data).get(t,x0,y0,z0,U);
+        c000.v = (**data).get(t,x0,y0,z0,V);
+        c000.w = (**data).get(t,x0,y0,z0,W);
 
         Velocity c001;
-        c001.u = data.get(t,x0,y0,z1,U);
-        c001.v = data.get(t,x0,y0,z1,V);
-        c001.w = data.get(t,x0,y0,z1,W);
+        c001.u = (**data).get(t,x0,y0,z1,U);
+        c001.v = (**data).get(t,x0,y0,z1,V);
+        c001.w = (**data).get(t,x0,y0,z1,W);
 
         Velocity c010;
-        c010.u = data.get(t,x0,y1,z0,U);
-        c010.v = data.get(t,x0,y1,z0,V);
-        c010.w = data.get(t,x0,y1,z0,W);
-
+        c010.u = (**data).get(t,x0,y1,z0,U);
+        c010.v = (**data).get(t,x0,y1,z0,V);
+        c010.w = (**data).get(t,x0,y1,z0,W);
         Velocity c011;
-        c011.u = data.get(t,x0,y1,z1,U);
-        c011.v = data.get(t,x0,y1,z1,V);
-        c011.w = data.get(t,x0,y1,z1,W);
+        c011.u = (**data).get(t,x0,y1,z1,U);
+        c011.v = (**data).get(t,x0,y1,z1,V);
+        c011.w = (**data).get(t,x0,y1,z1,W);
 
         Velocity c101;
-        c101.u = data.get(t,x1,y0,z1,U);
-        c101.v = data.get(t,x1,y0,z1,V);
-        c101.w = data.get(t,x1,y0,z1,W);
+        c101.u = (**data).get(t,x1,y0,z1,U);
+        c101.v = (**data).get(t,x1,y0,z1,V);
+        c101.w = (**data).get(t,x1,y0,z1,W);
 
         Velocity c110;
-        c110.u = data.get(t,x1,y1,z0,U);
-        c110.v = data.get(t,x1,y1,z0,V);
-        c110.w = data.get(t,x1,y1,z0,W);
+        c110.u = (**data).get(t,x1,y1,z0,U);
+        c110.v = (**data).get(t,x1,y1,z0,V);
+        c110.w = (**data).get(t,x1,y1,z0,W);
 
         Velocity c100;
-        c100.u = data.get(t,x1,y0,z0,U);
-        c100.v = data.get(t,x1,y0,z0,V);
-        c100.w = data.get(t,x1,y0,z0,W);
+        c100.u = (**data).get(t,x1,y0,z0,U);
+        c100.v = (**data).get(t,x1,y0,z0,V);
+        c100.w = (**data).get(t,x1,y0,z0,W);
 
         Velocity c111;
-        c111.u = data.get(t,x1,y1,z1,U);
-        c111.v = data.get(t,x1,y1,z1,V);
-        c111.w = data.get(t,x1,y1,z1,W);
+        c111.u = (**data).get(t,x1,y1,z1,U);
+        c111.v = (**data).get(t,x1,y1,z1,V);
+        c111.w = (**data).get(t,x1,y1,z1,W);
 
         Velocity interp = trilinearInterpolation(c000, c001, c010, c011, c101, c110,c100, c111, x0, x1, y0, y1, z0, z1, x, y, z);
 
@@ -292,7 +292,7 @@ loc latLonAltToEcef(double lat, double lon, double alt)
     ///    Velocity   ///
     /////////////////////
 
-      Velocity FGAircraft::myWindFunction( MyGrid data, double t, double xECEF, double yECEF, double zECEF)
+      Velocity FGAircraft::myWindFunction( MyGrid *data, double t, double xECEF, double yECEF, double zECEF)
     {
         Velocity windvel;
 
@@ -324,7 +324,7 @@ loc latLonAltToEcef(double lat, double lon, double alt)
             double yWing = coordECEF(2);
             double zWing = coordECEF(3);
 
-            Velocity vel = dataInterpolation(data, t, xWing, yWing, zWing);
+            Velocity vel = dataInterpolation(&data, t, xWing, yWing, zWing);
 
             FGColumnVector3 veloECEF(vel.u,vel.v,vel.w);
             FGColumnVector3 velNED = Tec2l*veloECEF;
@@ -348,8 +348,9 @@ loc latLonAltToEcef(double lat, double lon, double alt)
     ///  Wind Moment  ///
     /////////////////////
 
-    double  FGAircraft::myMomentFunction( MyGrid data, double t, double xECEF, double yECEF, double zECEF)
+    double  FGAircraft::myMomentFunction( MyGrid *data, double t, double xECEF, double yECEF, double zECEF)
     {
+
         FGAuxiliary* Auxiliary = FDMExec->GetAuxiliary();
         double alpha = Auxiliary->Getalpha();
         double MomentL;
@@ -377,6 +378,7 @@ loc latLonAltToEcef(double lat, double lon, double alt)
         // Left wing
         double interLeft = inter/2; //Nmbre d'interval
         Velocity velLeft[inter+1];
+
         for(int i = 0; i<=interLeft; i++) {
 
             FGColumnVector3 coordBODY(0, -b/2+i*b/inter, 0);
@@ -384,8 +386,10 @@ loc latLonAltToEcef(double lat, double lon, double alt)
             double xWing = coordECEF(1);
             double yWing = coordECEF(2);
             double zWing = coordECEF(3);
+            printf("moment1 %f %f %f %f\n",xWing,yWing,zWing,t);
+            Velocity vel = dataInterpolation(&data, t, xWing, yWing, zWing);
+            printf("moment3 %f %f %f %f\n",xWing,yWing,zWing,t);
 
-            Velocity vel = dataInterpolation(data, t, xWing, yWing, zWing);
 
             FGColumnVector3 veloECEF(vel.u,vel.v,vel.w);
             FGColumnVector3 velL = Tec2b*veloECEF;
@@ -406,7 +410,7 @@ loc latLonAltToEcef(double lat, double lon, double alt)
             double yWing = coordECEF(2);
             double zWing = coordECEF(3);
 
-            Velocity vel = dataInterpolation(data, t, xWing, yWing, zWing);
+            Velocity vel = dataInterpolation(&data, t, xWing, yWing, zWing);
 
             FGColumnVector3 veloECEF(vel.u,vel.v,vel.w);
             FGColumnVector3 velR = Tec2b*veloECEF;
@@ -430,7 +434,7 @@ bool FGAircraft::Run(bool Holding)
 
   RunPreFunctions();
 
-    // START : Modifié par Alex
+  // START : Modifié par Alex
     FGColumnVector3 myMoment;
 
      FGAuxiliary* Auxiliary = FDMExec->GetAuxiliary();
@@ -440,14 +444,16 @@ bool FGAircraft::Run(bool Holding)
 
     double t = FDMExec->GetSimTime();
 
-    int num[4] = {30,30,30,30};
+    int num[4] = {30,100,100,100};
     MyGrid data(num);
     setData(&data);
+
     // MyGrid data = new Mygrid(num);
 
 double lat = Propagate->GetLatitude();
 double lon = Propagate->GetLongitude();
 double alt = Propagate->GetRadius();
+
 
     double xECEF, yECEF, zECEF;
 loc pos = latLonAltToEcef(lat, lon, alt);
@@ -455,15 +461,14 @@ loc pos = latLonAltToEcef(lat, lon, alt);
   yECEF = pos.y;
   zECEF = pos.z;
 
-    double mz = myMomentFunction(data , t, xECEF, yECEF, zECEF);
-
+  double mz = myMomentFunction(&data , t, xECEF, yECEF, zECEF);
     myMoment(eX) = 0; //mx;
     myMoment(eY) = 0; //my;
     myMoment(eZ) = mz;
 
 
     FGColumnVector3 myWindNED;
-    Velocity windvel = myWindFunction(data , t, xECEF, yECEF, zECEF);
+    Velocity windvel = myWindFunction(&data , t, xECEF, yECEF, zECEF);
 
     myWindNED(eNorth) = windvel.u;
     myWindNED(eEast) = windvel.v;
@@ -482,7 +487,7 @@ loc pos = latLonAltToEcef(lat, lon, alt);
     vMoments += in.GroundMoment;
     vMoments += in.ExternalMoment;
     vMoments += in.BuoyantMoment;
-    vMoments += myMoment;
+    //vMoments += myMoment;
 
     // END : Modifié par Alex
   RunPostFunctions();

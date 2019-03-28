@@ -26,6 +26,7 @@ private:
     int mysize[4];
     // mydata[U,V,W] [ntime * nx * ny * nz]
     double* mydata[3];
+    bool _isInitialized = 0;
 public:
     // constructor
     MyGrid(int n[4]);

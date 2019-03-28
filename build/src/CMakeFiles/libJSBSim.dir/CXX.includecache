@@ -324,30 +324,6 @@ models/FGOutput.h
 math/FGTemplateFunc.h
 /Users/alexandrequintart/soft/jsbsim/src/math/FGTemplateFunc.h
 
-/Users/alexandrequintart/soft/jsbsim/src/FGJSBBase.cpp
-FGJSBBase.h
-/Users/alexandrequintart/soft/jsbsim/src/FGJSBBase.h
-iostream
--
-sstream
--
-cstdlib
--
-models/FGAtmosphere.h
-/Users/alexandrequintart/soft/jsbsim/src/models/FGAtmosphere.h
-
-/Users/alexandrequintart/soft/jsbsim/src/FGJSBBase.h
-float.h
--
-queue
--
-string
--
-cmath
--
-input_output/string_utilities.h
-/Users/alexandrequintart/soft/jsbsim/src/input_output/string_utilities.h
-
 /Users/alexandrequintart/soft/jsbsim/src/initialization/FGInitialCondition.h
 math/FGLocation.h
 /Users/alexandrequintart/soft/jsbsim/src/initialization/math/FGLocation.h
@@ -412,20 +388,6 @@ simgear/misc/sg_path.hxx
 simgear/io/iostreams/sgstream.hxx
 /Users/alexandrequintart/soft/jsbsim/src/input_output/simgear/io/iostreams/sgstream.hxx
 
-/Users/alexandrequintart/soft/jsbsim/src/input_output/string_utilities.h
-string
--
-sstream
--
-iostream
--
-vector
--
-stdio.h
--
-cctype
--
-
 /Users/alexandrequintart/soft/jsbsim/src/math/FGTemplateFunc.h
 math/FGFunction.h
 /Users/alexandrequintart/soft/jsbsim/src/math/math/FGFunction.h
@@ -473,12 +435,6 @@ gridWAPT.hpp
 /Users/alexandrequintart/soft/jsbsim/src/models/gridWAPT.hpp
 FGFDMExec.h
 /Users/alexandrequintart/soft/jsbsim/src/models/FGFDMExec.h
-
-/Users/alexandrequintart/soft/jsbsim/src/models/FGAtmosphere.h
-vector
--
-models/FGModel.h
-/Users/alexandrequintart/soft/jsbsim/src/models/models/FGModel.h
 
 /Users/alexandrequintart/soft/jsbsim/src/models/FGAuxiliary.h
 FGModel.h
