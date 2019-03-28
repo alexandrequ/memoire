@@ -147,9 +147,9 @@ public:
 
     // START : Modif Alex
 
-    void setData(MyGrid data);
+    void setData(MyGrid *data);
     double myMomentFunction( MyGrid data , double t, double xNED, double yNED, double zNED);
-    Velocity dataInterpolation(MyGrid data, double time, double x, double y, double z);
+        Velocity dataInterpolation(MyGrid data, double time, double x, double y, double z);
 Velocity myWindFunction( MyGrid data, double t, double xNED, double yNED, double zNED);
     /** Gets the initial orientation
      @return Initial orientation */

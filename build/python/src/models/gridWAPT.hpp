@@ -18,7 +18,7 @@
      ak    )
 
 
-enum VelType {U=1,V=2,W=3};
+enum VelType {U=0,V=1,W=2}; //enum VelType {U=1,V=2,W=3};
 
 class MyGrid{
 
@@ -32,13 +32,15 @@ public:
     // destructor
     ~MyGrid();
     // set and gets
-    double get(int itime, int i, int j, int k,int dim);
-    void   set(int itime, int i, int j, int k,int dim, double val);
+    double get(int itime, int i, int j, int k,int dim); // Agit sur val
+    void   set(int itime, int i, int j, int k,int dim, double val); // Agit sur val
 
-    double get(int itime, int i, int j, int k,VelType dim);
-    void   set(int itime, int i, int j, int k,VelType dim, double val);
+    double get(int itime, int i, int j, int k,VelType dim); // Agit sur val
+    void   set(int itime, int i, int j, int k,VelType dim, double val); // Agit sur val
 
-    double* getVelocity(VelType dim);
+    int* getsize(); // Agit sur val
+
+    double* getVelocity(VelType dim);  // Retourne le pointeur
 
 };
 

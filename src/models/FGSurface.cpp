@@ -99,7 +99,7 @@ void FGSurface::bind(void)
   default:
     return;
   }
- 
+
   property_name = base_property_name + "/solid";
   _PropertyManager->Tie( property_name.c_str(), &isSolid);
   property_name = base_property_name + "/bumpiness";
@@ -156,7 +156,7 @@ string FGSurface::GetSurfaceStrings(string delimeter) const
       << "maximumForce" << delimeter
       << "bumpiness" << delimeter
       << "isSolid";
-  
+
   return buf.str();
 }
 
@@ -165,7 +165,7 @@ string FGSurface::GetSurfaceStrings(string delimeter) const
 string FGSurface::GetSurfaceValues(string delimeter) const
 {
   std::ostringstream buf;
- 
+
   buf << staticFFactor << delimeter
       << rollingFFactor << delimeter
       << maximumForce << delimeter

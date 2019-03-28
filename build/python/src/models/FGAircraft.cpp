@@ -104,14 +104,21 @@ bool FGAircraft::InitModel(void)
 
 
 //Remplissage
-void FGAircraft::setData(MyGrid data) {
-  for(int t = 0; t<1; t++){
-  for(int i = 0; i<1; i++){
-    for(int j = 0; j<20; j++){
-      for(int k = 0; k<20; k++){
-        for(int l = 1; l<4; l++){
+void FGAircraft::setData(MyGrid *data) {
+
+  int *size = (*data).getsize();
+  int nt = size[0];
+  int nx = size[1];
+  int ny = size[2];
+  int nz = size[3];
+
+  for(int t = 0; t<nt; t++){
+  for(int i = 0; i<nx; i++){
+    for(int j = 0; j<ny; j++){
+      for(int k = 0; k<nz; k++){
+        for(int l = 0; l<3; l++){
           double val = rand();
-          data.set(t,i,j,k,l, val);
+          (*data).set(t,i,j,k,l, val);
           }
         }
       }
@@ -435,7 +442,7 @@ bool FGAircraft::Run(bool Holding)
 
     int num[4] = {30,30,30,30};
     MyGrid data(num);
-    setData(data);
+    setData(&data);
     // MyGrid data = new Mygrid(num);
 
 double lat = Propagate->GetLatitude();
