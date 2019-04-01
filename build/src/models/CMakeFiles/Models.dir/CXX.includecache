@@ -33,6 +33,8 @@ math/FGQuaternion.h
 ../src/initialization/math/FGQuaternion.h
 simgear/misc/sg_path.hxx
 ../src/initialization/simgear/misc/sg_path.hxx
+models/gridWAPT.hpp
+../src/initialization/models/gridWAPT.hpp
 
 ../src/input_output/FGGroundCallback.h
 simgear/structure/SGReferenced.hxx
@@ -180,6 +182,10 @@ math/FGQuaternion.h
 math/FGMatrix33.h
 ../src/models/math/FGMatrix33.h
 deque
+-
+
+../src/models/gridWAPT.hpp
+stdio.h
 -
 
 ../src/simgear/compiler.h

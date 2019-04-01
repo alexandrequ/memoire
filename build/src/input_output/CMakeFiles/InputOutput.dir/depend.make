@@ -342,6 +342,7 @@ src/input_output/CMakeFiles/InputOutput.dir/FGScript.cpp.o: ../src/models/FGInpu
 src/input_output/CMakeFiles/InputOutput.dir/FGScript.cpp.o: ../src/models/FGModel.h
 src/input_output/CMakeFiles/InputOutput.dir/FGScript.cpp.o: ../src/models/FGOutput.h
 src/input_output/CMakeFiles/InputOutput.dir/FGScript.cpp.o: ../src/models/FGPropagate.h
+src/input_output/CMakeFiles/InputOutput.dir/FGScript.cpp.o: ../src/models/gridWAPT.hpp
 src/input_output/CMakeFiles/InputOutput.dir/FGScript.cpp.o: ../src/simgear/compiler.h
 src/input_output/CMakeFiles/InputOutput.dir/FGScript.cpp.o: ../src/simgear/io/iostreams/sgstream.hxx
 src/input_output/CMakeFiles/InputOutput.dir/FGScript.cpp.o: ../src/simgear/misc/sg_path.hxx

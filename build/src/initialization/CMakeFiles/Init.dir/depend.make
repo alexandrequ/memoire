@@ -69,6 +69,7 @@ src/initialization/CMakeFiles/Init.dir/FGTrim.cpp.o: ../src/models/FGModel.h
 src/initialization/CMakeFiles/Init.dir/FGTrim.cpp.o: ../src/models/FGOutput.h
 src/initialization/CMakeFiles/Init.dir/FGTrim.cpp.o: ../src/models/FGPropagate.h
 src/initialization/CMakeFiles/Init.dir/FGTrim.cpp.o: ../src/models/FGSurface.h
+src/initialization/CMakeFiles/Init.dir/FGTrim.cpp.o: ../src/models/gridWAPT.hpp
 src/initialization/CMakeFiles/Init.dir/FGTrim.cpp.o: ../src/models/propulsion/FGForce.h
 src/initialization/CMakeFiles/Init.dir/FGTrim.cpp.o: ../src/simgear/compiler.h
 src/initialization/CMakeFiles/Init.dir/FGTrim.cpp.o: ../src/simgear/misc/sg_path.hxx
@@ -110,6 +111,7 @@ src/initialization/CMakeFiles/Init.dir/FGTrimAxis.cpp.o: ../src/models/FGOutput.
 src/initialization/CMakeFiles/Init.dir/FGTrimAxis.cpp.o: ../src/models/FGPropagate.h
 src/initialization/CMakeFiles/Init.dir/FGTrimAxis.cpp.o: ../src/models/FGPropulsion.h
 src/initialization/CMakeFiles/Init.dir/FGTrimAxis.cpp.o: ../src/models/FGSurface.h
+src/initialization/CMakeFiles/Init.dir/FGTrimAxis.cpp.o: ../src/models/gridWAPT.hpp
 src/initialization/CMakeFiles/Init.dir/FGTrimAxis.cpp.o: ../src/models/propulsion/FGEngine.h
 src/initialization/CMakeFiles/Init.dir/FGTrimAxis.cpp.o: ../src/models/propulsion/FGForce.h
 src/initialization/CMakeFiles/Init.dir/FGTrimAxis.cpp.o: ../src/simgear/compiler.h

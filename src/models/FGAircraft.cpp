@@ -233,6 +233,11 @@ loc latLonAltToEcef(double lat, double lon, double alt)
 
     Velocity FGAircraft::dataInterpolation(MyGrid** data, double time, double x, double y, double z)
     {
+      int *size = (**data).getsize();
+      int nt = size[0];
+      int nx = size[1];
+      int ny = size[2];
+      int nz = size[3];
 
         int t =(int) time;
 
@@ -243,45 +248,77 @@ loc latLonAltToEcef(double lat, double lon, double alt)
         int y1 = y0+1;
         int z1 = z0+1;
 
-        Velocity c000;
+        Velocity c000, c001, c010, c011,c101,c110, c100, c111;
+        if(t<=nt && x1<=nx && y1<=ny && z1<=nz)
+        {
+
         c000.u = (**data).get(t,x0,y0,z0,U);
         c000.v = (**data).get(t,x0,y0,z0,V);
         c000.w = (**data).get(t,x0,y0,z0,W);
 
-        Velocity c001;
         c001.u = (**data).get(t,x0,y0,z1,U);
         c001.v = (**data).get(t,x0,y0,z1,V);
         c001.w = (**data).get(t,x0,y0,z1,W);
 
-        Velocity c010;
         c010.u = (**data).get(t,x0,y1,z0,U);
         c010.v = (**data).get(t,x0,y1,z0,V);
         c010.w = (**data).get(t,x0,y1,z0,W);
-        Velocity c011;
+
         c011.u = (**data).get(t,x0,y1,z1,U);
         c011.v = (**data).get(t,x0,y1,z1,V);
         c011.w = (**data).get(t,x0,y1,z1,W);
 
-        Velocity c101;
         c101.u = (**data).get(t,x1,y0,z1,U);
         c101.v = (**data).get(t,x1,y0,z1,V);
         c101.w = (**data).get(t,x1,y0,z1,W);
 
-        Velocity c110;
         c110.u = (**data).get(t,x1,y1,z0,U);
         c110.v = (**data).get(t,x1,y1,z0,V);
         c110.w = (**data).get(t,x1,y1,z0,W);
 
-        Velocity c100;
         c100.u = (**data).get(t,x1,y0,z0,U);
         c100.v = (**data).get(t,x1,y0,z0,V);
         c100.w = (**data).get(t,x1,y0,z0,W);
 
-        Velocity c111;
         c111.u = (**data).get(t,x1,y1,z1,U);
         c111.v = (**data).get(t,x1,y1,z1,V);
         c111.w = (**data).get(t,x1,y1,z1,W);
+      }
+      else // Quand l'avion vole en dehors du data
+      {
 
+      c000.u = 0;
+      c000.v = 0;
+      c000.w = 0;
+
+      c001.u = 0;
+      c001.v = 0;
+      c001.w = 0;
+
+      c010.u = 0;
+      c010.v = 0;
+      c010.w = 0;
+
+      c011.u = 0;
+      c011.v = 0;
+      c011.w = 0;
+
+      c101.u = 0;
+      c101.v = 0;
+      c101.w = 0;
+
+      c110.u = 0;
+      c110.v = 0;
+      c110.w = 0;
+
+      c100.u = 0;
+      c100.v = 0;
+      c100.w = 0;
+
+      c111.u = 0;
+      c111.v = 0;
+      c111.w = 0;
+      }
         Velocity interp = trilinearInterpolation(c000, c001, c010, c011, c101, c110,c100, c111, x0, x1, y0, y1, z0, z1, x, y, z);
 
         return interp;
@@ -429,6 +466,7 @@ loc latLonAltToEcef(double lat, double lon, double alt)
 
 bool FGAircraft::Run(bool Holding)
 {
+  printf("Run : %d \n", Holding);
   if (FGModel::Run(Holding)) return true;
   if (Holding) return false;
 
@@ -446,9 +484,8 @@ bool FGAircraft::Run(bool Holding)
 
     int num[4] = {30,100,100,100};
     MyGrid data(num);
-    setData(&data);
+    setData(&data); // Pose probleme : Il faur setdata en dehors de la fonction et une seul fois
 
-    // MyGrid data = new Mygrid(num);
 
 double lat = Propagate->GetLatitude();
 double lon = Propagate->GetLongitude();
@@ -456,19 +493,47 @@ double alt = Propagate->GetRadius();
 
 
     double xECEF, yECEF, zECEF;
-loc pos = latLonAltToEcef(lat, lon, alt);
+loc pos = latLonAltToEcef(lat, lon, alt); // FAUX
   xECEF = pos.x;
   yECEF = pos.y;
   zECEF = pos.z;
 
-  double mz = myMomentFunction(&data , t, xECEF, yECEF, zECEF);
+//printf("position %f %f %f %f\n",xECEF,yECEF,zECEF,t);
+  //int *size = (**data).getsize();
+  int nt = 30;//size[0];
+  int nx = 100;//size[1];
+  int ny = 100;//size[2];
+  int nz = 100;//size[3];
+
+double xECEF_data_origine = 21725650;
+double yECEF_data_origine = -40;
+double zECEF_data_origine = 0;
+
+double mz;
+Velocity windvel;
+
+  if( xECEF>=xECEF_data_origine && xECEF<=(xECEF_data_origine+nx) &&\
+      yECEF>=yECEF_data_origine && yECEF<=(yECEF_data_origine+ny) &&\
+      zECEF>=zECEF_data_origine && zECEF<=(zECEF_data_origine+nz))
+      {
+  mz = myMomentFunction(&data , t, xECEF, yECEF, zECEF);
+  windvel = myWindFunction(&data , t, xECEF, yECEF, zECEF);
+      }
+  else
+  {
+    mz = 0;
+    windvel.u = 0;
+    windvel.v = 0;
+    windvel.w = 0;
+  }
+
+  //printf("moment1 %f \n",mz);
+
     myMoment(eX) = 0; //mx;
     myMoment(eY) = 0; //my;
     myMoment(eZ) = mz;
 
-
     FGColumnVector3 myWindNED;
-    Velocity windvel = myWindFunction(&data , t, xECEF, yECEF, zECEF);
 
     myWindNED(eNorth) = windvel.u;
     myWindNED(eEast) = windvel.v;
@@ -487,11 +552,11 @@ loc pos = latLonAltToEcef(lat, lon, alt);
     vMoments += in.GroundMoment;
     vMoments += in.ExternalMoment;
     vMoments += in.BuoyantMoment;
-    //vMoments += myMoment;
+    vMoments += myMoment;
 
     // END : Modifié par Alex
   RunPostFunctions();
-
+  printf("time %f \n",t);
   return false;
 }
 
@@ -646,5 +711,4 @@ void FGAircraft::Debug(int from)
     }
   }
 }
-
 } // namespace JSBSim

@@ -343,6 +343,7 @@ src/input_output/CMakeFiles/InputOutput.dir/FGScript.cpp.o
  ../src/models/FGModel.h
  ../src/models/FGOutput.h
  ../src/models/FGPropagate.h
+ ../src/models/gridWAPT.hpp
  ../src/simgear/compiler.h
  ../src/simgear/io/iostreams/sgstream.hxx
  ../src/simgear/misc/sg_path.hxx

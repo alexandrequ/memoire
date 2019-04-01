@@ -19,6 +19,7 @@ src/CMakeFiles/JSBSim.dir/JSBSim.cpp.o
  ../src/math/FGPropertyValue.h
  ../src/math/FGQuaternion.h
  ../src/models/FGModel.h
+ ../src/models/gridWAPT.hpp
  ../src/simgear/compiler.h
  ../src/simgear/io/iostreams/sgstream.hxx
  ../src/simgear/misc/sg_path.hxx

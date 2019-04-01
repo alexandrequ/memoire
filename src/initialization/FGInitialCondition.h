@@ -50,6 +50,7 @@ INCLUDES
 #include "math/FGLocation.h"
 #include "math/FGQuaternion.h"
 #include "simgear/misc/sg_path.hxx"
+#include "models/gridWAPT.hpp"
 
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 FORWARD DECLARATIONS
@@ -236,6 +237,10 @@ public:
   /** Set equivalent airspeed initial condition in knots.
       @param ve Equivalent airspeed in knots  */
   void SetVequivalentKtsIC(double ve);
+
+// Modifié par Alex
+  void setData(MyGrid *data);
+// END : Modifié par Alex
 
   /** Set true airspeed initial condition in knots.
       @param vtrue True airspeed in knots  */
@@ -677,7 +682,7 @@ public:
       @param index of the engine to be checked
       @return true if the engine is running. */
   bool IsEngineRunning(unsigned int n) const { return (enginesRunning & (1 << n)) != 0; }
-  
+
   /** Does initialization file call for trim ?
       @return Trim type, if any requested (version 1). */
   int TrimRequested(void) const { return trimRequested; }

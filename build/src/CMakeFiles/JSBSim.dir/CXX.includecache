@@ -146,6 +146,10 @@ math/FGModelFunctions.h
 simgear/misc/sg_path.hxx
 ../src/models/simgear/misc/sg_path.hxx
 
+../src/models/gridWAPT.hpp
+stdio.h
+-
+
 ../src/simgear/compiler.h
 ieeefp.h
 -
@@ -267,6 +271,8 @@ math/FGQuaternion.h
 /Users/alexandrequintart/soft/jsbsim/src/initialization/math/FGQuaternion.h
 simgear/misc/sg_path.hxx
 /Users/alexandrequintart/soft/jsbsim/src/initialization/simgear/misc/sg_path.hxx
+models/gridWAPT.hpp
+/Users/alexandrequintart/soft/jsbsim/src/initialization/models/gridWAPT.hpp
 
 /Users/alexandrequintart/soft/jsbsim/src/initialization/FGTrim.h
 FGFDMExec.h

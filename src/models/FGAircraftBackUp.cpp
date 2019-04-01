@@ -106,6 +106,8 @@ bool FGAircraft::Run(bool Holding)
   vMoments += in.ExternalMoment;
   vMoments += in.BuoyantMoment;
 
+  double t = FDMExec->GetSimTime();
+  printf("time %f \n",t);
   RunPostFunctions();
 
   return false;

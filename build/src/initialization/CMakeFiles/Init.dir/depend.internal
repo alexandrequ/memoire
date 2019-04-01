@@ -70,6 +70,7 @@ src/initialization/CMakeFiles/Init.dir/FGTrim.cpp.o
  ../src/models/FGOutput.h
  ../src/models/FGPropagate.h
  ../src/models/FGSurface.h
+ ../src/models/gridWAPT.hpp
  ../src/models/propulsion/FGForce.h
  ../src/simgear/compiler.h
  ../src/simgear/misc/sg_path.hxx
@@ -111,6 +112,7 @@ src/initialization/CMakeFiles/Init.dir/FGTrimAxis.cpp.o
  ../src/models/FGPropagate.h
  ../src/models/FGPropulsion.h
  ../src/models/FGSurface.h
+ ../src/models/gridWAPT.hpp
  ../src/models/propulsion/FGEngine.h
  ../src/models/propulsion/FGForce.h
  ../src/simgear/compiler.h

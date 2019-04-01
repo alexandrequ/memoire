@@ -25,6 +25,7 @@ src/CMakeFiles/libJSBSim.dir/FGFDMExec.cpp.o: ../src/models/FGGroundReactions.h
 src/CMakeFiles/libJSBSim.dir/FGFDMExec.cpp.o: ../src/models/FGLGear.h
 src/CMakeFiles/libJSBSim.dir/FGFDMExec.cpp.o: ../src/models/FGModel.h
 src/CMakeFiles/libJSBSim.dir/FGFDMExec.cpp.o: ../src/models/FGSurface.h
+src/CMakeFiles/libJSBSim.dir/FGFDMExec.cpp.o: ../src/models/gridWAPT.hpp
 src/CMakeFiles/libJSBSim.dir/FGFDMExec.cpp.o: ../src/models/propulsion/FGForce.h
 src/CMakeFiles/libJSBSim.dir/FGFDMExec.cpp.o: ../src/simgear/compiler.h
 src/CMakeFiles/libJSBSim.dir/FGFDMExec.cpp.o: ../src/simgear/io/iostreams/sgstream.hxx

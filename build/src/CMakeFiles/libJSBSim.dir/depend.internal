@@ -26,6 +26,7 @@ src/CMakeFiles/libJSBSim.dir/FGFDMExec.cpp.o
  ../src/models/FGLGear.h
  ../src/models/FGModel.h
  ../src/models/FGSurface.h
+ ../src/models/gridWAPT.hpp
  ../src/models/propulsion/FGForce.h
  ../src/simgear/compiler.h
  ../src/simgear/io/iostreams/sgstream.hxx
