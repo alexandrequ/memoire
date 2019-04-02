@@ -20,6 +20,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Models.dir/FGGasCell.cpp.o"
   "CMakeFiles/Models.dir/FGAccelerations.cpp.o"
   "CMakeFiles/Models.dir/gridWAPT.cpp.o"
+  "CMakeFiles/Models.dir/setDataWaPT.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -46,7 +46,8 @@ INCLUDES
 #include <cstdlib>
 #include "FGWinds.h"
 #include "FGFDMExec.h"
-
+#include "models/FGAircraft.h"
+#include "models/gridWAPT.hpp"
 using namespace std;
 
 namespace JSBSim {
@@ -142,7 +143,6 @@ bool FGWinds::Run(bool Holding)
   if (Holding) return false;
 
   if (turbType != ttNone) Turbulence(in.AltitudeASL);
-  if (oneMinusCosineGust.gustProfile.Running) CosineGust();
 
   vTotalWindNED = vWindNED + vGustNED + vCosineGust + vTurbulenceNED;
 

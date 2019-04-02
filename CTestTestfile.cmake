@@ -7,4 +7,5 @@
 subdirs("src")
 subdirs("tests")
 subdirs("python")
+subdirs("tests/unit_tests")
 subdirs("utils")

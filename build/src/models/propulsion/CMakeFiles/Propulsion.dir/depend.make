@@ -22,6 +22,8 @@ src/models/propulsion/CMakeFiles/Propulsion.dir/FGElectric.cpp.o: ../src/math/FG
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGElectric.cpp.o: ../src/models/FGModel.h
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGElectric.cpp.o: ../src/models/FGOutput.h
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGElectric.cpp.o: ../src/models/FGPropagate.h
+src/models/propulsion/CMakeFiles/Propulsion.dir/FGElectric.cpp.o: ../src/models/gridWAPT.hpp
+src/models/propulsion/CMakeFiles/Propulsion.dir/FGElectric.cpp.o: ../src/models/setDataWAPT.hpp
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGElectric.cpp.o: ../src/simgear/compiler.h
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGElectric.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGElectric.cpp.o: ../src/simgear/props/propertyObject.hxx
@@ -56,6 +58,8 @@ src/models/propulsion/CMakeFiles/Propulsion.dir/FGEngine.cpp.o: ../src/math/FGTe
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGEngine.cpp.o: ../src/models/FGModel.h
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGEngine.cpp.o: ../src/models/FGOutput.h
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGEngine.cpp.o: ../src/models/FGPropagate.h
+src/models/propulsion/CMakeFiles/Propulsion.dir/FGEngine.cpp.o: ../src/models/gridWAPT.hpp
+src/models/propulsion/CMakeFiles/Propulsion.dir/FGEngine.cpp.o: ../src/models/setDataWAPT.hpp
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGEngine.cpp.o: ../src/simgear/compiler.h
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGEngine.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGEngine.cpp.o: ../src/simgear/props/propertyObject.hxx
@@ -92,6 +96,8 @@ src/models/propulsion/CMakeFiles/Propulsion.dir/FGForce.cpp.o: ../src/models/FGM
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGForce.cpp.o: ../src/models/FGModel.h
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGForce.cpp.o: ../src/models/FGOutput.h
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGForce.cpp.o: ../src/models/FGPropagate.h
+src/models/propulsion/CMakeFiles/Propulsion.dir/FGForce.cpp.o: ../src/models/gridWAPT.hpp
+src/models/propulsion/CMakeFiles/Propulsion.dir/FGForce.cpp.o: ../src/models/setDataWAPT.hpp
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGForce.cpp.o: ../src/simgear/compiler.h
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGForce.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGForce.cpp.o: ../src/simgear/props/propertyObject.hxx
@@ -134,6 +140,8 @@ src/models/propulsion/CMakeFiles/Propulsion.dir/FGPiston.cpp.o: ../src/math/FGTe
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGPiston.cpp.o: ../src/models/FGModel.h
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGPiston.cpp.o: ../src/models/FGOutput.h
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGPiston.cpp.o: ../src/models/FGPropagate.h
+src/models/propulsion/CMakeFiles/Propulsion.dir/FGPiston.cpp.o: ../src/models/gridWAPT.hpp
+src/models/propulsion/CMakeFiles/Propulsion.dir/FGPiston.cpp.o: ../src/models/setDataWAPT.hpp
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGPiston.cpp.o: ../src/simgear/compiler.h
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGPiston.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGPiston.cpp.o: ../src/simgear/props/propertyObject.hxx
@@ -168,6 +176,8 @@ src/models/propulsion/CMakeFiles/Propulsion.dir/FGPropeller.cpp.o: ../src/math/F
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGPropeller.cpp.o: ../src/models/FGModel.h
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGPropeller.cpp.o: ../src/models/FGOutput.h
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGPropeller.cpp.o: ../src/models/FGPropagate.h
+src/models/propulsion/CMakeFiles/Propulsion.dir/FGPropeller.cpp.o: ../src/models/gridWAPT.hpp
+src/models/propulsion/CMakeFiles/Propulsion.dir/FGPropeller.cpp.o: ../src/models/setDataWAPT.hpp
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGPropeller.cpp.o: ../src/simgear/compiler.h
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGPropeller.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGPropeller.cpp.o: ../src/simgear/props/propertyObject.hxx
@@ -200,6 +210,8 @@ src/models/propulsion/CMakeFiles/Propulsion.dir/FGRocket.cpp.o: ../src/math/FGTe
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGRocket.cpp.o: ../src/models/FGModel.h
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGRocket.cpp.o: ../src/models/FGOutput.h
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGRocket.cpp.o: ../src/models/FGPropagate.h
+src/models/propulsion/CMakeFiles/Propulsion.dir/FGRocket.cpp.o: ../src/models/gridWAPT.hpp
+src/models/propulsion/CMakeFiles/Propulsion.dir/FGRocket.cpp.o: ../src/models/setDataWAPT.hpp
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGRocket.cpp.o: ../src/simgear/compiler.h
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGRocket.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGRocket.cpp.o: ../src/simgear/props/propertyObject.hxx
@@ -234,7 +246,9 @@ src/models/propulsion/CMakeFiles/Propulsion.dir/FGRotor.cpp.o: ../src/models/FGM
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGRotor.cpp.o: ../src/models/FGOutput.h
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGRotor.cpp.o: ../src/models/FGPropagate.h
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGRotor.cpp.o: ../src/models/FGPropulsion.h
+src/models/propulsion/CMakeFiles/Propulsion.dir/FGRotor.cpp.o: ../src/models/gridWAPT.hpp
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGRotor.cpp.o: ../src/models/propulsion/FGEngine.h
+src/models/propulsion/CMakeFiles/Propulsion.dir/FGRotor.cpp.o: ../src/models/setDataWAPT.hpp
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGRotor.cpp.o: ../src/simgear/compiler.h
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGRotor.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGRotor.cpp.o: ../src/simgear/props/propertyObject.hxx
@@ -267,6 +281,8 @@ src/models/propulsion/CMakeFiles/Propulsion.dir/FGTank.cpp.o: ../src/math/FGTemp
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGTank.cpp.o: ../src/models/FGModel.h
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGTank.cpp.o: ../src/models/FGOutput.h
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGTank.cpp.o: ../src/models/FGPropagate.h
+src/models/propulsion/CMakeFiles/Propulsion.dir/FGTank.cpp.o: ../src/models/gridWAPT.hpp
+src/models/propulsion/CMakeFiles/Propulsion.dir/FGTank.cpp.o: ../src/models/setDataWAPT.hpp
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGTank.cpp.o: ../src/simgear/compiler.h
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGTank.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGTank.cpp.o: ../src/simgear/props/propertyObject.hxx
@@ -296,6 +312,8 @@ src/models/propulsion/CMakeFiles/Propulsion.dir/FGThruster.cpp.o: ../src/math/FG
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGThruster.cpp.o: ../src/models/FGModel.h
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGThruster.cpp.o: ../src/models/FGOutput.h
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGThruster.cpp.o: ../src/models/FGPropagate.h
+src/models/propulsion/CMakeFiles/Propulsion.dir/FGThruster.cpp.o: ../src/models/gridWAPT.hpp
+src/models/propulsion/CMakeFiles/Propulsion.dir/FGThruster.cpp.o: ../src/models/setDataWAPT.hpp
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGThruster.cpp.o: ../src/simgear/compiler.h
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGThruster.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGThruster.cpp.o: ../src/simgear/props/propertyObject.hxx
@@ -325,6 +343,8 @@ src/models/propulsion/CMakeFiles/Propulsion.dir/FGTransmission.cpp.o: ../src/mat
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGTransmission.cpp.o: ../src/models/FGModel.h
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGTransmission.cpp.o: ../src/models/FGOutput.h
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGTransmission.cpp.o: ../src/models/FGPropagate.h
+src/models/propulsion/CMakeFiles/Propulsion.dir/FGTransmission.cpp.o: ../src/models/gridWAPT.hpp
+src/models/propulsion/CMakeFiles/Propulsion.dir/FGTransmission.cpp.o: ../src/models/setDataWAPT.hpp
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGTransmission.cpp.o: ../src/simgear/compiler.h
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGTransmission.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGTransmission.cpp.o: ../src/simgear/props/propertyObject.hxx
@@ -354,6 +374,8 @@ src/models/propulsion/CMakeFiles/Propulsion.dir/FGTurbine.cpp.o: ../src/math/FGT
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGTurbine.cpp.o: ../src/models/FGModel.h
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGTurbine.cpp.o: ../src/models/FGOutput.h
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGTurbine.cpp.o: ../src/models/FGPropagate.h
+src/models/propulsion/CMakeFiles/Propulsion.dir/FGTurbine.cpp.o: ../src/models/gridWAPT.hpp
+src/models/propulsion/CMakeFiles/Propulsion.dir/FGTurbine.cpp.o: ../src/models/setDataWAPT.hpp
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGTurbine.cpp.o: ../src/simgear/compiler.h
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGTurbine.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGTurbine.cpp.o: ../src/simgear/props/propertyObject.hxx
@@ -387,6 +409,8 @@ src/models/propulsion/CMakeFiles/Propulsion.dir/FGTurboProp.cpp.o: ../src/math/F
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGTurboProp.cpp.o: ../src/models/FGModel.h
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGTurboProp.cpp.o: ../src/models/FGOutput.h
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGTurboProp.cpp.o: ../src/models/FGPropagate.h
+src/models/propulsion/CMakeFiles/Propulsion.dir/FGTurboProp.cpp.o: ../src/models/gridWAPT.hpp
+src/models/propulsion/CMakeFiles/Propulsion.dir/FGTurboProp.cpp.o: ../src/models/setDataWAPT.hpp
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGTurboProp.cpp.o: ../src/simgear/compiler.h
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGTurboProp.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/models/propulsion/CMakeFiles/Propulsion.dir/FGTurboProp.cpp.o: ../src/simgear/props/propertyObject.hxx

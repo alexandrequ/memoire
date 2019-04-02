@@ -58,31 +58,31 @@ CMAKE_BINARY_DIR = /Users/alexandrequintart/soft/jsbsim
 
 # Special rule for the target install/strip
 install/strip: preinstall
-	@echo "Installing the project stripped..."
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
 	/Applications/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
-	@echo "Installing the project stripped..."
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
 	/Applications/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target install
 install: preinstall
-	@echo "Install the project..."
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
 	/Applications/CMake.app/Contents/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
-	@echo "Install the project..."
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
 	/Applications/CMake.app/Contents/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target list_install_components
 list_install_components:
-	@echo "Available install components are: \"devel\" \"runtime\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"devel\" \"runtime\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -90,32 +90,9 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@echo "Installing only the local directory..."
-	/Applications/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@echo "Installing only the local directory..."
-	/Applications/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
-# Special rule for the target test
-test:
-	@echo "Running tests..."
-	/Applications/CMake.app/Contents/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # Special rule for the target edit_cache
 edit_cache:
-	@echo "Running CMake cache editor..."
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
 	/Applications/CMake.app/Contents/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
@@ -124,9 +101,32 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/Applications/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/Applications/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/Applications/CMake.app/Contents/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
-	@echo "Running CMake to regenerate build system..."
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
 	/Applications/CMake.app/Contents/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
@@ -137,7 +137,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target package_source
 package_source:
-	@echo "Run CPack packaging tool for source..."
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
 	/Applications/CMake.app/Contents/bin/cpack --config ./CPackSourceConfig.cmake /Users/alexandrequintart/soft/jsbsim/CPackSourceConfig.cmake
 .PHONY : package_source
 
@@ -148,7 +148,7 @@ package_source/fast: package_source
 
 # Special rule for the target package
 package: preinstall
-	@echo "Run CPack packaging tool..."
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
 	/Applications/CMake.app/Contents/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
@@ -188,6 +188,19 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named doc
+
+# Build rule for target.
+doc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 doc
+.PHONY : doc
+
+# fast build rule for target.
+doc/fast:
+	$(MAKE) -f CMakeFiles/doc.dir/build.make CMakeFiles/doc.dir/build
+.PHONY : doc/fast
 
 #=============================================================================
 # Target rules for targets named dist
@@ -424,6 +437,84 @@ PythonJSBSim/fast:
 .PHONY : PythonJSBSim/fast
 
 #=============================================================================
+# Target rules for targets named FGLocationTest1
+
+# Build rule for target.
+FGLocationTest1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 FGLocationTest1
+.PHONY : FGLocationTest1
+
+# fast build rule for target.
+FGLocationTest1/fast:
+	$(MAKE) -f tests/unit_tests/CMakeFiles/FGLocationTest1.dir/build.make tests/unit_tests/CMakeFiles/FGLocationTest1.dir/build
+.PHONY : FGLocationTest1/fast
+
+#=============================================================================
+# Target rules for targets named FGQuaternionTest1
+
+# Build rule for target.
+FGQuaternionTest1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 FGQuaternionTest1
+.PHONY : FGQuaternionTest1
+
+# fast build rule for target.
+FGQuaternionTest1/fast:
+	$(MAKE) -f tests/unit_tests/CMakeFiles/FGQuaternionTest1.dir/build.make tests/unit_tests/CMakeFiles/FGQuaternionTest1.dir/build
+.PHONY : FGQuaternionTest1/fast
+
+#=============================================================================
+# Target rules for targets named FGMatrix33Test1
+
+# Build rule for target.
+FGMatrix33Test1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 FGMatrix33Test1
+.PHONY : FGMatrix33Test1
+
+# fast build rule for target.
+FGMatrix33Test1/fast:
+	$(MAKE) -f tests/unit_tests/CMakeFiles/FGMatrix33Test1.dir/build.make tests/unit_tests/CMakeFiles/FGMatrix33Test1.dir/build
+.PHONY : FGMatrix33Test1/fast
+
+#=============================================================================
+# Target rules for targets named FGJSBBaseTest1
+
+# Build rule for target.
+FGJSBBaseTest1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 FGJSBBaseTest1
+.PHONY : FGJSBBaseTest1
+
+# fast build rule for target.
+FGJSBBaseTest1/fast:
+	$(MAKE) -f tests/unit_tests/CMakeFiles/FGJSBBaseTest1.dir/build.make tests/unit_tests/CMakeFiles/FGJSBBaseTest1.dir/build
+.PHONY : FGJSBBaseTest1/fast
+
+#=============================================================================
+# Target rules for targets named StringUtilitiesTest1
+
+# Build rule for target.
+StringUtilitiesTest1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 StringUtilitiesTest1
+.PHONY : StringUtilitiesTest1
+
+# fast build rule for target.
+StringUtilitiesTest1/fast:
+	$(MAKE) -f tests/unit_tests/CMakeFiles/StringUtilitiesTest1.dir/build.make tests/unit_tests/CMakeFiles/StringUtilitiesTest1.dir/build
+.PHONY : StringUtilitiesTest1/fast
+
+#=============================================================================
+# Target rules for targets named FGColumnVector3Test1
+
+# Build rule for target.
+FGColumnVector3Test1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 FGColumnVector3Test1
+.PHONY : FGColumnVector3Test1
+
+# fast build rule for target.
+FGColumnVector3Test1/fast:
+	$(MAKE) -f tests/unit_tests/CMakeFiles/FGColumnVector3Test1.dir/build.make tests/unit_tests/CMakeFiles/FGColumnVector3Test1.dir/build
+.PHONY : FGColumnVector3Test1/fast
+
+#=============================================================================
 # Target rules for targets named aeromatic
 
 # Build rule for target.
@@ -458,9 +549,10 @@ help:
 	@echo "... install/strip"
 	@echo "... install"
 	@echo "... list_install_components"
-	@echo "... install/local"
-	@echo "... test"
 	@echo "... edit_cache"
+	@echo "... install/local"
+	@echo "... doc"
+	@echo "... test"
 	@echo "... rebuild_cache"
 	@echo "... package_source"
 	@echo "... package"
@@ -482,6 +574,12 @@ help:
 	@echo "... Xml"
 	@echo "... IOStreams"
 	@echo "... PythonJSBSim"
+	@echo "... FGLocationTest1"
+	@echo "... FGQuaternionTest1"
+	@echo "... FGMatrix33Test1"
+	@echo "... FGJSBBaseTest1"
+	@echo "... StringUtilitiesTest1"
+	@echo "... FGColumnVector3Test1"
 	@echo "... aeromatic"
 	@echo "... Aeromatic++"
 .PHONY : help

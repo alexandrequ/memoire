@@ -15,9 +15,9 @@ MyGrid::MyGrid(int n[4]){
     mysize[2] = n[2]; // number of ny
     mysize[3] = n[3]; // number of nz
 
-    mydata[0] = (double*)calloc(n[0]*n[1]*n[2]*n[3],sizeof(double)); // u
-    mydata[1] = (double*)calloc(n[0]*n[1]*n[2]*n[3],sizeof(double)); // v
-    mydata[2] = (double*)calloc(n[0]*n[1]*n[2]*n[3],sizeof(double)); // w
+    mydata[0] = (double*)calloc(n[0]*n[1]*n[2]*n[3],sizeof(double)+1); // u
+    mydata[1] = (double*)calloc(n[0]*n[1]*n[2]*n[3],sizeof(double)+1); // v
+    mydata[2] = (double*)calloc(n[0]*n[1]*n[2]*n[3],sizeof(double)+1); // w
 
 
     printf("Hello from allocation grid\n");

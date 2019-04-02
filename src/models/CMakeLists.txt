@@ -22,7 +22,8 @@ set(SOURCES FGAerodynamics.cpp
             FGBuoyantForces.cpp
             FGGasCell.cpp
             FGAccelerations.cpp
-            gridWAPT.cpp)
+            gridWAPT.cpp
+            setDataWaPT.cpp)
 
 set(HEADERS FGAerodynamics.h
             FGAircraft.h
@@ -45,7 +46,8 @@ set(HEADERS FGAerodynamics.h
             FGGasCell.h
             FGAccelerations.h
             FGFCSChannel.h
-            gridWAPT.hpp)
+            gridWAPT.hpp
+            setDataWaPT.hpp)
 
 add_library(Models OBJECT ${HEADERS} ${SOURCES})
 set_target_properties(Models PROPERTIES TARGET_DIRECTORY

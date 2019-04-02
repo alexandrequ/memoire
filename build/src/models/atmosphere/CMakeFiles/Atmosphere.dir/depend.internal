@@ -23,6 +23,8 @@ src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGMSIS.cpp.o
  ../src/models/FGModel.h
  ../src/models/FGOutput.h
  ../src/models/FGPropagate.h
+ ../src/models/gridWAPT.hpp
+ ../src/models/setDataWAPT.hpp
  ../src/simgear/compiler.h
  ../src/simgear/misc/sg_path.hxx
  ../src/simgear/props/propertyObject.hxx
@@ -71,6 +73,8 @@ src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGStandardAtmosphere.cpp.o
  ../src/models/FGModel.h
  ../src/models/FGOutput.h
  ../src/models/FGPropagate.h
+ ../src/models/gridWAPT.hpp
+ ../src/models/setDataWAPT.hpp
  ../src/simgear/compiler.h
  ../src/simgear/misc/sg_path.hxx
  ../src/simgear/props/propertyObject.hxx
@@ -102,6 +106,7 @@ src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGWinds.cpp.o
  ../src/models/FGOutput.h
  ../src/models/FGPropagate.h
  ../src/models/gridWAPT.hpp
+ ../src/models/setDataWAPT.hpp
  ../src/simgear/compiler.h
  ../src/simgear/misc/sg_path.hxx
  ../src/simgear/props/propertyObject.hxx

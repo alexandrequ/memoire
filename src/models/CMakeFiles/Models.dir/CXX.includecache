@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/alexandrequintart/soft/jsbsim/src/models/gridWAPT.hpp
+stdio.h
+-
+
+/Users/alexandrequintart/soft/jsbsim/src/models/setDataWaPT.cpp
+setDataWaPT.hpp
+/Users/alexandrequintart/soft/jsbsim/src/models/setDataWaPT.hpp
+gridWAPT.hpp
+/Users/alexandrequintart/soft/jsbsim/src/models/gridWAPT.hpp
+cstdlib
+-
+
+/Users/alexandrequintart/soft/jsbsim/src/models/setDataWaPT.hpp
+gridWAPT.hpp
+/Users/alexandrequintart/soft/jsbsim/src/models/gridWAPT.hpp
+stdio.h
+-
+

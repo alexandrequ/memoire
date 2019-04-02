@@ -771,6 +771,33 @@ gridWAPT.cpp.s:
 	cd /Users/alexandrequintart/soft/jsbsim/build && $(MAKE) -f src/models/CMakeFiles/Models.dir/build.make src/models/CMakeFiles/Models.dir/gridWAPT.cpp.s
 .PHONY : gridWAPT.cpp.s
 
+setDataWaPT.o: setDataWaPT.cpp.o
+
+.PHONY : setDataWaPT.o
+
+# target to build an object file
+setDataWaPT.cpp.o:
+	cd /Users/alexandrequintart/soft/jsbsim/build && $(MAKE) -f src/models/CMakeFiles/Models.dir/build.make src/models/CMakeFiles/Models.dir/setDataWaPT.cpp.o
+.PHONY : setDataWaPT.cpp.o
+
+setDataWaPT.i: setDataWaPT.cpp.i
+
+.PHONY : setDataWaPT.i
+
+# target to preprocess a source file
+setDataWaPT.cpp.i:
+	cd /Users/alexandrequintart/soft/jsbsim/build && $(MAKE) -f src/models/CMakeFiles/Models.dir/build.make src/models/CMakeFiles/Models.dir/setDataWaPT.cpp.i
+.PHONY : setDataWaPT.cpp.i
+
+setDataWaPT.s: setDataWaPT.cpp.s
+
+.PHONY : setDataWaPT.s
+
+# target to generate assembly for a file
+setDataWaPT.cpp.s:
+	cd /Users/alexandrequintart/soft/jsbsim/build && $(MAKE) -f src/models/CMakeFiles/Models.dir/build.make src/models/CMakeFiles/Models.dir/setDataWaPT.cpp.s
+.PHONY : setDataWaPT.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -850,6 +877,9 @@ help:
 	@echo "... gridWAPT.o"
 	@echo "... gridWAPT.i"
 	@echo "... gridWAPT.s"
+	@echo "... setDataWaPT.o"
+	@echo "... setDataWaPT.i"
+	@echo "... setDataWaPT.s"
 .PHONY : help
 
 

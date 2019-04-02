@@ -56,6 +56,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevelx" OR NOT CMAKE_INSTALL_COMPON
     "/Users/alexandrequintart/soft/jsbsim/src/models/FGAccelerations.h"
     "/Users/alexandrequintart/soft/jsbsim/src/models/FGFCSChannel.h"
     "/Users/alexandrequintart/soft/jsbsim/src/models/gridWAPT.hpp"
+    "/Users/alexandrequintart/soft/jsbsim/src/models/setDataWaPT.hpp"
     )
 endif()
 

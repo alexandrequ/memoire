@@ -44,6 +44,8 @@ src/math/CMakeFiles/Math.dir/FGFunction.cpp.o: ../src/math/FGTemplateFunc.h
 src/math/CMakeFiles/Math.dir/FGFunction.cpp.o: ../src/models/FGModel.h
 src/math/CMakeFiles/Math.dir/FGFunction.cpp.o: ../src/models/FGOutput.h
 src/math/CMakeFiles/Math.dir/FGFunction.cpp.o: ../src/models/FGPropagate.h
+src/math/CMakeFiles/Math.dir/FGFunction.cpp.o: ../src/models/gridWAPT.hpp
+src/math/CMakeFiles/Math.dir/FGFunction.cpp.o: ../src/models/setDataWAPT.hpp
 src/math/CMakeFiles/Math.dir/FGFunction.cpp.o: ../src/simgear/compiler.h
 src/math/CMakeFiles/Math.dir/FGFunction.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/math/CMakeFiles/Math.dir/FGFunction.cpp.o: ../src/simgear/misc/strutils.hxx
@@ -94,6 +96,8 @@ src/math/CMakeFiles/Math.dir/FGModelFunctions.cpp.o: ../src/math/FGTemplateFunc.
 src/math/CMakeFiles/Math.dir/FGModelFunctions.cpp.o: ../src/models/FGModel.h
 src/math/CMakeFiles/Math.dir/FGModelFunctions.cpp.o: ../src/models/FGOutput.h
 src/math/CMakeFiles/Math.dir/FGModelFunctions.cpp.o: ../src/models/FGPropagate.h
+src/math/CMakeFiles/Math.dir/FGModelFunctions.cpp.o: ../src/models/gridWAPT.hpp
+src/math/CMakeFiles/Math.dir/FGModelFunctions.cpp.o: ../src/models/setDataWAPT.hpp
 src/math/CMakeFiles/Math.dir/FGModelFunctions.cpp.o: ../src/simgear/compiler.h
 src/math/CMakeFiles/Math.dir/FGModelFunctions.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/math/CMakeFiles/Math.dir/FGModelFunctions.cpp.o: ../src/simgear/props/propertyObject.hxx
@@ -168,6 +172,8 @@ src/math/CMakeFiles/Math.dir/FGTemplateFunc.cpp.o: ../src/math/FGTemplateFunc.h
 src/math/CMakeFiles/Math.dir/FGTemplateFunc.cpp.o: ../src/models/FGModel.h
 src/math/CMakeFiles/Math.dir/FGTemplateFunc.cpp.o: ../src/models/FGOutput.h
 src/math/CMakeFiles/Math.dir/FGTemplateFunc.cpp.o: ../src/models/FGPropagate.h
+src/math/CMakeFiles/Math.dir/FGTemplateFunc.cpp.o: ../src/models/gridWAPT.hpp
+src/math/CMakeFiles/Math.dir/FGTemplateFunc.cpp.o: ../src/models/setDataWAPT.hpp
 src/math/CMakeFiles/Math.dir/FGTemplateFunc.cpp.o: ../src/simgear/compiler.h
 src/math/CMakeFiles/Math.dir/FGTemplateFunc.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/math/CMakeFiles/Math.dir/FGTemplateFunc.cpp.o: ../src/simgear/props/propertyObject.hxx

@@ -59,41 +59,41 @@ include src/initialization/CMakeFiles/Init.dir/flags.make
 
 src/initialization/CMakeFiles/Init.dir/FGInitialCondition.cpp.o: src/initialization/CMakeFiles/Init.dir/flags.make
 src/initialization/CMakeFiles/Init.dir/FGInitialCondition.cpp.o: src/initialization/FGInitialCondition.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/initialization/CMakeFiles/Init.dir/FGInitialCondition.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/initialization/CMakeFiles/Init.dir/FGInitialCondition.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/initialization && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Init.dir/FGInitialCondition.cpp.o -c /Users/alexandrequintart/soft/jsbsim/src/initialization/FGInitialCondition.cpp
 
 src/initialization/CMakeFiles/Init.dir/FGInitialCondition.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/Init.dir/FGInitialCondition.cpp.i"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Init.dir/FGInitialCondition.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/initialization && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/initialization/FGInitialCondition.cpp > CMakeFiles/Init.dir/FGInitialCondition.cpp.i
 
 src/initialization/CMakeFiles/Init.dir/FGInitialCondition.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/Init.dir/FGInitialCondition.cpp.s"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Init.dir/FGInitialCondition.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/initialization && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/initialization/FGInitialCondition.cpp -o CMakeFiles/Init.dir/FGInitialCondition.cpp.s
 
 src/initialization/CMakeFiles/Init.dir/FGTrim.cpp.o: src/initialization/CMakeFiles/Init.dir/flags.make
 src/initialization/CMakeFiles/Init.dir/FGTrim.cpp.o: src/initialization/FGTrim.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/initialization/CMakeFiles/Init.dir/FGTrim.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/initialization/CMakeFiles/Init.dir/FGTrim.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/initialization && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Init.dir/FGTrim.cpp.o -c /Users/alexandrequintart/soft/jsbsim/src/initialization/FGTrim.cpp
 
 src/initialization/CMakeFiles/Init.dir/FGTrim.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/Init.dir/FGTrim.cpp.i"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Init.dir/FGTrim.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/initialization && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/initialization/FGTrim.cpp > CMakeFiles/Init.dir/FGTrim.cpp.i
 
 src/initialization/CMakeFiles/Init.dir/FGTrim.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/Init.dir/FGTrim.cpp.s"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Init.dir/FGTrim.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/initialization && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/initialization/FGTrim.cpp -o CMakeFiles/Init.dir/FGTrim.cpp.s
 
 src/initialization/CMakeFiles/Init.dir/FGTrimAxis.cpp.o: src/initialization/CMakeFiles/Init.dir/flags.make
 src/initialization/CMakeFiles/Init.dir/FGTrimAxis.cpp.o: src/initialization/FGTrimAxis.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/initialization/CMakeFiles/Init.dir/FGTrimAxis.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/initialization/CMakeFiles/Init.dir/FGTrimAxis.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/initialization && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Init.dir/FGTrimAxis.cpp.o -c /Users/alexandrequintart/soft/jsbsim/src/initialization/FGTrimAxis.cpp
 
 src/initialization/CMakeFiles/Init.dir/FGTrimAxis.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/Init.dir/FGTrimAxis.cpp.i"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Init.dir/FGTrimAxis.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/initialization && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/initialization/FGTrimAxis.cpp > CMakeFiles/Init.dir/FGTrimAxis.cpp.i
 
 src/initialization/CMakeFiles/Init.dir/FGTrimAxis.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/Init.dir/FGTrimAxis.cpp.s"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Init.dir/FGTrimAxis.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/initialization && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/initialization/FGTrimAxis.cpp -o CMakeFiles/Init.dir/FGTrimAxis.cpp.s
 
 Init: src/initialization/CMakeFiles/Init.dir/FGInitialCondition.cpp.o
@@ -113,6 +113,6 @@ src/initialization/CMakeFiles/Init.dir/clean:
 .PHONY : src/initialization/CMakeFiles/Init.dir/clean
 
 src/initialization/CMakeFiles/Init.dir/depend:
-	cd /Users/alexandrequintart/soft/jsbsim && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/src/initialization /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/src/initialization /Users/alexandrequintart/soft/jsbsim/src/initialization/CMakeFiles/Init.dir/DependInfo.cmake
+	cd /Users/alexandrequintart/soft/jsbsim && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/src/initialization /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/src/initialization /Users/alexandrequintart/soft/jsbsim/src/initialization/CMakeFiles/Init.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/initialization/CMakeFiles/Init.dir/depend
 

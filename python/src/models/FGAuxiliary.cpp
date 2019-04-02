@@ -145,7 +145,7 @@ bool FGAuxiliary::Run(bool Holding)
 
   // Combine the wind speed with aircraft speed to obtain wind relative speed
   vAeroPQR = in.vPQR - in.TurbPQR;
-  vAeroUVW = in.vUVW - in.Tl2b * in.TotalWindNED;
+  vAeroUVW = in.vUVW - in.Tl2b * in.WakeTotalWindNED; //modifié par alex
 
   alpha = beta = adot = bdot = 0;
   double AeroU2 = vAeroUVW(eU)*vAeroUVW(eU);

@@ -150,6 +150,7 @@ libJSBSim_EXTERNAL_OBJECTS = \
 "/Users/alexandrequintart/soft/jsbsim/build/src/models/CMakeFiles/Models.dir/FGGasCell.cpp.o" \
 "/Users/alexandrequintart/soft/jsbsim/build/src/models/CMakeFiles/Models.dir/FGAccelerations.cpp.o" \
 "/Users/alexandrequintart/soft/jsbsim/build/src/models/CMakeFiles/Models.dir/gridWAPT.cpp.o" \
+"/Users/alexandrequintart/soft/jsbsim/build/src/models/CMakeFiles/Models.dir/setDataWaPT.cpp.o" \
 "/Users/alexandrequintart/soft/jsbsim/build/src/math/CMakeFiles/Math.dir/FGColumnVector3.cpp.o" \
 "/Users/alexandrequintart/soft/jsbsim/build/src/math/CMakeFiles/Math.dir/FGFunction.cpp.o" \
 "/Users/alexandrequintart/soft/jsbsim/build/src/math/CMakeFiles/Math.dir/FGLocation.cpp.o" \
@@ -251,6 +252,7 @@ src/libJSBSim.a: src/models/CMakeFiles/Models.dir/FGBuoyantForces.cpp.o
 src/libJSBSim.a: src/models/CMakeFiles/Models.dir/FGGasCell.cpp.o
 src/libJSBSim.a: src/models/CMakeFiles/Models.dir/FGAccelerations.cpp.o
 src/libJSBSim.a: src/models/CMakeFiles/Models.dir/gridWAPT.cpp.o
+src/libJSBSim.a: src/models/CMakeFiles/Models.dir/setDataWaPT.cpp.o
 src/libJSBSim.a: src/math/CMakeFiles/Math.dir/FGColumnVector3.cpp.o
 src/libJSBSim.a: src/math/CMakeFiles/Math.dir/FGFunction.cpp.o
 src/libJSBSim.a: src/math/CMakeFiles/Math.dir/FGLocation.cpp.o

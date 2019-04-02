@@ -330,6 +330,19 @@ src/models/CMakeFiles/Models.dir/gridWAPT.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Models.dir/gridWAPT.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/build/src/models && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/models/gridWAPT.cpp -o CMakeFiles/Models.dir/gridWAPT.cpp.s
 
+src/models/CMakeFiles/Models.dir/setDataWaPT.cpp.o: src/models/CMakeFiles/Models.dir/flags.make
+src/models/CMakeFiles/Models.dir/setDataWaPT.cpp.o: ../src/models/setDataWaPT.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object src/models/CMakeFiles/Models.dir/setDataWaPT.cpp.o"
+	cd /Users/alexandrequintart/soft/jsbsim/build/src/models && /usr/local/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Models.dir/setDataWaPT.cpp.o -c /Users/alexandrequintart/soft/jsbsim/src/models/setDataWaPT.cpp
+
+src/models/CMakeFiles/Models.dir/setDataWaPT.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Models.dir/setDataWaPT.cpp.i"
+	cd /Users/alexandrequintart/soft/jsbsim/build/src/models && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/models/setDataWaPT.cpp > CMakeFiles/Models.dir/setDataWaPT.cpp.i
+
+src/models/CMakeFiles/Models.dir/setDataWaPT.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Models.dir/setDataWaPT.cpp.s"
+	cd /Users/alexandrequintart/soft/jsbsim/build/src/models && /usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/models/setDataWaPT.cpp -o CMakeFiles/Models.dir/setDataWaPT.cpp.s
+
 Models: src/models/CMakeFiles/Models.dir/FGAerodynamics.cpp.o
 Models: src/models/CMakeFiles/Models.dir/FGAircraft.cpp.o
 Models: src/models/CMakeFiles/Models.dir/FGAtmosphere.cpp.o
@@ -351,6 +364,7 @@ Models: src/models/CMakeFiles/Models.dir/FGBuoyantForces.cpp.o
 Models: src/models/CMakeFiles/Models.dir/FGGasCell.cpp.o
 Models: src/models/CMakeFiles/Models.dir/FGAccelerations.cpp.o
 Models: src/models/CMakeFiles/Models.dir/gridWAPT.cpp.o
+Models: src/models/CMakeFiles/Models.dir/setDataWaPT.cpp.o
 Models: src/models/CMakeFiles/Models.dir/build.make
 
 .PHONY : Models

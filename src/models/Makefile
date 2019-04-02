@@ -58,31 +58,31 @@ CMAKE_BINARY_DIR = /Users/alexandrequintart/soft/jsbsim
 
 # Special rule for the target install/strip
 install/strip: preinstall
-	@echo "Installing the project stripped..."
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
 	/Applications/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
-	@echo "Installing the project stripped..."
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
 	/Applications/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target install
 install: preinstall
-	@echo "Install the project..."
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
 	/Applications/CMake.app/Contents/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
-	@echo "Install the project..."
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
 	/Applications/CMake.app/Contents/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target list_install_components
 list_install_components:
-	@echo "Available install components are: \"devel\" \"runtime\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"devel\" \"runtime\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -92,19 +92,19 @@ list_install_components/fast: list_install_components
 
 # Special rule for the target install/local
 install/local: preinstall
-	@echo "Installing only the local directory..."
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
 	/Applications/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
-	@echo "Installing only the local directory..."
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
 	/Applications/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target test
 test:
-	@echo "Running tests..."
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
 	/Applications/CMake.app/Contents/bin/ctest --force-new-ctest-process $(ARGS)
 .PHONY : test
 
@@ -115,7 +115,7 @@ test/fast: test
 
 # Special rule for the target edit_cache
 edit_cache:
-	@echo "Running CMake cache editor..."
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
 	/Applications/CMake.app/Contents/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
@@ -126,7 +126,7 @@ edit_cache/fast: edit_cache
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
-	@echo "Running CMake to regenerate build system..."
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
 	/Applications/CMake.app/Contents/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
@@ -137,7 +137,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target package_source
 package_source:
-	@echo "Run CPack packaging tool for source..."
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
 	cd /Users/alexandrequintart/soft/jsbsim && /Applications/CMake.app/Contents/bin/cpack --config ./CPackSourceConfig.cmake /Users/alexandrequintart/soft/jsbsim/CPackSourceConfig.cmake
 .PHONY : package_source
 
@@ -148,7 +148,7 @@ package_source/fast: package_source
 
 # Special rule for the target package
 package: preinstall
-	@echo "Run CPack packaging tool..."
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
 	cd /Users/alexandrequintart/soft/jsbsim && /Applications/CMake.app/Contents/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
@@ -771,6 +771,33 @@ gridWAPT.cpp.s:
 	cd /Users/alexandrequintart/soft/jsbsim && $(MAKE) -f src/models/CMakeFiles/Models.dir/build.make src/models/CMakeFiles/Models.dir/gridWAPT.cpp.s
 .PHONY : gridWAPT.cpp.s
 
+setDataWaPT.o: setDataWaPT.cpp.o
+
+.PHONY : setDataWaPT.o
+
+# target to build an object file
+setDataWaPT.cpp.o:
+	cd /Users/alexandrequintart/soft/jsbsim && $(MAKE) -f src/models/CMakeFiles/Models.dir/build.make src/models/CMakeFiles/Models.dir/setDataWaPT.cpp.o
+.PHONY : setDataWaPT.cpp.o
+
+setDataWaPT.i: setDataWaPT.cpp.i
+
+.PHONY : setDataWaPT.i
+
+# target to preprocess a source file
+setDataWaPT.cpp.i:
+	cd /Users/alexandrequintart/soft/jsbsim && $(MAKE) -f src/models/CMakeFiles/Models.dir/build.make src/models/CMakeFiles/Models.dir/setDataWaPT.cpp.i
+.PHONY : setDataWaPT.cpp.i
+
+setDataWaPT.s: setDataWaPT.cpp.s
+
+.PHONY : setDataWaPT.s
+
+# target to generate assembly for a file
+setDataWaPT.cpp.s:
+	cd /Users/alexandrequintart/soft/jsbsim && $(MAKE) -f src/models/CMakeFiles/Models.dir/build.make src/models/CMakeFiles/Models.dir/setDataWaPT.cpp.s
+.PHONY : setDataWaPT.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -850,6 +877,9 @@ help:
 	@echo "... gridWAPT.o"
 	@echo "... gridWAPT.i"
 	@echo "... gridWAPT.s"
+	@echo "... setDataWaPT.o"
+	@echo "... setDataWaPT.i"
+	@echo "... setDataWaPT.s"
 .PHONY : help
 
 

@@ -29,7 +29,9 @@ src/models/flight_control/CMakeFiles/FlightControl.dir/FGAccelerometer.cpp.o
  ../src/models/FGOutput.h
  ../src/models/FGPropagate.h
  ../src/models/FGSurface.h
+ ../src/models/gridWAPT.hpp
  ../src/models/propulsion/FGForce.h
+ ../src/models/setDataWAPT.hpp
  ../src/simgear/compiler.h
  ../src/simgear/misc/sg_path.hxx
  ../src/simgear/props/propertyObject.hxx
@@ -68,7 +70,9 @@ src/models/flight_control/CMakeFiles/FlightControl.dir/FGActuator.cpp.o
  ../src/models/FGOutput.h
  ../src/models/FGPropagate.h
  ../src/models/FGSurface.h
+ ../src/models/gridWAPT.hpp
  ../src/models/propulsion/FGForce.h
+ ../src/models/setDataWAPT.hpp
  ../src/simgear/compiler.h
  ../src/simgear/misc/sg_path.hxx
  ../src/simgear/props/propertyObject.hxx
@@ -159,7 +163,9 @@ src/models/flight_control/CMakeFiles/FlightControl.dir/FGFCSComponent.cpp.o
  ../src/models/FGOutput.h
  ../src/models/FGPropagate.h
  ../src/models/FGSurface.h
+ ../src/models/gridWAPT.hpp
  ../src/models/propulsion/FGForce.h
+ ../src/models/setDataWAPT.hpp
  ../src/simgear/compiler.h
  ../src/simgear/misc/sg_path.hxx
  ../src/simgear/props/propertyObject.hxx
@@ -194,7 +200,9 @@ src/models/flight_control/CMakeFiles/FlightControl.dir/FGFCSFunction.cpp.o
  ../src/models/FGOutput.h
  ../src/models/FGPropagate.h
  ../src/models/FGSurface.h
+ ../src/models/gridWAPT.hpp
  ../src/models/propulsion/FGForce.h
+ ../src/models/setDataWAPT.hpp
  ../src/simgear/compiler.h
  ../src/simgear/misc/sg_path.hxx
  ../src/simgear/props/propertyObject.hxx
@@ -267,7 +275,9 @@ src/models/flight_control/CMakeFiles/FlightControl.dir/FGGyro.cpp.o
  ../src/models/FGOutput.h
  ../src/models/FGPropagate.h
  ../src/models/FGSurface.h
+ ../src/models/gridWAPT.hpp
  ../src/models/propulsion/FGForce.h
+ ../src/models/setDataWAPT.hpp
  ../src/simgear/compiler.h
  ../src/simgear/misc/sg_path.hxx
  ../src/simgear/props/propertyObject.hxx
@@ -305,7 +315,9 @@ src/models/flight_control/CMakeFiles/FlightControl.dir/FGKinemat.cpp.o
  ../src/models/FGOutput.h
  ../src/models/FGPropagate.h
  ../src/models/FGSurface.h
+ ../src/models/gridWAPT.hpp
  ../src/models/propulsion/FGForce.h
+ ../src/models/setDataWAPT.hpp
  ../src/simgear/compiler.h
  ../src/simgear/misc/sg_path.hxx
  ../src/simgear/props/propertyObject.hxx
@@ -343,7 +355,9 @@ src/models/flight_control/CMakeFiles/FlightControl.dir/FGLinearActuator.cpp.o
  ../src/models/FGOutput.h
  ../src/models/FGPropagate.h
  ../src/models/FGSurface.h
+ ../src/models/gridWAPT.hpp
  ../src/models/propulsion/FGForce.h
+ ../src/models/setDataWAPT.hpp
  ../src/simgear/compiler.h
  ../src/simgear/misc/sg_path.hxx
  ../src/simgear/props/propertyObject.hxx
@@ -381,7 +395,9 @@ src/models/flight_control/CMakeFiles/FlightControl.dir/FGMagnetometer.cpp.o
  ../src/models/FGOutput.h
  ../src/models/FGPropagate.h
  ../src/models/FGSurface.h
+ ../src/models/gridWAPT.hpp
  ../src/models/propulsion/FGForce.h
+ ../src/models/setDataWAPT.hpp
  ../src/simgear/compiler.h
  ../src/simgear/magvar/coremag.hxx
  ../src/simgear/misc/sg_path.hxx

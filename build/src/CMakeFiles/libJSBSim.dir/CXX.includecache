@@ -198,10 +198,6 @@ simgear/misc/sg_path.hxx
 FGFDMExec.h
 ../src/models/FGFDMExec.h
 
-../src/models/gridWAPT.hpp
-stdio.h
--
-
 ../src/models/propulsion/FGForce.h
 FGJSBBase.h
 ../src/models/propulsion/FGJSBBase.h
@@ -319,6 +315,10 @@ input_output/FGScript.h
 /Users/alexandrequintart/soft/jsbsim/src/input_output/FGScript.h
 input_output/FGXMLFileRead.h
 /Users/alexandrequintart/soft/jsbsim/src/input_output/FGXMLFileRead.h
+models/gridWAPT.hpp
+/Users/alexandrequintart/soft/jsbsim/src/models/gridWAPT.hpp
+models/setDataWAPT.hpp
+/Users/alexandrequintart/soft/jsbsim/src/models/setDataWAPT.hpp
 
 /Users/alexandrequintart/soft/jsbsim/src/FGFDMExec.h
 models/FGPropagate.h
@@ -327,6 +327,10 @@ models/FGOutput.h
 /Users/alexandrequintart/soft/jsbsim/src/models/FGOutput.h
 math/FGTemplateFunc.h
 /Users/alexandrequintart/soft/jsbsim/src/math/FGTemplateFunc.h
+models/gridWAPT.hpp
+/Users/alexandrequintart/soft/jsbsim/src/models/gridWAPT.hpp
+models/setDataWAPT.hpp
+/Users/alexandrequintart/soft/jsbsim/src/models/setDataWAPT.hpp
 
 /Users/alexandrequintart/soft/jsbsim/src/initialization/FGInitialCondition.h
 math/FGLocation.h
@@ -597,4 +601,10 @@ math/FGModelFunctions.h
 /Users/alexandrequintart/soft/jsbsim/src/models/propulsion/math/FGModelFunctions.h
 math/FGColumnVector3.h
 /Users/alexandrequintart/soft/jsbsim/src/models/propulsion/math/FGColumnVector3.h
+
+/Users/alexandrequintart/soft/jsbsim/src/models/setDataWAPT.hpp
+gridWAPT.hpp
+/Users/alexandrequintart/soft/jsbsim/src/models/gridWAPT.hpp
+stdio.h
+-
 

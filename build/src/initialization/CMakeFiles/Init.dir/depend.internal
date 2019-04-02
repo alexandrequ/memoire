@@ -30,6 +30,7 @@ src/initialization/CMakeFiles/Init.dir/FGInitialCondition.cpp.o
  ../src/models/FGOutput.h
  ../src/models/FGPropagate.h
  ../src/models/gridWAPT.hpp
+ ../src/models/setDataWAPT.hpp
  ../src/simgear/compiler.h
  ../src/simgear/io/iostreams/sgstream.hxx
  ../src/simgear/misc/sg_path.hxx
@@ -72,6 +73,7 @@ src/initialization/CMakeFiles/Init.dir/FGTrim.cpp.o
  ../src/models/FGSurface.h
  ../src/models/gridWAPT.hpp
  ../src/models/propulsion/FGForce.h
+ ../src/models/setDataWAPT.hpp
  ../src/simgear/compiler.h
  ../src/simgear/misc/sg_path.hxx
  ../src/simgear/props/propertyObject.hxx
@@ -115,6 +117,7 @@ src/initialization/CMakeFiles/Init.dir/FGTrimAxis.cpp.o
  ../src/models/gridWAPT.hpp
  ../src/models/propulsion/FGEngine.h
  ../src/models/propulsion/FGForce.h
+ ../src/models/setDataWAPT.hpp
  ../src/simgear/compiler.h
  ../src/simgear/misc/sg_path.hxx
  ../src/simgear/props/propertyObject.hxx

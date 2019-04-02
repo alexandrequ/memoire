@@ -71,6 +71,6 @@ src/simgear/structure/CMakeFiles/Structure.dir/clean:
 .PHONY : src/simgear/structure/CMakeFiles/Structure.dir/clean
 
 src/simgear/structure/CMakeFiles/Structure.dir/depend:
-	cd /Users/alexandrequintart/soft/jsbsim && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/src/simgear/structure /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/src/simgear/structure /Users/alexandrequintart/soft/jsbsim/src/simgear/structure/CMakeFiles/Structure.dir/DependInfo.cmake
+	cd /Users/alexandrequintart/soft/jsbsim && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/src/simgear/structure /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/src/simgear/structure /Users/alexandrequintart/soft/jsbsim/src/simgear/structure/CMakeFiles/Structure.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/simgear/structure/CMakeFiles/Structure.dir/depend
 

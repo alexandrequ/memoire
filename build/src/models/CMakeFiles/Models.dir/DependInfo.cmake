@@ -25,6 +25,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/alexandrequintart/soft/jsbsim/src/models/FGPropulsion.cpp" "/Users/alexandrequintart/soft/jsbsim/build/src/models/CMakeFiles/Models.dir/FGPropulsion.cpp.o"
   "/Users/alexandrequintart/soft/jsbsim/src/models/FGSurface.cpp" "/Users/alexandrequintart/soft/jsbsim/build/src/models/CMakeFiles/Models.dir/FGSurface.cpp.o"
   "/Users/alexandrequintart/soft/jsbsim/src/models/gridWAPT.cpp" "/Users/alexandrequintart/soft/jsbsim/build/src/models/CMakeFiles/Models.dir/gridWAPT.cpp.o"
+  "/Users/alexandrequintart/soft/jsbsim/src/models/setDataWaPT.cpp" "/Users/alexandrequintart/soft/jsbsim/build/src/models/CMakeFiles/Models.dir/setDataWaPT.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

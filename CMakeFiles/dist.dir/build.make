@@ -71,6 +71,6 @@ CMakeFiles/dist.dir/clean:
 .PHONY : CMakeFiles/dist.dir/clean
 
 CMakeFiles/dist.dir/depend:
-	cd /Users/alexandrequintart/soft/jsbsim && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/CMakeFiles/dist.dir/DependInfo.cmake
+	cd /Users/alexandrequintart/soft/jsbsim && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/CMakeFiles/dist.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/dist.dir/depend
 

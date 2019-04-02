@@ -59,67 +59,67 @@ include src/models/atmosphere/CMakeFiles/Atmosphere.dir/flags.make
 
 src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGMSIS.cpp.o: src/models/atmosphere/CMakeFiles/Atmosphere.dir/flags.make
 src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGMSIS.cpp.o: src/models/atmosphere/FGMSIS.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGMSIS.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGMSIS.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/atmosphere && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Atmosphere.dir/FGMSIS.cpp.o -c /Users/alexandrequintart/soft/jsbsim/src/models/atmosphere/FGMSIS.cpp
 
 src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGMSIS.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/Atmosphere.dir/FGMSIS.cpp.i"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Atmosphere.dir/FGMSIS.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/atmosphere && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/models/atmosphere/FGMSIS.cpp > CMakeFiles/Atmosphere.dir/FGMSIS.cpp.i
 
 src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGMSIS.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/Atmosphere.dir/FGMSIS.cpp.s"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Atmosphere.dir/FGMSIS.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/atmosphere && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/models/atmosphere/FGMSIS.cpp -o CMakeFiles/Atmosphere.dir/FGMSIS.cpp.s
 
 src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGMSISData.cpp.o: src/models/atmosphere/CMakeFiles/Atmosphere.dir/flags.make
 src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGMSISData.cpp.o: src/models/atmosphere/FGMSISData.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGMSISData.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGMSISData.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/atmosphere && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Atmosphere.dir/FGMSISData.cpp.o -c /Users/alexandrequintart/soft/jsbsim/src/models/atmosphere/FGMSISData.cpp
 
 src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGMSISData.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/Atmosphere.dir/FGMSISData.cpp.i"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Atmosphere.dir/FGMSISData.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/atmosphere && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/models/atmosphere/FGMSISData.cpp > CMakeFiles/Atmosphere.dir/FGMSISData.cpp.i
 
 src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGMSISData.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/Atmosphere.dir/FGMSISData.cpp.s"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Atmosphere.dir/FGMSISData.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/atmosphere && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/models/atmosphere/FGMSISData.cpp -o CMakeFiles/Atmosphere.dir/FGMSISData.cpp.s
 
 src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGMars.cpp.o: src/models/atmosphere/CMakeFiles/Atmosphere.dir/flags.make
 src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGMars.cpp.o: src/models/atmosphere/FGMars.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGMars.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGMars.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/atmosphere && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Atmosphere.dir/FGMars.cpp.o -c /Users/alexandrequintart/soft/jsbsim/src/models/atmosphere/FGMars.cpp
 
 src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGMars.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/Atmosphere.dir/FGMars.cpp.i"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Atmosphere.dir/FGMars.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/atmosphere && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/models/atmosphere/FGMars.cpp > CMakeFiles/Atmosphere.dir/FGMars.cpp.i
 
 src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGMars.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/Atmosphere.dir/FGMars.cpp.s"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Atmosphere.dir/FGMars.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/atmosphere && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/models/atmosphere/FGMars.cpp -o CMakeFiles/Atmosphere.dir/FGMars.cpp.s
 
 src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGStandardAtmosphere.cpp.o: src/models/atmosphere/CMakeFiles/Atmosphere.dir/flags.make
 src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGStandardAtmosphere.cpp.o: src/models/atmosphere/FGStandardAtmosphere.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGStandardAtmosphere.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGStandardAtmosphere.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/atmosphere && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Atmosphere.dir/FGStandardAtmosphere.cpp.o -c /Users/alexandrequintart/soft/jsbsim/src/models/atmosphere/FGStandardAtmosphere.cpp
 
 src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGStandardAtmosphere.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/Atmosphere.dir/FGStandardAtmosphere.cpp.i"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Atmosphere.dir/FGStandardAtmosphere.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/atmosphere && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/models/atmosphere/FGStandardAtmosphere.cpp > CMakeFiles/Atmosphere.dir/FGStandardAtmosphere.cpp.i
 
 src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGStandardAtmosphere.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/Atmosphere.dir/FGStandardAtmosphere.cpp.s"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Atmosphere.dir/FGStandardAtmosphere.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/atmosphere && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/models/atmosphere/FGStandardAtmosphere.cpp -o CMakeFiles/Atmosphere.dir/FGStandardAtmosphere.cpp.s
 
 src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGWinds.cpp.o: src/models/atmosphere/CMakeFiles/Atmosphere.dir/flags.make
 src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGWinds.cpp.o: src/models/atmosphere/FGWinds.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGWinds.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGWinds.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/atmosphere && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Atmosphere.dir/FGWinds.cpp.o -c /Users/alexandrequintart/soft/jsbsim/src/models/atmosphere/FGWinds.cpp
 
 src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGWinds.cpp.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/Atmosphere.dir/FGWinds.cpp.i"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Atmosphere.dir/FGWinds.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/atmosphere && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/models/atmosphere/FGWinds.cpp > CMakeFiles/Atmosphere.dir/FGWinds.cpp.i
 
 src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGWinds.cpp.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/Atmosphere.dir/FGWinds.cpp.s"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Atmosphere.dir/FGWinds.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/atmosphere && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/models/atmosphere/FGWinds.cpp -o CMakeFiles/Atmosphere.dir/FGWinds.cpp.s
 
 Atmosphere: src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGMSIS.cpp.o
@@ -141,6 +141,6 @@ src/models/atmosphere/CMakeFiles/Atmosphere.dir/clean:
 .PHONY : src/models/atmosphere/CMakeFiles/Atmosphere.dir/clean
 
 src/models/atmosphere/CMakeFiles/Atmosphere.dir/depend:
-	cd /Users/alexandrequintart/soft/jsbsim && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/src/models/atmosphere /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/src/models/atmosphere /Users/alexandrequintart/soft/jsbsim/src/models/atmosphere/CMakeFiles/Atmosphere.dir/DependInfo.cmake
+	cd /Users/alexandrequintart/soft/jsbsim && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/src/models/atmosphere /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/src/models/atmosphere /Users/alexandrequintart/soft/jsbsim/src/models/atmosphere/CMakeFiles/Atmosphere.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/models/atmosphere/CMakeFiles/Atmosphere.dir/depend
 

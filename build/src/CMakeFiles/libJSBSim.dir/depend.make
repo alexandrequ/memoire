@@ -25,7 +25,6 @@ src/CMakeFiles/libJSBSim.dir/FGFDMExec.cpp.o: ../src/models/FGGroundReactions.h
 src/CMakeFiles/libJSBSim.dir/FGFDMExec.cpp.o: ../src/models/FGLGear.h
 src/CMakeFiles/libJSBSim.dir/FGFDMExec.cpp.o: ../src/models/FGModel.h
 src/CMakeFiles/libJSBSim.dir/FGFDMExec.cpp.o: ../src/models/FGSurface.h
-src/CMakeFiles/libJSBSim.dir/FGFDMExec.cpp.o: ../src/models/gridWAPT.hpp
 src/CMakeFiles/libJSBSim.dir/FGFDMExec.cpp.o: ../src/models/propulsion/FGForce.h
 src/CMakeFiles/libJSBSim.dir/FGFDMExec.cpp.o: ../src/simgear/compiler.h
 src/CMakeFiles/libJSBSim.dir/FGFDMExec.cpp.o: ../src/simgear/io/iostreams/sgstream.hxx
@@ -63,6 +62,7 @@ src/CMakeFiles/libJSBSim.dir/FGFDMExec.cpp.o: ../src/models/atmosphere/FGStandar
 src/CMakeFiles/libJSBSim.dir/FGFDMExec.cpp.o: ../src/models/atmosphere/FGWinds.h
 src/CMakeFiles/libJSBSim.dir/FGFDMExec.cpp.o: ../src/models/gridWAPT.hpp
 src/CMakeFiles/libJSBSim.dir/FGFDMExec.cpp.o: ../src/models/propulsion/FGEngine.h
+src/CMakeFiles/libJSBSim.dir/FGFDMExec.cpp.o: ../src/models/setDataWAPT.hpp
 
 src/CMakeFiles/libJSBSim.dir/FGJSBBase.cpp.o: ../src/input_output/FGPropertyManager.h
 src/CMakeFiles/libJSBSim.dir/FGJSBBase.cpp.o: ../src/input_output/FGPropertyReader.h

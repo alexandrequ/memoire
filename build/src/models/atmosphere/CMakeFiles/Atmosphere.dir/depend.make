@@ -22,6 +22,8 @@ src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGMSIS.cpp.o: ../src/models/FGAu
 src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGMSIS.cpp.o: ../src/models/FGModel.h
 src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGMSIS.cpp.o: ../src/models/FGOutput.h
 src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGMSIS.cpp.o: ../src/models/FGPropagate.h
+src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGMSIS.cpp.o: ../src/models/gridWAPT.hpp
+src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGMSIS.cpp.o: ../src/models/setDataWAPT.hpp
 src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGMSIS.cpp.o: ../src/simgear/compiler.h
 src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGMSIS.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGMSIS.cpp.o: ../src/simgear/props/propertyObject.hxx
@@ -70,6 +72,8 @@ src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGStandardAtmosphere.cpp.o: ../s
 src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGStandardAtmosphere.cpp.o: ../src/models/FGModel.h
 src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGStandardAtmosphere.cpp.o: ../src/models/FGOutput.h
 src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGStandardAtmosphere.cpp.o: ../src/models/FGPropagate.h
+src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGStandardAtmosphere.cpp.o: ../src/models/gridWAPT.hpp
+src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGStandardAtmosphere.cpp.o: ../src/models/setDataWAPT.hpp
 src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGStandardAtmosphere.cpp.o: ../src/simgear/compiler.h
 src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGStandardAtmosphere.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGStandardAtmosphere.cpp.o: ../src/simgear/props/propertyObject.hxx
@@ -101,6 +105,7 @@ src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGWinds.cpp.o: ../src/models/FGM
 src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGWinds.cpp.o: ../src/models/FGOutput.h
 src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGWinds.cpp.o: ../src/models/FGPropagate.h
 src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGWinds.cpp.o: ../src/models/gridWAPT.hpp
+src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGWinds.cpp.o: ../src/models/setDataWAPT.hpp
 src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGWinds.cpp.o: ../src/simgear/compiler.h
 src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGWinds.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/models/atmosphere/CMakeFiles/Atmosphere.dir/FGWinds.cpp.o: ../src/simgear/props/propertyObject.hxx

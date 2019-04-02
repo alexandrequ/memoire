@@ -26,7 +26,6 @@ src/CMakeFiles/libJSBSim.dir/FGFDMExec.cpp.o
  ../src/models/FGLGear.h
  ../src/models/FGModel.h
  ../src/models/FGSurface.h
- ../src/models/gridWAPT.hpp
  ../src/models/propulsion/FGForce.h
  ../src/simgear/compiler.h
  ../src/simgear/io/iostreams/sgstream.hxx
@@ -64,6 +63,7 @@ src/CMakeFiles/libJSBSim.dir/FGFDMExec.cpp.o
  /Users/alexandrequintart/soft/jsbsim/src/models/atmosphere/FGWinds.h
  /Users/alexandrequintart/soft/jsbsim/src/models/gridWAPT.hpp
  /Users/alexandrequintart/soft/jsbsim/src/models/propulsion/FGEngine.h
+ /Users/alexandrequintart/soft/jsbsim/src/models/setDataWAPT.hpp
 src/CMakeFiles/libJSBSim.dir/FGJSBBase.cpp.o
  ../src/input_output/FGPropertyManager.h
  ../src/input_output/FGPropertyReader.h

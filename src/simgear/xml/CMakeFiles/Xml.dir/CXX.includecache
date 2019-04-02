@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/alexandrequintart/soft/jsbsim/src/simgear/compiler.h
+ieeefp.h
+-
+
+/Users/alexandrequintart/soft/jsbsim/src/simgear/xml/easyxml.cxx
+../compiler.h
+/Users/alexandrequintart/soft/jsbsim/src/simgear/compiler.h
+string.h
+-
+easyxml.hxx
+/Users/alexandrequintart/soft/jsbsim/src/simgear/xml/easyxml.hxx
+expat.h
+-
+fstream
+-
+iostream
+-
+
+/Users/alexandrequintart/soft/jsbsim/src/simgear/xml/easyxml.hxx
+../compiler.h
+/Users/alexandrequintart/soft/jsbsim/src/simgear/compiler.h
+iostream
+-
+string
+-
+vector
+-
+
+src/simgear/xml/expat.h
+stdlib.h
+-
+expat_external.h
+src/simgear/xml/expat_external.h
+
+src/simgear/xml/expat_external.h
+

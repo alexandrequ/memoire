@@ -146,10 +146,6 @@ math/FGModelFunctions.h
 simgear/misc/sg_path.hxx
 ../src/models/simgear/misc/sg_path.hxx
 
-../src/models/gridWAPT.hpp
-stdio.h
--
-
 ../src/simgear/compiler.h
 ieeefp.h
 -
@@ -231,6 +227,10 @@ models/FGOutput.h
 /Users/alexandrequintart/soft/jsbsim/src/models/FGOutput.h
 math/FGTemplateFunc.h
 /Users/alexandrequintart/soft/jsbsim/src/math/FGTemplateFunc.h
+models/gridWAPT.hpp
+/Users/alexandrequintart/soft/jsbsim/src/models/gridWAPT.hpp
+models/setDataWAPT.hpp
+/Users/alexandrequintart/soft/jsbsim/src/models/setDataWAPT.hpp
 
 /Users/alexandrequintart/soft/jsbsim/src/JSBSim.cpp
 initialization/FGTrim.h
@@ -239,6 +239,10 @@ FGFDMExec.h
 /Users/alexandrequintart/soft/jsbsim/src/FGFDMExec.h
 input_output/FGXMLFileRead.h
 /Users/alexandrequintart/soft/jsbsim/src/input_output/FGXMLFileRead.h
+models/gridWAPT.hpp
+/Users/alexandrequintart/soft/jsbsim/src/models/gridWAPT.hpp
+models/setDataWAPT.hpp
+/Users/alexandrequintart/soft/jsbsim/src/models/setDataWAPT.hpp
 time
 -
 time.h
@@ -338,5 +342,15 @@ math/FGQuaternion.h
 math/FGMatrix33.h
 /Users/alexandrequintart/soft/jsbsim/src/models/math/FGMatrix33.h
 deque
+-
+
+/Users/alexandrequintart/soft/jsbsim/src/models/gridWAPT.hpp
+stdio.h
+-
+
+/Users/alexandrequintart/soft/jsbsim/src/models/setDataWAPT.hpp
+gridWAPT.hpp
+/Users/alexandrequintart/soft/jsbsim/src/models/gridWAPT.hpp
+stdio.h
 -
 

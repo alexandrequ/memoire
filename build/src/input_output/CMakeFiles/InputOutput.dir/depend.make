@@ -35,6 +35,7 @@ src/input_output/CMakeFiles/InputOutput.dir/FGInputSocket.cpp.o: ../src/models/F
 src/input_output/CMakeFiles/InputOutput.dir/FGInputSocket.cpp.o: ../src/models/FGOutput.h
 src/input_output/CMakeFiles/InputOutput.dir/FGInputSocket.cpp.o: ../src/models/FGPropagate.h
 src/input_output/CMakeFiles/InputOutput.dir/FGInputSocket.cpp.o: ../src/models/gridWAPT.hpp
+src/input_output/CMakeFiles/InputOutput.dir/FGInputSocket.cpp.o: ../src/models/setDataWAPT.hpp
 src/input_output/CMakeFiles/InputOutput.dir/FGInputSocket.cpp.o: ../src/simgear/compiler.h
 src/input_output/CMakeFiles/InputOutput.dir/FGInputSocket.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/input_output/CMakeFiles/InputOutput.dir/FGInputSocket.cpp.o: ../src/simgear/props/propertyObject.hxx
@@ -113,10 +114,12 @@ src/input_output/CMakeFiles/InputOutput.dir/FGOutputFG.cpp.o: ../src/models/FGOu
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputFG.cpp.o: ../src/models/FGPropagate.h
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputFG.cpp.o: ../src/models/FGPropulsion.h
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputFG.cpp.o: ../src/models/FGSurface.h
+src/input_output/CMakeFiles/InputOutput.dir/FGOutputFG.cpp.o: ../src/models/gridWAPT.hpp
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputFG.cpp.o: ../src/models/propulsion/FGEngine.h
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputFG.cpp.o: ../src/models/propulsion/FGForce.h
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputFG.cpp.o: ../src/models/propulsion/FGPiston.h
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputFG.cpp.o: ../src/models/propulsion/FGTank.h
+src/input_output/CMakeFiles/InputOutput.dir/FGOutputFG.cpp.o: ../src/models/setDataWAPT.hpp
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputFG.cpp.o: ../src/simgear/compiler.h
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputFG.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputFG.cpp.o: ../src/simgear/misc/stdint.hxx
@@ -149,6 +152,8 @@ src/input_output/CMakeFiles/InputOutput.dir/FGOutputFile.cpp.o: ../src/math/FGTe
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputFile.cpp.o: ../src/models/FGModel.h
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputFile.cpp.o: ../src/models/FGOutput.h
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputFile.cpp.o: ../src/models/FGPropagate.h
+src/input_output/CMakeFiles/InputOutput.dir/FGOutputFile.cpp.o: ../src/models/gridWAPT.hpp
+src/input_output/CMakeFiles/InputOutput.dir/FGOutputFile.cpp.o: ../src/models/setDataWAPT.hpp
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputFile.cpp.o: ../src/simgear/compiler.h
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputFile.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputFile.cpp.o: ../src/simgear/props/propertyObject.hxx
@@ -198,6 +203,7 @@ src/input_output/CMakeFiles/InputOutput.dir/FGOutputSocket.cpp.o: ../src/models/
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputSocket.cpp.o: ../src/models/gridWAPT.hpp
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputSocket.cpp.o: ../src/models/propulsion/FGEngine.h
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputSocket.cpp.o: ../src/models/propulsion/FGForce.h
+src/input_output/CMakeFiles/InputOutput.dir/FGOutputSocket.cpp.o: ../src/models/setDataWAPT.hpp
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputSocket.cpp.o: ../src/simgear/compiler.h
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputSocket.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputSocket.cpp.o: ../src/simgear/misc/stdint.hxx
@@ -249,6 +255,7 @@ src/input_output/CMakeFiles/InputOutput.dir/FGOutputTextFile.cpp.o: ../src/model
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputTextFile.cpp.o: ../src/models/gridWAPT.hpp
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputTextFile.cpp.o: ../src/models/propulsion/FGEngine.h
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputTextFile.cpp.o: ../src/models/propulsion/FGForce.h
+src/input_output/CMakeFiles/InputOutput.dir/FGOutputTextFile.cpp.o: ../src/models/setDataWAPT.hpp
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputTextFile.cpp.o: ../src/simgear/compiler.h
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputTextFile.cpp.o: ../src/simgear/io/iostreams/sgstream.hxx
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputTextFile.cpp.o: ../src/simgear/misc/sg_path.hxx
@@ -282,6 +289,8 @@ src/input_output/CMakeFiles/InputOutput.dir/FGOutputType.cpp.o: ../src/math/FGTe
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputType.cpp.o: ../src/models/FGModel.h
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputType.cpp.o: ../src/models/FGOutput.h
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputType.cpp.o: ../src/models/FGPropagate.h
+src/input_output/CMakeFiles/InputOutput.dir/FGOutputType.cpp.o: ../src/models/gridWAPT.hpp
+src/input_output/CMakeFiles/InputOutput.dir/FGOutputType.cpp.o: ../src/models/setDataWAPT.hpp
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputType.cpp.o: ../src/simgear/compiler.h
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputType.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/input_output/CMakeFiles/InputOutput.dir/FGOutputType.cpp.o: ../src/simgear/props/propertyObject.hxx
@@ -343,6 +352,7 @@ src/input_output/CMakeFiles/InputOutput.dir/FGScript.cpp.o: ../src/models/FGMode
 src/input_output/CMakeFiles/InputOutput.dir/FGScript.cpp.o: ../src/models/FGOutput.h
 src/input_output/CMakeFiles/InputOutput.dir/FGScript.cpp.o: ../src/models/FGPropagate.h
 src/input_output/CMakeFiles/InputOutput.dir/FGScript.cpp.o: ../src/models/gridWAPT.hpp
+src/input_output/CMakeFiles/InputOutput.dir/FGScript.cpp.o: ../src/models/setDataWAPT.hpp
 src/input_output/CMakeFiles/InputOutput.dir/FGScript.cpp.o: ../src/simgear/compiler.h
 src/input_output/CMakeFiles/InputOutput.dir/FGScript.cpp.o: ../src/simgear/io/iostreams/sgstream.hxx
 src/input_output/CMakeFiles/InputOutput.dir/FGScript.cpp.o: ../src/simgear/misc/sg_path.hxx
@@ -376,6 +386,8 @@ src/input_output/CMakeFiles/InputOutput.dir/FGUDPInputSocket.cpp.o: ../src/math/
 src/input_output/CMakeFiles/InputOutput.dir/FGUDPInputSocket.cpp.o: ../src/models/FGModel.h
 src/input_output/CMakeFiles/InputOutput.dir/FGUDPInputSocket.cpp.o: ../src/models/FGOutput.h
 src/input_output/CMakeFiles/InputOutput.dir/FGUDPInputSocket.cpp.o: ../src/models/FGPropagate.h
+src/input_output/CMakeFiles/InputOutput.dir/FGUDPInputSocket.cpp.o: ../src/models/gridWAPT.hpp
+src/input_output/CMakeFiles/InputOutput.dir/FGUDPInputSocket.cpp.o: ../src/models/setDataWAPT.hpp
 src/input_output/CMakeFiles/InputOutput.dir/FGUDPInputSocket.cpp.o: ../src/simgear/compiler.h
 src/input_output/CMakeFiles/InputOutput.dir/FGUDPInputSocket.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/input_output/CMakeFiles/InputOutput.dir/FGUDPInputSocket.cpp.o: ../src/simgear/props/propertyObject.hxx

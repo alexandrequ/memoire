@@ -19,7 +19,6 @@ src/CMakeFiles/JSBSim.dir/JSBSim.cpp.o
  ../src/math/FGPropertyValue.h
  ../src/math/FGQuaternion.h
  ../src/models/FGModel.h
- ../src/models/gridWAPT.hpp
  ../src/simgear/compiler.h
  ../src/simgear/io/iostreams/sgstream.hxx
  ../src/simgear/misc/sg_path.hxx
@@ -38,3 +37,5 @@ src/CMakeFiles/JSBSim.dir/JSBSim.cpp.o
  /Users/alexandrequintart/soft/jsbsim/src/models/FGModel.h
  /Users/alexandrequintart/soft/jsbsim/src/models/FGOutput.h
  /Users/alexandrequintart/soft/jsbsim/src/models/FGPropagate.h
+ /Users/alexandrequintart/soft/jsbsim/src/models/gridWAPT.hpp
+ /Users/alexandrequintart/soft/jsbsim/src/models/setDataWAPT.hpp

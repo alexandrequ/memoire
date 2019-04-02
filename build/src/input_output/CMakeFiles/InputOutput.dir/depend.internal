@@ -36,6 +36,7 @@ src/input_output/CMakeFiles/InputOutput.dir/FGInputSocket.cpp.o
  ../src/models/FGOutput.h
  ../src/models/FGPropagate.h
  ../src/models/gridWAPT.hpp
+ ../src/models/setDataWAPT.hpp
  ../src/simgear/compiler.h
  ../src/simgear/misc/sg_path.hxx
  ../src/simgear/props/propertyObject.hxx
@@ -114,10 +115,12 @@ src/input_output/CMakeFiles/InputOutput.dir/FGOutputFG.cpp.o
  ../src/models/FGPropagate.h
  ../src/models/FGPropulsion.h
  ../src/models/FGSurface.h
+ ../src/models/gridWAPT.hpp
  ../src/models/propulsion/FGEngine.h
  ../src/models/propulsion/FGForce.h
  ../src/models/propulsion/FGPiston.h
  ../src/models/propulsion/FGTank.h
+ ../src/models/setDataWAPT.hpp
  ../src/simgear/compiler.h
  ../src/simgear/misc/sg_path.hxx
  ../src/simgear/misc/stdint.hxx
@@ -150,6 +153,8 @@ src/input_output/CMakeFiles/InputOutput.dir/FGOutputFile.cpp.o
  ../src/models/FGModel.h
  ../src/models/FGOutput.h
  ../src/models/FGPropagate.h
+ ../src/models/gridWAPT.hpp
+ ../src/models/setDataWAPT.hpp
  ../src/simgear/compiler.h
  ../src/simgear/misc/sg_path.hxx
  ../src/simgear/props/propertyObject.hxx
@@ -199,6 +204,7 @@ src/input_output/CMakeFiles/InputOutput.dir/FGOutputSocket.cpp.o
  ../src/models/gridWAPT.hpp
  ../src/models/propulsion/FGEngine.h
  ../src/models/propulsion/FGForce.h
+ ../src/models/setDataWAPT.hpp
  ../src/simgear/compiler.h
  ../src/simgear/misc/sg_path.hxx
  ../src/simgear/misc/stdint.hxx
@@ -250,6 +256,7 @@ src/input_output/CMakeFiles/InputOutput.dir/FGOutputTextFile.cpp.o
  ../src/models/gridWAPT.hpp
  ../src/models/propulsion/FGEngine.h
  ../src/models/propulsion/FGForce.h
+ ../src/models/setDataWAPT.hpp
  ../src/simgear/compiler.h
  ../src/simgear/io/iostreams/sgstream.hxx
  ../src/simgear/misc/sg_path.hxx
@@ -283,6 +290,8 @@ src/input_output/CMakeFiles/InputOutput.dir/FGOutputType.cpp.o
  ../src/models/FGModel.h
  ../src/models/FGOutput.h
  ../src/models/FGPropagate.h
+ ../src/models/gridWAPT.hpp
+ ../src/models/setDataWAPT.hpp
  ../src/simgear/compiler.h
  ../src/simgear/misc/sg_path.hxx
  ../src/simgear/props/propertyObject.hxx
@@ -344,6 +353,7 @@ src/input_output/CMakeFiles/InputOutput.dir/FGScript.cpp.o
  ../src/models/FGOutput.h
  ../src/models/FGPropagate.h
  ../src/models/gridWAPT.hpp
+ ../src/models/setDataWAPT.hpp
  ../src/simgear/compiler.h
  ../src/simgear/io/iostreams/sgstream.hxx
  ../src/simgear/misc/sg_path.hxx
@@ -377,6 +387,8 @@ src/input_output/CMakeFiles/InputOutput.dir/FGUDPInputSocket.cpp.o
  ../src/models/FGModel.h
  ../src/models/FGOutput.h
  ../src/models/FGPropagate.h
+ ../src/models/gridWAPT.hpp
+ ../src/models/setDataWAPT.hpp
  ../src/simgear/compiler.h
  ../src/simgear/misc/sg_path.hxx
  ../src/simgear/props/propertyObject.hxx

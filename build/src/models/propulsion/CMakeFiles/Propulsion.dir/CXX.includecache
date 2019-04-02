@@ -13,6 +13,10 @@ models/FGOutput.h
 ../src/models/FGOutput.h
 math/FGTemplateFunc.h
 ../src/math/FGTemplateFunc.h
+models/gridWAPT.hpp
+../src/models/gridWAPT.hpp
+models/setDataWAPT.hpp
+../src/models/setDataWAPT.hpp
 
 ../src/FGJSBBase.h
 float.h
@@ -222,6 +226,10 @@ propulsion/FGEngine.h
 math/FGMatrix33.h
 ../src/models/math/FGMatrix33.h
 
+../src/models/gridWAPT.hpp
+stdio.h
+-
+
 ../src/models/propulsion/FGEngine.h
 vector
 -
@@ -231,6 +239,12 @@ math/FGModelFunctions.h
 ../src/models/propulsion/math/FGModelFunctions.h
 math/FGColumnVector3.h
 ../src/models/propulsion/math/FGColumnVector3.h
+
+../src/models/setDataWAPT.hpp
+gridWAPT.hpp
+../src/models/gridWAPT.hpp
+stdio.h
+-
 
 ../src/simgear/compiler.h
 ieeefp.h
@@ -347,18 +361,6 @@ FGJSBBase.h
 /Users/alexandrequintart/soft/jsbsim/src/models/propulsion/FGJSBBase.h
 math/FGMatrix33.h
 /Users/alexandrequintart/soft/jsbsim/src/models/propulsion/math/FGMatrix33.h
-
-/Users/alexandrequintart/soft/jsbsim/src/models/propulsion/FGNozzle.cpp
-iostream
--
-sstream
--
-cstdlib
--
-FGNozzle.h
-/Users/alexandrequintart/soft/jsbsim/src/models/propulsion/FGNozzle.h
-input_output/FGXMLElement.h
-/Users/alexandrequintart/soft/jsbsim/src/models/propulsion/input_output/FGXMLElement.h
 
 /Users/alexandrequintart/soft/jsbsim/src/models/propulsion/FGNozzle.h
 FGThruster.h

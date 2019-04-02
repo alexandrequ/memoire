@@ -28,7 +28,9 @@ src/models/flight_control/CMakeFiles/FlightControl.dir/FGAccelerometer.cpp.o: ..
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGAccelerometer.cpp.o: ../src/models/FGOutput.h
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGAccelerometer.cpp.o: ../src/models/FGPropagate.h
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGAccelerometer.cpp.o: ../src/models/FGSurface.h
+src/models/flight_control/CMakeFiles/FlightControl.dir/FGAccelerometer.cpp.o: ../src/models/gridWAPT.hpp
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGAccelerometer.cpp.o: ../src/models/propulsion/FGForce.h
+src/models/flight_control/CMakeFiles/FlightControl.dir/FGAccelerometer.cpp.o: ../src/models/setDataWAPT.hpp
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGAccelerometer.cpp.o: ../src/simgear/compiler.h
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGAccelerometer.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGAccelerometer.cpp.o: ../src/simgear/props/propertyObject.hxx
@@ -67,7 +69,9 @@ src/models/flight_control/CMakeFiles/FlightControl.dir/FGActuator.cpp.o: ../src/
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGActuator.cpp.o: ../src/models/FGOutput.h
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGActuator.cpp.o: ../src/models/FGPropagate.h
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGActuator.cpp.o: ../src/models/FGSurface.h
+src/models/flight_control/CMakeFiles/FlightControl.dir/FGActuator.cpp.o: ../src/models/gridWAPT.hpp
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGActuator.cpp.o: ../src/models/propulsion/FGForce.h
+src/models/flight_control/CMakeFiles/FlightControl.dir/FGActuator.cpp.o: ../src/models/setDataWAPT.hpp
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGActuator.cpp.o: ../src/simgear/compiler.h
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGActuator.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGActuator.cpp.o: ../src/simgear/props/propertyObject.hxx
@@ -158,7 +162,9 @@ src/models/flight_control/CMakeFiles/FlightControl.dir/FGFCSComponent.cpp.o: ../
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGFCSComponent.cpp.o: ../src/models/FGOutput.h
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGFCSComponent.cpp.o: ../src/models/FGPropagate.h
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGFCSComponent.cpp.o: ../src/models/FGSurface.h
+src/models/flight_control/CMakeFiles/FlightControl.dir/FGFCSComponent.cpp.o: ../src/models/gridWAPT.hpp
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGFCSComponent.cpp.o: ../src/models/propulsion/FGForce.h
+src/models/flight_control/CMakeFiles/FlightControl.dir/FGFCSComponent.cpp.o: ../src/models/setDataWAPT.hpp
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGFCSComponent.cpp.o: ../src/simgear/compiler.h
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGFCSComponent.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGFCSComponent.cpp.o: ../src/simgear/props/propertyObject.hxx
@@ -193,7 +199,9 @@ src/models/flight_control/CMakeFiles/FlightControl.dir/FGFCSFunction.cpp.o: ../s
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGFCSFunction.cpp.o: ../src/models/FGOutput.h
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGFCSFunction.cpp.o: ../src/models/FGPropagate.h
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGFCSFunction.cpp.o: ../src/models/FGSurface.h
+src/models/flight_control/CMakeFiles/FlightControl.dir/FGFCSFunction.cpp.o: ../src/models/gridWAPT.hpp
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGFCSFunction.cpp.o: ../src/models/propulsion/FGForce.h
+src/models/flight_control/CMakeFiles/FlightControl.dir/FGFCSFunction.cpp.o: ../src/models/setDataWAPT.hpp
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGFCSFunction.cpp.o: ../src/simgear/compiler.h
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGFCSFunction.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGFCSFunction.cpp.o: ../src/simgear/props/propertyObject.hxx
@@ -266,7 +274,9 @@ src/models/flight_control/CMakeFiles/FlightControl.dir/FGGyro.cpp.o: ../src/mode
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGGyro.cpp.o: ../src/models/FGOutput.h
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGGyro.cpp.o: ../src/models/FGPropagate.h
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGGyro.cpp.o: ../src/models/FGSurface.h
+src/models/flight_control/CMakeFiles/FlightControl.dir/FGGyro.cpp.o: ../src/models/gridWAPT.hpp
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGGyro.cpp.o: ../src/models/propulsion/FGForce.h
+src/models/flight_control/CMakeFiles/FlightControl.dir/FGGyro.cpp.o: ../src/models/setDataWAPT.hpp
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGGyro.cpp.o: ../src/simgear/compiler.h
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGGyro.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGGyro.cpp.o: ../src/simgear/props/propertyObject.hxx
@@ -304,7 +314,9 @@ src/models/flight_control/CMakeFiles/FlightControl.dir/FGKinemat.cpp.o: ../src/m
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGKinemat.cpp.o: ../src/models/FGOutput.h
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGKinemat.cpp.o: ../src/models/FGPropagate.h
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGKinemat.cpp.o: ../src/models/FGSurface.h
+src/models/flight_control/CMakeFiles/FlightControl.dir/FGKinemat.cpp.o: ../src/models/gridWAPT.hpp
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGKinemat.cpp.o: ../src/models/propulsion/FGForce.h
+src/models/flight_control/CMakeFiles/FlightControl.dir/FGKinemat.cpp.o: ../src/models/setDataWAPT.hpp
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGKinemat.cpp.o: ../src/simgear/compiler.h
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGKinemat.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGKinemat.cpp.o: ../src/simgear/props/propertyObject.hxx
@@ -342,7 +354,9 @@ src/models/flight_control/CMakeFiles/FlightControl.dir/FGLinearActuator.cpp.o: .
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGLinearActuator.cpp.o: ../src/models/FGOutput.h
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGLinearActuator.cpp.o: ../src/models/FGPropagate.h
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGLinearActuator.cpp.o: ../src/models/FGSurface.h
+src/models/flight_control/CMakeFiles/FlightControl.dir/FGLinearActuator.cpp.o: ../src/models/gridWAPT.hpp
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGLinearActuator.cpp.o: ../src/models/propulsion/FGForce.h
+src/models/flight_control/CMakeFiles/FlightControl.dir/FGLinearActuator.cpp.o: ../src/models/setDataWAPT.hpp
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGLinearActuator.cpp.o: ../src/simgear/compiler.h
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGLinearActuator.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGLinearActuator.cpp.o: ../src/simgear/props/propertyObject.hxx
@@ -380,7 +394,9 @@ src/models/flight_control/CMakeFiles/FlightControl.dir/FGMagnetometer.cpp.o: ../
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGMagnetometer.cpp.o: ../src/models/FGOutput.h
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGMagnetometer.cpp.o: ../src/models/FGPropagate.h
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGMagnetometer.cpp.o: ../src/models/FGSurface.h
+src/models/flight_control/CMakeFiles/FlightControl.dir/FGMagnetometer.cpp.o: ../src/models/gridWAPT.hpp
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGMagnetometer.cpp.o: ../src/models/propulsion/FGForce.h
+src/models/flight_control/CMakeFiles/FlightControl.dir/FGMagnetometer.cpp.o: ../src/models/setDataWAPT.hpp
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGMagnetometer.cpp.o: ../src/simgear/compiler.h
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGMagnetometer.cpp.o: ../src/simgear/magvar/coremag.hxx
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGMagnetometer.cpp.o: ../src/simgear/misc/sg_path.hxx

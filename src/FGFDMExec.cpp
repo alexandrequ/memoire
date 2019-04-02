@@ -62,6 +62,9 @@ INCLUDES
 #include "input_output/FGScript.h"
 #include "input_output/FGXMLFileRead.h"
 
+#include "models/gridWAPT.hpp"
+#include "models/setDataWAPT.hpp"
+
 using namespace std;
 
 namespace JSBSim {
@@ -261,6 +264,7 @@ bool FGFDMExec::Allocate(void)
 
   // Initialize planet (environment) constants
   LoadPlanetConstants();
+
 
   // Initialize models
   for (unsigned int i = 0; i < Models.size(); i++) {
@@ -582,6 +586,7 @@ bool FGFDMExec::RunIC(void)
 
 void FGFDMExec::Initialize(FGInitialCondition* FGIC)
 {
+  
   Propagate->SetInitialState(FGIC);
   Winds->SetWindNED(FGIC->GetWindNEDFpsIC());
   Run();

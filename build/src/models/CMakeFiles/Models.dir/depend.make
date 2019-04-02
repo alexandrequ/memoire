@@ -21,6 +21,8 @@ src/models/CMakeFiles/Models.dir/FGAccelerations.cpp.o: ../src/math/LagrangeMult
 src/models/CMakeFiles/Models.dir/FGAccelerations.cpp.o: ../src/models/FGModel.h
 src/models/CMakeFiles/Models.dir/FGAccelerations.cpp.o: ../src/models/FGOutput.h
 src/models/CMakeFiles/Models.dir/FGAccelerations.cpp.o: ../src/models/FGPropagate.h
+src/models/CMakeFiles/Models.dir/FGAccelerations.cpp.o: ../src/models/gridWAPT.hpp
+src/models/CMakeFiles/Models.dir/FGAccelerations.cpp.o: ../src/models/setDataWAPT.hpp
 src/models/CMakeFiles/Models.dir/FGAccelerations.cpp.o: ../src/simgear/compiler.h
 src/models/CMakeFiles/Models.dir/FGAccelerations.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/models/CMakeFiles/Models.dir/FGAccelerations.cpp.o: ../src/simgear/props/propertyObject.hxx
@@ -72,6 +74,7 @@ src/models/CMakeFiles/Models.dir/FGAircraft.cpp.o: ../src/models/FGModel.h
 src/models/CMakeFiles/Models.dir/FGAircraft.cpp.o: ../src/models/FGOutput.h
 src/models/CMakeFiles/Models.dir/FGAircraft.cpp.o: ../src/models/FGPropagate.h
 src/models/CMakeFiles/Models.dir/FGAircraft.cpp.o: ../src/models/gridWAPT.hpp
+src/models/CMakeFiles/Models.dir/FGAircraft.cpp.o: ../src/models/setDataWAPT.hpp
 src/models/CMakeFiles/Models.dir/FGAircraft.cpp.o: ../src/simgear/compiler.h
 src/models/CMakeFiles/Models.dir/FGAircraft.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/models/CMakeFiles/Models.dir/FGAircraft.cpp.o: ../src/simgear/props/propertyObject.hxx
@@ -83,6 +86,7 @@ src/models/CMakeFiles/Models.dir/FGAircraft.cpp.o: ../src/models/FGAircraft.h
 src/models/CMakeFiles/Models.dir/FGAircraft.cpp.o: ../src/models/FGAuxiliary.h
 src/models/CMakeFiles/Models.dir/FGAircraft.cpp.o: ../src/models/FGModel.h
 src/models/CMakeFiles/Models.dir/FGAircraft.cpp.o: ../src/models/gridWAPT.hpp
+src/models/CMakeFiles/Models.dir/FGAircraft.cpp.o: ../src/models/setDataWAPT.hpp
 
 src/models/CMakeFiles/Models.dir/FGAtmosphere.cpp.o: ../src/FGFDMExec.h
 src/models/CMakeFiles/Models.dir/FGAtmosphere.cpp.o: ../src/FGJSBBase.h
@@ -103,6 +107,8 @@ src/models/CMakeFiles/Models.dir/FGAtmosphere.cpp.o: ../src/math/FGTemplateFunc.
 src/models/CMakeFiles/Models.dir/FGAtmosphere.cpp.o: ../src/models/FGModel.h
 src/models/CMakeFiles/Models.dir/FGAtmosphere.cpp.o: ../src/models/FGOutput.h
 src/models/CMakeFiles/Models.dir/FGAtmosphere.cpp.o: ../src/models/FGPropagate.h
+src/models/CMakeFiles/Models.dir/FGAtmosphere.cpp.o: ../src/models/gridWAPT.hpp
+src/models/CMakeFiles/Models.dir/FGAtmosphere.cpp.o: ../src/models/setDataWAPT.hpp
 src/models/CMakeFiles/Models.dir/FGAtmosphere.cpp.o: ../src/simgear/compiler.h
 src/models/CMakeFiles/Models.dir/FGAtmosphere.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/models/CMakeFiles/Models.dir/FGAtmosphere.cpp.o: ../src/simgear/props/propertyObject.hxx
@@ -133,6 +139,7 @@ src/models/CMakeFiles/Models.dir/FGAuxiliary.cpp.o: ../src/models/FGModel.h
 src/models/CMakeFiles/Models.dir/FGAuxiliary.cpp.o: ../src/models/FGOutput.h
 src/models/CMakeFiles/Models.dir/FGAuxiliary.cpp.o: ../src/models/FGPropagate.h
 src/models/CMakeFiles/Models.dir/FGAuxiliary.cpp.o: ../src/models/gridWAPT.hpp
+src/models/CMakeFiles/Models.dir/FGAuxiliary.cpp.o: ../src/models/setDataWAPT.hpp
 src/models/CMakeFiles/Models.dir/FGAuxiliary.cpp.o: ../src/simgear/compiler.h
 src/models/CMakeFiles/Models.dir/FGAuxiliary.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/models/CMakeFiles/Models.dir/FGAuxiliary.cpp.o: ../src/simgear/props/propertyObject.hxx
@@ -163,7 +170,9 @@ src/models/CMakeFiles/Models.dir/FGBuoyantForces.cpp.o: ../src/math/FGTemplateFu
 src/models/CMakeFiles/Models.dir/FGBuoyantForces.cpp.o: ../src/models/FGModel.h
 src/models/CMakeFiles/Models.dir/FGBuoyantForces.cpp.o: ../src/models/FGOutput.h
 src/models/CMakeFiles/Models.dir/FGBuoyantForces.cpp.o: ../src/models/FGPropagate.h
+src/models/CMakeFiles/Models.dir/FGBuoyantForces.cpp.o: ../src/models/gridWAPT.hpp
 src/models/CMakeFiles/Models.dir/FGBuoyantForces.cpp.o: ../src/models/propulsion/FGForce.h
+src/models/CMakeFiles/Models.dir/FGBuoyantForces.cpp.o: ../src/models/setDataWAPT.hpp
 src/models/CMakeFiles/Models.dir/FGBuoyantForces.cpp.o: ../src/simgear/compiler.h
 src/models/CMakeFiles/Models.dir/FGBuoyantForces.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/models/CMakeFiles/Models.dir/FGBuoyantForces.cpp.o: ../src/simgear/props/propertyObject.hxx
@@ -195,7 +204,9 @@ src/models/CMakeFiles/Models.dir/FGExternalForce.cpp.o: ../src/math/FGTemplateFu
 src/models/CMakeFiles/Models.dir/FGExternalForce.cpp.o: ../src/models/FGModel.h
 src/models/CMakeFiles/Models.dir/FGExternalForce.cpp.o: ../src/models/FGOutput.h
 src/models/CMakeFiles/Models.dir/FGExternalForce.cpp.o: ../src/models/FGPropagate.h
+src/models/CMakeFiles/Models.dir/FGExternalForce.cpp.o: ../src/models/gridWAPT.hpp
 src/models/CMakeFiles/Models.dir/FGExternalForce.cpp.o: ../src/models/propulsion/FGForce.h
+src/models/CMakeFiles/Models.dir/FGExternalForce.cpp.o: ../src/models/setDataWAPT.hpp
 src/models/CMakeFiles/Models.dir/FGExternalForce.cpp.o: ../src/simgear/compiler.h
 src/models/CMakeFiles/Models.dir/FGExternalForce.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/models/CMakeFiles/Models.dir/FGExternalForce.cpp.o: ../src/simgear/props/propertyObject.hxx
@@ -275,7 +286,9 @@ src/models/CMakeFiles/Models.dir/FGFCS.cpp.o: ../src/models/flight_control/FGSen
 src/models/CMakeFiles/Models.dir/FGFCS.cpp.o: ../src/models/flight_control/FGSummer.h
 src/models/CMakeFiles/Models.dir/FGFCS.cpp.o: ../src/models/flight_control/FGSwitch.h
 src/models/CMakeFiles/Models.dir/FGFCS.cpp.o: ../src/models/flight_control/FGWaypoint.h
+src/models/CMakeFiles/Models.dir/FGFCS.cpp.o: ../src/models/gridWAPT.hpp
 src/models/CMakeFiles/Models.dir/FGFCS.cpp.o: ../src/models/propulsion/FGForce.h
+src/models/CMakeFiles/Models.dir/FGFCS.cpp.o: ../src/models/setDataWAPT.hpp
 src/models/CMakeFiles/Models.dir/FGFCS.cpp.o: ../src/simgear/compiler.h
 src/models/CMakeFiles/Models.dir/FGFCS.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/models/CMakeFiles/Models.dir/FGFCS.cpp.o: ../src/simgear/props/propertyObject.hxx
@@ -307,7 +320,9 @@ src/models/CMakeFiles/Models.dir/FGGasCell.cpp.o: ../src/models/FGMassBalance.h
 src/models/CMakeFiles/Models.dir/FGGasCell.cpp.o: ../src/models/FGModel.h
 src/models/CMakeFiles/Models.dir/FGGasCell.cpp.o: ../src/models/FGOutput.h
 src/models/CMakeFiles/Models.dir/FGGasCell.cpp.o: ../src/models/FGPropagate.h
+src/models/CMakeFiles/Models.dir/FGGasCell.cpp.o: ../src/models/gridWAPT.hpp
 src/models/CMakeFiles/Models.dir/FGGasCell.cpp.o: ../src/models/propulsion/FGForce.h
+src/models/CMakeFiles/Models.dir/FGGasCell.cpp.o: ../src/models/setDataWAPT.hpp
 src/models/CMakeFiles/Models.dir/FGGasCell.cpp.o: ../src/simgear/compiler.h
 src/models/CMakeFiles/Models.dir/FGGasCell.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/models/CMakeFiles/Models.dir/FGGasCell.cpp.o: ../src/simgear/props/propertyObject.hxx
@@ -338,7 +353,9 @@ src/models/CMakeFiles/Models.dir/FGGroundReactions.cpp.o: ../src/math/LagrangeMu
 src/models/CMakeFiles/Models.dir/FGGroundReactions.cpp.o: ../src/models/FGModel.h
 src/models/CMakeFiles/Models.dir/FGGroundReactions.cpp.o: ../src/models/FGOutput.h
 src/models/CMakeFiles/Models.dir/FGGroundReactions.cpp.o: ../src/models/FGPropagate.h
+src/models/CMakeFiles/Models.dir/FGGroundReactions.cpp.o: ../src/models/gridWAPT.hpp
 src/models/CMakeFiles/Models.dir/FGGroundReactions.cpp.o: ../src/models/propulsion/FGForce.h
+src/models/CMakeFiles/Models.dir/FGGroundReactions.cpp.o: ../src/models/setDataWAPT.hpp
 src/models/CMakeFiles/Models.dir/FGGroundReactions.cpp.o: ../src/simgear/compiler.h
 src/models/CMakeFiles/Models.dir/FGGroundReactions.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/models/CMakeFiles/Models.dir/FGGroundReactions.cpp.o: ../src/simgear/props/propertyObject.hxx
@@ -371,6 +388,8 @@ src/models/CMakeFiles/Models.dir/FGInertial.cpp.o: ../src/math/FGTemplateFunc.h
 src/models/CMakeFiles/Models.dir/FGInertial.cpp.o: ../src/models/FGModel.h
 src/models/CMakeFiles/Models.dir/FGInertial.cpp.o: ../src/models/FGOutput.h
 src/models/CMakeFiles/Models.dir/FGInertial.cpp.o: ../src/models/FGPropagate.h
+src/models/CMakeFiles/Models.dir/FGInertial.cpp.o: ../src/models/gridWAPT.hpp
+src/models/CMakeFiles/Models.dir/FGInertial.cpp.o: ../src/models/setDataWAPT.hpp
 src/models/CMakeFiles/Models.dir/FGInertial.cpp.o: ../src/simgear/compiler.h
 src/models/CMakeFiles/Models.dir/FGInertial.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/models/CMakeFiles/Models.dir/FGInertial.cpp.o: ../src/simgear/props/propertyObject.hxx
@@ -408,6 +427,8 @@ src/models/CMakeFiles/Models.dir/FGInput.cpp.o: ../src/math/FGTemplateFunc.h
 src/models/CMakeFiles/Models.dir/FGInput.cpp.o: ../src/models/FGModel.h
 src/models/CMakeFiles/Models.dir/FGInput.cpp.o: ../src/models/FGOutput.h
 src/models/CMakeFiles/Models.dir/FGInput.cpp.o: ../src/models/FGPropagate.h
+src/models/CMakeFiles/Models.dir/FGInput.cpp.o: ../src/models/gridWAPT.hpp
+src/models/CMakeFiles/Models.dir/FGInput.cpp.o: ../src/models/setDataWAPT.hpp
 src/models/CMakeFiles/Models.dir/FGInput.cpp.o: ../src/simgear/compiler.h
 src/models/CMakeFiles/Models.dir/FGInput.cpp.o: ../src/simgear/io/iostreams/sgstream.hxx
 src/models/CMakeFiles/Models.dir/FGInput.cpp.o: ../src/simgear/misc/sg_path.hxx
@@ -443,7 +464,9 @@ src/models/CMakeFiles/Models.dir/FGLGear.cpp.o: ../src/models/FGGroundReactions.
 src/models/CMakeFiles/Models.dir/FGLGear.cpp.o: ../src/models/FGModel.h
 src/models/CMakeFiles/Models.dir/FGLGear.cpp.o: ../src/models/FGOutput.h
 src/models/CMakeFiles/Models.dir/FGLGear.cpp.o: ../src/models/FGPropagate.h
+src/models/CMakeFiles/Models.dir/FGLGear.cpp.o: ../src/models/gridWAPT.hpp
 src/models/CMakeFiles/Models.dir/FGLGear.cpp.o: ../src/models/propulsion/FGForce.h
+src/models/CMakeFiles/Models.dir/FGLGear.cpp.o: ../src/models/setDataWAPT.hpp
 src/models/CMakeFiles/Models.dir/FGLGear.cpp.o: ../src/simgear/compiler.h
 src/models/CMakeFiles/Models.dir/FGLGear.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/models/CMakeFiles/Models.dir/FGLGear.cpp.o: ../src/simgear/props/propertyObject.hxx
@@ -474,6 +497,8 @@ src/models/CMakeFiles/Models.dir/FGMassBalance.cpp.o: ../src/math/FGTemplateFunc
 src/models/CMakeFiles/Models.dir/FGMassBalance.cpp.o: ../src/models/FGModel.h
 src/models/CMakeFiles/Models.dir/FGMassBalance.cpp.o: ../src/models/FGOutput.h
 src/models/CMakeFiles/Models.dir/FGMassBalance.cpp.o: ../src/models/FGPropagate.h
+src/models/CMakeFiles/Models.dir/FGMassBalance.cpp.o: ../src/models/gridWAPT.hpp
+src/models/CMakeFiles/Models.dir/FGMassBalance.cpp.o: ../src/models/setDataWAPT.hpp
 src/models/CMakeFiles/Models.dir/FGMassBalance.cpp.o: ../src/simgear/compiler.h
 src/models/CMakeFiles/Models.dir/FGMassBalance.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/models/CMakeFiles/Models.dir/FGMassBalance.cpp.o: ../src/simgear/props/propertyObject.hxx
@@ -505,6 +530,8 @@ src/models/CMakeFiles/Models.dir/FGModel.cpp.o: ../src/math/FGTemplateFunc.h
 src/models/CMakeFiles/Models.dir/FGModel.cpp.o: ../src/models/FGModel.h
 src/models/CMakeFiles/Models.dir/FGModel.cpp.o: ../src/models/FGOutput.h
 src/models/CMakeFiles/Models.dir/FGModel.cpp.o: ../src/models/FGPropagate.h
+src/models/CMakeFiles/Models.dir/FGModel.cpp.o: ../src/models/gridWAPT.hpp
+src/models/CMakeFiles/Models.dir/FGModel.cpp.o: ../src/models/setDataWAPT.hpp
 src/models/CMakeFiles/Models.dir/FGModel.cpp.o: ../src/simgear/compiler.h
 src/models/CMakeFiles/Models.dir/FGModel.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/models/CMakeFiles/Models.dir/FGModel.cpp.o: ../src/simgear/props/propertyObject.hxx
@@ -543,6 +570,8 @@ src/models/CMakeFiles/Models.dir/FGOutput.cpp.o: ../src/math/FGTemplateFunc.h
 src/models/CMakeFiles/Models.dir/FGOutput.cpp.o: ../src/models/FGModel.h
 src/models/CMakeFiles/Models.dir/FGOutput.cpp.o: ../src/models/FGOutput.h
 src/models/CMakeFiles/Models.dir/FGOutput.cpp.o: ../src/models/FGPropagate.h
+src/models/CMakeFiles/Models.dir/FGOutput.cpp.o: ../src/models/gridWAPT.hpp
+src/models/CMakeFiles/Models.dir/FGOutput.cpp.o: ../src/models/setDataWAPT.hpp
 src/models/CMakeFiles/Models.dir/FGOutput.cpp.o: ../src/simgear/compiler.h
 src/models/CMakeFiles/Models.dir/FGOutput.cpp.o: ../src/simgear/io/iostreams/sgstream.hxx
 src/models/CMakeFiles/Models.dir/FGOutput.cpp.o: ../src/simgear/misc/sg_path.hxx
@@ -579,6 +608,7 @@ src/models/CMakeFiles/Models.dir/FGPropagate.cpp.o: ../src/models/FGOutput.h
 src/models/CMakeFiles/Models.dir/FGPropagate.cpp.o: ../src/models/FGPropagate.h
 src/models/CMakeFiles/Models.dir/FGPropagate.cpp.o: ../src/models/gridWAPT.hpp
 src/models/CMakeFiles/Models.dir/FGPropagate.cpp.o: ../src/models/propulsion/FGForce.h
+src/models/CMakeFiles/Models.dir/FGPropagate.cpp.o: ../src/models/setDataWAPT.hpp
 src/models/CMakeFiles/Models.dir/FGPropagate.cpp.o: ../src/simgear/compiler.h
 src/models/CMakeFiles/Models.dir/FGPropagate.cpp.o: ../src/simgear/io/iostreams/sgstream.hxx
 src/models/CMakeFiles/Models.dir/FGPropagate.cpp.o: ../src/simgear/misc/sg_path.hxx
@@ -616,6 +646,7 @@ src/models/CMakeFiles/Models.dir/FGPropulsion.cpp.o: ../src/models/FGMassBalance
 src/models/CMakeFiles/Models.dir/FGPropulsion.cpp.o: ../src/models/FGModel.h
 src/models/CMakeFiles/Models.dir/FGPropulsion.cpp.o: ../src/models/FGOutput.h
 src/models/CMakeFiles/Models.dir/FGPropulsion.cpp.o: ../src/models/FGPropagate.h
+src/models/CMakeFiles/Models.dir/FGPropulsion.cpp.o: ../src/models/gridWAPT.hpp
 src/models/CMakeFiles/Models.dir/FGPropulsion.cpp.o: ../src/models/propulsion/FGElectric.h
 src/models/CMakeFiles/Models.dir/FGPropulsion.cpp.o: ../src/models/propulsion/FGEngine.h
 src/models/CMakeFiles/Models.dir/FGPropulsion.cpp.o: ../src/models/propulsion/FGPiston.h
@@ -623,6 +654,7 @@ src/models/CMakeFiles/Models.dir/FGPropulsion.cpp.o: ../src/models/propulsion/FG
 src/models/CMakeFiles/Models.dir/FGPropulsion.cpp.o: ../src/models/propulsion/FGTank.h
 src/models/CMakeFiles/Models.dir/FGPropulsion.cpp.o: ../src/models/propulsion/FGTurbine.h
 src/models/CMakeFiles/Models.dir/FGPropulsion.cpp.o: ../src/models/propulsion/FGTurboProp.h
+src/models/CMakeFiles/Models.dir/FGPropulsion.cpp.o: ../src/models/setDataWAPT.hpp
 src/models/CMakeFiles/Models.dir/FGPropulsion.cpp.o: ../src/simgear/compiler.h
 src/models/CMakeFiles/Models.dir/FGPropulsion.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/models/CMakeFiles/Models.dir/FGPropulsion.cpp.o: ../src/simgear/props/propertyObject.hxx
@@ -654,6 +686,8 @@ src/models/CMakeFiles/Models.dir/FGSurface.cpp.o: ../src/models/FGModel.h
 src/models/CMakeFiles/Models.dir/FGSurface.cpp.o: ../src/models/FGOutput.h
 src/models/CMakeFiles/Models.dir/FGSurface.cpp.o: ../src/models/FGPropagate.h
 src/models/CMakeFiles/Models.dir/FGSurface.cpp.o: ../src/models/FGSurface.h
+src/models/CMakeFiles/Models.dir/FGSurface.cpp.o: ../src/models/gridWAPT.hpp
+src/models/CMakeFiles/Models.dir/FGSurface.cpp.o: ../src/models/setDataWAPT.hpp
 src/models/CMakeFiles/Models.dir/FGSurface.cpp.o: ../src/simgear/compiler.h
 src/models/CMakeFiles/Models.dir/FGSurface.cpp.o: ../src/simgear/misc/sg_path.hxx
 src/models/CMakeFiles/Models.dir/FGSurface.cpp.o: ../src/simgear/props/propertyObject.hxx
@@ -664,4 +698,8 @@ src/models/CMakeFiles/Models.dir/FGSurface.cpp.o: ../src/models/FGSurface.cpp
 
 src/models/CMakeFiles/Models.dir/gridWAPT.cpp.o: ../src/models/gridWAPT.cpp
 src/models/CMakeFiles/Models.dir/gridWAPT.cpp.o: ../src/models/gridWAPT.hpp
+
+src/models/CMakeFiles/Models.dir/setDataWaPT.cpp.o: ../src/models/gridWAPT.hpp
+src/models/CMakeFiles/Models.dir/setDataWaPT.cpp.o: ../src/models/setDataWaPT.cpp
+src/models/CMakeFiles/Models.dir/setDataWaPT.cpp.o: ../src/models/setDataWaPT.hpp
 

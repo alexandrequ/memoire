@@ -42,6 +42,8 @@ INCLUDES
 #include "initialization/FGTrim.h"
 #include "FGFDMExec.h"
 #include "input_output/FGXMLFileRead.h"
+#include "models/gridWAPT.hpp"
+#include "models/setDataWAPT.hpp"
 
 #if !defined(__GNUC__) && !defined(sgi) && !defined(_MSC_VER)
 #  include <time>
@@ -192,7 +194,7 @@ CLASS DOCUMENTATION
  * formally known as JSBSim-ML (JSBSim Markup Language).
  *
  * JSBSim (www.jsbsim.org) was created initially for the open source FlightGear
- * flight simulator (www.flightgear.org). JSBSim maintains the ability to run 
+ * flight simulator (www.flightgear.org). JSBSim maintains the ability to run
  * as a standalone executable in soft real-time, or batch mode. This is useful
  * for running tests or sets of tests automatically using the internal scripting
  * capability.
@@ -216,7 +218,7 @@ CLASS DOCUMENTATION
  * basic theoretical aero knowledge.
  *
  * One of the more unique features of JSBSim is its method of modeling aircraft
- * systems such as a flight control system, autopilot, electrical, etc. 
+ * systems such as a flight control system, autopilot, electrical, etc.
  * These are modeled by assembling strings of components that represent filters,
  * switches, summers, gains, sensors, and so on.
  *
@@ -313,7 +315,7 @@ int real_main(int argc, char* argv[])
   LogDirectiveName.clear();
   bool result = false, success;
   bool was_paused = false;
-  
+
   double frame_duration;
 
   double new_five_second_value = 0.0;
@@ -339,8 +341,20 @@ int real_main(int argc, char* argv[])
     exit(-1);
   }
 
+
+
+// Start : Modifié par ALEX
+
+/*
+int num[4] = {30,100,100,100};
+MyGrid data(num);
+setDataWaPT(&data);
+
+*/
+// End : Modifié par ALEX
+
   // *** SET UP JSBSIM *** //
-  FDMExec = new JSBSim::FGFDMExec();
+  FDMExec = new JSBSim::FGFDMExec();   // Alex : Ici on va ajouter l'initialisation de setdata
   FDMExec->SetRootDir(RootDir);
   FDMExec->SetAircraftPath(SGPath("aircraft"));
   FDMExec->SetEnginePath(SGPath("engine"));
@@ -458,7 +472,7 @@ int real_main(int argc, char* argv[])
 
   // Dump the simulation state (position, orientation, etc.)
   FDMExec->GetPropagate()->DumpState();
-  
+
   // Perform trim if requested via the initialization file
   JSBSim::TrimMode icTrimRequested = (JSBSim::TrimMode)FDMExec->GetIC()->TrimRequested();
   if (icTrimRequested != JSBSim::TrimMode::tNone) {
@@ -475,7 +489,7 @@ int real_main(int argc, char* argv[])
       exit(1);
     }
   }
-  
+
   cout << endl << JSBSim::FGFDMExec::fggreen << JSBSim::FGFDMExec::highint
        << "---- JSBSim Execution beginning ... --------------------------------------------"
        << JSBSim::FGFDMExec::reset << endl << endl;
@@ -495,18 +509,18 @@ int real_main(int argc, char* argv[])
   if (realtime) sleep_nseconds = (long)(frame_duration*1e9);
   else          sleep_nseconds = (sleep_period )*1e9;           // 0.01 seconds
 
-  tzset(); 
+  tzset();
   current_seconds = initial_seconds = getcurrentseconds();
 
   // *** CYCLIC EXECUTION LOOP, AND MESSAGE READING *** //
   while (result && FDMExec->GetSimTime() <= end_time) {
 
     FDMExec->ProcessMessage(); // Process messages, if any.
-    
+
     // Check if increment then hold is on and take appropriate actions if it is
     // Iterate is not supported in realtime - only in batch and playnice modes
     FDMExec->CheckIncrementalHold();
-    
+
     // if running realtime, throttle the execution, else just run flat-out fast
     // unless "playing nice", in which case sleep for a while (0.01 seconds) each frame.
     // If suspended, then don't increment cumulative realtime "stopwatch".
@@ -703,7 +717,7 @@ bool options(int count, char **arg)
 
       XMLFile xmlFile;
       SGPath path = SGPath::fromLocal8Bit(keyword.c_str());
-      
+
       if (xmlFile.IsScriptFile(path)) ScriptName = path;
       else if (xmlFile.IsLogDirectiveFile(path))  LogDirectiveName.push_back(path);
       else if (xmlFile.IsAircraftFile(SGPath("aircraft")/keyword/keyword)) AircraftName = keyword;

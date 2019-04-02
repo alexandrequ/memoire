@@ -62,6 +62,7 @@
 /Users/alexandrequintart/soft/jsbsim_lib/jsbsim_modif/include/JSBSim/models/FGAccelerations.h
 /Users/alexandrequintart/soft/jsbsim_lib/jsbsim_modif/include/JSBSim/models/FGFCSChannel.h
 /Users/alexandrequintart/soft/jsbsim_lib/jsbsim_modif/include/JSBSim/models/gridWAPT.hpp
+/Users/alexandrequintart/soft/jsbsim_lib/jsbsim_modif/include/JSBSim/models/setDataWaPT.hpp
 /Users/alexandrequintart/soft/jsbsim_lib/jsbsim_modif/include/JSBSim/models/atmosphere/FGMSIS.h
 /Users/alexandrequintart/soft/jsbsim_lib/jsbsim_modif/include/JSBSim/models/atmosphere/FGMars.h
 /Users/alexandrequintart/soft/jsbsim_lib/jsbsim_modif/include/JSBSim/models/atmosphere/FGStandardAtmosphere.h

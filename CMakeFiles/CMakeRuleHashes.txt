@@ -1,5 +1,12 @@
 # Hashes of file build rules.
 e5f8831b3a4ab94ca2b2363c96ad2576 CMakeFiles/dist
+32395735758386fb061da4ffd07b81f7 CMakeFiles/doc
 f222c56bbba7c4d269fa60c3ae9824ab python/CMakeFiles/PythonJSBSim
-fbdb548835ae4e3b11cc795d9ccda359 python/jsbsim.cxx
+f87b3276f92e9f6c7ff925770a6c597b python/jsbsim.cxx
 7b3c101455067f86dc907d5818addd4c tests/jsbsim.cpython-37m-darwin.so
+878ff212c312946716b35f56a5a23f57 tests/unit_tests/FGColumnVector3Test.cpp
+ddbf37509e299c3dd1abb65c263482ad tests/unit_tests/FGJSBBaseTest.cpp
+48324a9b4fd26fa7251bc48cdde85adb tests/unit_tests/FGLocationTest.cpp
+e1856ca9084bb51848e04d104a9fc6dd tests/unit_tests/FGMatrix33Test.cpp
+ea8358302684031198bc33c162d1c66c tests/unit_tests/FGQuaternionTest.cpp
+6c87d553011d4aa322ff45b93bff234e tests/unit_tests/StringUtilitiesTest.cpp

@@ -37,6 +37,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/Users/alexandrequintart/soft/jsbsim/src/cmake_install.cmake")
   include("/Users/alexandrequintart/soft/jsbsim/tests/cmake_install.cmake")
   include("/Users/alexandrequintart/soft/jsbsim/python/cmake_install.cmake")
+  include("/Users/alexandrequintart/soft/jsbsim/tests/unit_tests/cmake_install.cmake")
   include("/Users/alexandrequintart/soft/jsbsim/utils/cmake_install.cmake")
 
 endif()

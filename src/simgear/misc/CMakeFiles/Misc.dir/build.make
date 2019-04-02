@@ -59,28 +59,28 @@ include src/simgear/misc/CMakeFiles/Misc.dir/flags.make
 
 src/simgear/misc/CMakeFiles/Misc.dir/sg_path.cxx.o: src/simgear/misc/CMakeFiles/Misc.dir/flags.make
 src/simgear/misc/CMakeFiles/Misc.dir/sg_path.cxx.o: src/simgear/misc/sg_path.cxx
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/simgear/misc/CMakeFiles/Misc.dir/sg_path.cxx.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/simgear/misc/CMakeFiles/Misc.dir/sg_path.cxx.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/simgear/misc && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Misc.dir/sg_path.cxx.o -c /Users/alexandrequintart/soft/jsbsim/src/simgear/misc/sg_path.cxx
 
 src/simgear/misc/CMakeFiles/Misc.dir/sg_path.cxx.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/Misc.dir/sg_path.cxx.i"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Misc.dir/sg_path.cxx.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/simgear/misc && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/simgear/misc/sg_path.cxx > CMakeFiles/Misc.dir/sg_path.cxx.i
 
 src/simgear/misc/CMakeFiles/Misc.dir/sg_path.cxx.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/Misc.dir/sg_path.cxx.s"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Misc.dir/sg_path.cxx.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/simgear/misc && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/simgear/misc/sg_path.cxx -o CMakeFiles/Misc.dir/sg_path.cxx.s
 
 src/simgear/misc/CMakeFiles/Misc.dir/strutils.cxx.o: src/simgear/misc/CMakeFiles/Misc.dir/flags.make
 src/simgear/misc/CMakeFiles/Misc.dir/strutils.cxx.o: src/simgear/misc/strutils.cxx
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/simgear/misc/CMakeFiles/Misc.dir/strutils.cxx.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/simgear/misc/CMakeFiles/Misc.dir/strutils.cxx.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/simgear/misc && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Misc.dir/strutils.cxx.o -c /Users/alexandrequintart/soft/jsbsim/src/simgear/misc/strutils.cxx
 
 src/simgear/misc/CMakeFiles/Misc.dir/strutils.cxx.i: cmake_force
-	@echo "Preprocessing CXX source to CMakeFiles/Misc.dir/strutils.cxx.i"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Misc.dir/strutils.cxx.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/simgear/misc && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/simgear/misc/strutils.cxx > CMakeFiles/Misc.dir/strutils.cxx.i
 
 src/simgear/misc/CMakeFiles/Misc.dir/strutils.cxx.s: cmake_force
-	@echo "Compiling CXX source to assembly CMakeFiles/Misc.dir/strutils.cxx.s"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Misc.dir/strutils.cxx.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/simgear/misc && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/simgear/misc/strutils.cxx -o CMakeFiles/Misc.dir/strutils.cxx.s
 
 Misc: src/simgear/misc/CMakeFiles/Misc.dir/sg_path.cxx.o
@@ -99,6 +99,6 @@ src/simgear/misc/CMakeFiles/Misc.dir/clean:
 .PHONY : src/simgear/misc/CMakeFiles/Misc.dir/clean
 
 src/simgear/misc/CMakeFiles/Misc.dir/depend:
-	cd /Users/alexandrequintart/soft/jsbsim && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/src/simgear/misc /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/src/simgear/misc /Users/alexandrequintart/soft/jsbsim/src/simgear/misc/CMakeFiles/Misc.dir/DependInfo.cmake
+	cd /Users/alexandrequintart/soft/jsbsim && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/src/simgear/misc /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/src/simgear/misc /Users/alexandrequintart/soft/jsbsim/src/simgear/misc/CMakeFiles/Misc.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/simgear/misc/CMakeFiles/Misc.dir/depend
 

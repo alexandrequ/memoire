@@ -13,6 +13,10 @@ models/FGOutput.h
 ../src/models/FGOutput.h
 math/FGTemplateFunc.h
 ../src/math/FGTemplateFunc.h
+models/gridWAPT.hpp
+../src/models/gridWAPT.hpp
+models/setDataWAPT.hpp
+../src/models/setDataWAPT.hpp
 
 ../src/FGJSBBase.h
 float.h
@@ -238,6 +242,12 @@ deque
 stdio.h
 -
 
+../src/models/setDataWAPT.hpp
+gridWAPT.hpp
+../src/models/gridWAPT.hpp
+stdio.h
+-
+
 ../src/simgear/compiler.h
 ieeefp.h
 -
@@ -331,8 +341,6 @@ input_output/FGXMLFileRead.h
 /Users/alexandrequintart/soft/jsbsim/src/initialization/input_output/FGXMLFileRead.h
 FGTrim.h
 /Users/alexandrequintart/soft/jsbsim/src/initialization/FGTrim.h
-models/gridWAPT.hpp
-/Users/alexandrequintart/soft/jsbsim/src/initialization/models/gridWAPT.hpp
 
 /Users/alexandrequintart/soft/jsbsim/src/initialization/FGInitialCondition.h
 math/FGLocation.h
