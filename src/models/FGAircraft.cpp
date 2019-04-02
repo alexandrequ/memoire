@@ -338,6 +338,8 @@ namespace JSBSim {
     double dens = Density;
     double surf = WingArea/inter;
     double lambda = b*b/WingArea;
+    double cTip = 0;
+    double cRoot = 0;
     //  orientation = FGQuaternion(phi, theta, psi);
     //const FGMatrix33& _Tl2b  = orientation.GetT();     // local to body frame
     //const FGMatrix33& _Tb2l  = orientation.GetTInv();  // body to local
@@ -353,6 +355,14 @@ namespace JSBSim {
 
     for(int i = 0; i<=interLeft; i++) {
 
+      // Calcule de la surface de chaque morceau d'aile si les cordes sont spécifiés
+        if(cTip != 0 && cRoot != 0){
+          double y = -b/2+i*b/inter;
+          double rapport = cTip/cRoot;
+          double c = 2*WingArea/((1+rapport)*b)*(1-((1-rapport)/b)*abs(y));
+          surf = c*b/inter;
+        }
+
       FGColumnVector3 coordBODY(0, -b/2+i*b/inter, 0);
       FGColumnVector3 coordECEF = Tb2ec*coordBODY;//transform(0, -b/2+i*b/inter, 0);
       double xWing = coordECEF(1);
@@ -363,13 +373,13 @@ namespace JSBSim {
 
       FGColumnVector3 veloECEF(vel.u,vel.v,vel.w);
       FGColumnVector3 velL = Tec2b*veloECEF;
-      double velLocalU = velL(1);
-      double velLocalW = velL(3);
-      double velRoll = sqrt(velLocalU*velLocalU+velLocalW*velLocalW);
 
-      double alphaWind = atan (velLocalW/(velLocalU+Vground));
+double velLocalU = velL(1);
+double velLocalW = velL(3);
+double velRoll = sqrt(velLocalU*velLocalU+velLocalW*velLocalW);
+
+double alphaWind = atan (velLocalW/(velLocalU+Vground));
       double alphaLocal = alpha + alphaWind;
-
       double CL = 2*pi*alphaLocal*lambda/(lambda+2);
       double LiftL = 0.5*dens*(velRoll)*(velRoll)*surf*CL;
       MomentL = MomentL+LiftL*(-b/2+i*b/(2*inter));
@@ -379,6 +389,14 @@ namespace JSBSim {
     double interRight = inter/2; //Nmbre d'interval
     Velocity velRight[inter+1];
     for(int i = 0; i<=interRight; i++) {
+
+      // Calcule de la surface de chaque morceau d'aile si les cordes sont spécifiés
+        if(cTip != 0 && cRoot != 0){
+          double y = -b/2+i*b/inter;
+          double rapport = cTip/cRoot;
+          double c = 2*WingArea/((1+rapport)*b)*(1-((1-rapport)/b)*abs(y));
+          surf = c*b/inter;
+        }
 
       FGColumnVector3 coordBODY(0, -b/2+i*b/inter, 0);
       FGColumnVector3 coordECEF = Tb2ec*coordBODY;//transform(0, -b/2+i*b/inter, 0);
@@ -396,7 +414,6 @@ namespace JSBSim {
 
       double alphaWind = atan (velLocalW/(velLocalU+Vground));
       double alphaLocal = alpha + alphaWind;
-
       double CL = 2*pi*alphaLocal*lambda/(lambda+2);
       double LiftR = 0.5*dens*(velRoll)*(velRoll)*surf*CL;
       MomentR = MomentR+LiftR*(i*b/(2*inter));
@@ -426,7 +443,7 @@ namespace JSBSim {
     double t = FDMExec->GetSimTime();
 
     //int num[4] = {30,100,100,100};
-    //  MyGrid data(num);
+  //  MyGrid data(num);
     //setData(&data); // Pose probleme : Il faut setdata en dehors de la fonction et une seul fois
 
 
@@ -456,12 +473,12 @@ namespace JSBSim {
     static MyGrid data(num);
     static bool initData = 0;
 
-    if(initData == 0)
-    {
-      setDataWaPT(&data);
-      printf("Je m'initialise");
-      initData = 1;
-    }
+if(initData == 0)
+{
+    setDataWaPT(&data);
+    printf("Je m'initialise");
+    initData = 1;
+}
 
     double mz;
     Velocity windvel;
