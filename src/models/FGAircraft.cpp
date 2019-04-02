@@ -40,6 +40,7 @@ INCLUDES
 #include <iostream>
 #include "FGAircraft.h"
 #include "FGAuxiliary.h"
+#include "FGAtmosphere.h"
 #include "initialization/FGInitialCondition.h"
 #include "FGFDMExec.h"
 #include "input_output/FGXMLElement.h"
@@ -275,7 +276,6 @@ namespace JSBSim {
     double phi = GetPhi();
     double psi = GetPsi();
     double theta = GetTheta();
-    double dens = Density;
     double surf = WingArea/inter;
     double lambda = b*b/WingArea;
     double dy = b/inter;
@@ -298,7 +298,10 @@ namespace JSBSim {
 
       Velocity vel = dataInterpolation(&data, t, xWing, yWing, zWing);
 
-      FGColumnVector3 veloECEF(vel.u,vel.v,vel.w);
+      double velu = vel.u*3.28084; // m to fts
+      double velv = vel.v*3.28084; // m to fts
+      double velw = vel.w*3.28084; // m to fts
+      FGColumnVector3 veloECEF(velu,velv,velw);
       FGColumnVector3 velNED = Tec2l*veloECEF;
 
       integu = integu + (oldu + velNED(1))/2 * dy;
@@ -324,20 +327,23 @@ namespace JSBSim {
   {
 
     FGAuxiliary* Auxiliary = FDMExec->GetAuxiliary();
+    FGAtmosphere* Atmosphere = FDMExec->GetAtmosphere();
     double alpha = Auxiliary->Getalpha();
-    double Vground = Auxiliary->GetVground();
+    double Vground = Auxiliary->GetVground()*0.3048;
+    double Density = Atmosphere->GetDensity();
+
     double MomentL;
     double MomentR;
     const double pi = M_PI;
     int inter = 20;
-    double b = WingSpan;//in.Wingspan; //FDMExec->Aircraft->GetWingSpan(); // Envergure de l'aile
+    double b = WingSpan*0.3048;//in.Wingspan; //FDMExec->Aircraft->GetWingSpan(); // Envergure de l'aile
     // double surface = FDMExec->Aircraft->GetWingArea();
     double phi = GetPhi();
     double psi = GetPsi();
     double theta = GetTheta();
-    double dens = Density;
-    double surf = WingArea/inter;
-    double lambda = b*b/WingArea;
+    double dens = Density*515.378818;
+    double surf = WingArea/inter*0.092903;
+    double lambda = WingSpan*WingSpan/WingArea;
     double cTip = 0;
     double cRoot = 0;
     //  orientation = FGQuaternion(phi, theta, psi);
@@ -377,12 +383,15 @@ namespace JSBSim {
 double velLocalU = velL(1);
 double velLocalW = velL(3);
 double velRoll = sqrt(velLocalU*velLocalU+velLocalW*velLocalW);
+printf("velRoll%f \n",velRoll);
 
 double alphaWind = atan (velLocalW/(velLocalU+Vground));
       double alphaLocal = alpha + alphaWind;
       double CL = 2*pi*alphaLocal*lambda/(lambda+2);
       double LiftL = 0.5*dens*(velRoll)*(velRoll)*surf*CL;
+      printf("dens %f \n",dens);
       MomentL = MomentL+LiftL*(-b/2+i*b/(2*inter));
+      printf("MomentL%f \n",MomentL);
     }
 
     // Right wing
@@ -420,7 +429,7 @@ double alphaWind = atan (velLocalW/(velLocalU+Vground));
     }
 
 
-    double moment = MomentR-MomentL;
+    double moment = (MomentR-MomentL)*0.7375621493; //Nm ->ft*lbf
     return moment;
   }
 
@@ -435,7 +444,7 @@ double alphaWind = atan (velLocalW/(velLocalU+Vground));
 
     // START : Modifié par Alex
     FGColumnVector3 myMoment;
-
+    FGColumnVector3 myPosition;
     FGAuxiliary* Auxiliary = FDMExec->GetAuxiliary();
     FGPropagate* Propagate = FDMExec->GetPropagate();
 
@@ -447,16 +456,10 @@ double alphaWind = atan (velLocalW/(velLocalU+Vground));
     //setData(&data); // Pose probleme : Il faut setdata en dehors de la fonction et une seul fois
 
 
-    double lat = Propagate->GetLatitude();
-    double lon = Propagate->GetLongitude();
-    double alt = Propagate->GetRadius();
-
-
-    double xECEF, yECEF, zECEF;
-    loc pos = latLonAltToEcef(lat, lon, alt); // FAUX
-    xECEF = pos.x;
-    yECEF = pos.y;
-    zECEF = pos.z;
+    myPosition = Propagate->GetLocation();
+    double xECEF = myPosition(eX);
+    double yECEF = myPosition(eY);
+    double zECEF = myPosition(eZ);
 
     //printf("position %f %f %f %f\n",xECEF,yECEF,zECEF,t);
     //int *size = (**data).getsize();
@@ -465,9 +468,9 @@ double alphaWind = atan (velLocalW/(velLocalU+Vground));
     int ny = 100;//size[2];
     int nz = 100;//size[3];
 
-    double xECEF_data_origine = 27312550;
+    double xECEF_data_origine = 20925650;
     double yECEF_data_origine = -40;
-    double zECEF_data_origine = 2000;
+    double zECEF_data_origine = 3335; //1000
 
     int num[4] = {30,100,200,200};
     static MyGrid data(num);
@@ -527,12 +530,16 @@ if(initData == 0)
 
     // END : Modifié par Alex
     RunPostFunctions();
+    if(mz != 0)
+    {
     printf("time %f \n",t);
     printf("xECEF,yECEF,zECEF %f %f %f \n",xECEF,yECEF,zECEF);
     printf("moment %f \n",mz);
     double printvel = (double) windvel.u;
     printf("velocity %f \n",printvel);
+  }
     return false;
+
   }
 
   // END : Modifié par Alex

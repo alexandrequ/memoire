@@ -84,6 +84,7 @@ src/models/CMakeFiles/Models.dir/FGAircraft.cpp.o
  ../src/simgear/structure/SGSharedPtr.hxx
  /Users/alexandrequintart/soft/jsbsim/src/models/FGAircraft.cpp
  /Users/alexandrequintart/soft/jsbsim/src/models/FGAircraft.h
+ /Users/alexandrequintart/soft/jsbsim/src/models/FGAtmosphere.h
  /Users/alexandrequintart/soft/jsbsim/src/models/FGAuxiliary.h
  /Users/alexandrequintart/soft/jsbsim/src/models/FGModel.h
  /Users/alexandrequintart/soft/jsbsim/src/models/gridWAPT.hpp

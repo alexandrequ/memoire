@@ -22,7 +22,7 @@ void setDataWaPT(MyGrid *data) {
     for(int j = 0; j<ny; j++){
       for(int k = 0; k<nz; k++){
         for(int l = 0; l<3; l++){
-          double val = rand() % 1000 + 1;
+          double val = rand() % 30 + 1; //m/s
           (*data).set(t,i,j,k,l, val);
 
           }

@@ -83,6 +83,7 @@ src/models/CMakeFiles/Models.dir/FGAircraft.cpp.o: ../src/simgear/structure/SGRe
 src/models/CMakeFiles/Models.dir/FGAircraft.cpp.o: ../src/simgear/structure/SGSharedPtr.hxx
 src/models/CMakeFiles/Models.dir/FGAircraft.cpp.o: ../src/models/FGAircraft.cpp
 src/models/CMakeFiles/Models.dir/FGAircraft.cpp.o: ../src/models/FGAircraft.h
+src/models/CMakeFiles/Models.dir/FGAircraft.cpp.o: ../src/models/FGAtmosphere.h
 src/models/CMakeFiles/Models.dir/FGAircraft.cpp.o: ../src/models/FGAuxiliary.h
 src/models/CMakeFiles/Models.dir/FGAircraft.cpp.o: ../src/models/FGModel.h
 src/models/CMakeFiles/Models.dir/FGAircraft.cpp.o: ../src/models/gridWAPT.hpp

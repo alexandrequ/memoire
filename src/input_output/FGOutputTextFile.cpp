@@ -165,7 +165,7 @@ bool FGOutputTextFile::OpenFile(void)
     outstream << "L_{Gear} (ft-lbs)" + delimeter + "M_{Gear} (ft-lbs)" + delimeter + "N_{Gear} (ft-lbs)" + delimeter;
     outstream << "L_{ext} (ft-lbs)" + delimeter + "M_{ext} (ft-lbs)" + delimeter + "N_{ext} (ft-lbs)" + delimeter;
     outstream << "L_{Buoyant} (ft-lbs)" + delimeter + "M_{Buoyant} (ft-lbs)" + delimeter + "N_{Buoyant} (ft-lbs)" + delimeter;
-    outstream << "L_{Total} (ft-lbs)" + delimeter + "M_{Total} (ft-lbs)" + delimeter + "N_{Total} (ft-lbs)";
+    outstream << "L_Total_ft_lbs" + delimeter + "M_Total_ft_lbs" + delimeter + "N_Total_ft_lbs";
   }
   if (SubSystems & ssAtmosphere) {
     outstream << delimeter;
