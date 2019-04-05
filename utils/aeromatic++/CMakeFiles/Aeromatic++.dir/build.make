@@ -59,236 +59,236 @@ include utils/aeromatic++/CMakeFiles/Aeromatic++.dir/flags.make
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/types.cpp.o: utils/aeromatic++/CMakeFiles/Aeromatic++.dir/flags.make
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/types.cpp.o: utils/aeromatic++/types.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object utils/aeromatic++/CMakeFiles/Aeromatic++.dir/types.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object utils/aeromatic++/CMakeFiles/Aeromatic++.dir/types.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Aeromatic++.dir/types.cpp.o -c /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/types.cpp
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/types.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Aeromatic++.dir/types.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/Aeromatic++.dir/types.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/types.cpp > CMakeFiles/Aeromatic++.dir/types.cpp.i
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/types.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Aeromatic++.dir/types.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/Aeromatic++.dir/types.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/types.cpp -o CMakeFiles/Aeromatic++.dir/types.cpp.s
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Aircraft.cpp.o: utils/aeromatic++/CMakeFiles/Aeromatic++.dir/flags.make
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Aircraft.cpp.o: utils/aeromatic++/Aircraft.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Aircraft.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Aircraft.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Aeromatic++.dir/Aircraft.cpp.o -c /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/Aircraft.cpp
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Aircraft.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Aeromatic++.dir/Aircraft.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/Aeromatic++.dir/Aircraft.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/Aircraft.cpp > CMakeFiles/Aeromatic++.dir/Aircraft.cpp.i
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Aircraft.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Aeromatic++.dir/Aircraft.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/Aeromatic++.dir/Aircraft.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/Aircraft.cpp -o CMakeFiles/Aeromatic++.dir/Aircraft.cpp.s
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/AeroLightGA.cpp.o: utils/aeromatic++/CMakeFiles/Aeromatic++.dir/flags.make
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/AeroLightGA.cpp.o: utils/aeromatic++/AeroLightGA.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object utils/aeromatic++/CMakeFiles/Aeromatic++.dir/AeroLightGA.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object utils/aeromatic++/CMakeFiles/Aeromatic++.dir/AeroLightGA.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Aeromatic++.dir/AeroLightGA.cpp.o -c /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/AeroLightGA.cpp
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/AeroLightGA.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Aeromatic++.dir/AeroLightGA.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/Aeromatic++.dir/AeroLightGA.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/AeroLightGA.cpp > CMakeFiles/Aeromatic++.dir/AeroLightGA.cpp.i
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/AeroLightGA.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Aeromatic++.dir/AeroLightGA.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/Aeromatic++.dir/AeroLightGA.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/AeroLightGA.cpp -o CMakeFiles/Aeromatic++.dir/AeroLightGA.cpp.s
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/AeroFighterJet.cpp.o: utils/aeromatic++/CMakeFiles/Aeromatic++.dir/flags.make
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/AeroFighterJet.cpp.o: utils/aeromatic++/AeroFighterJet.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object utils/aeromatic++/CMakeFiles/Aeromatic++.dir/AeroFighterJet.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object utils/aeromatic++/CMakeFiles/Aeromatic++.dir/AeroFighterJet.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Aeromatic++.dir/AeroFighterJet.cpp.o -c /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/AeroFighterJet.cpp
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/AeroFighterJet.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Aeromatic++.dir/AeroFighterJet.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/Aeromatic++.dir/AeroFighterJet.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/AeroFighterJet.cpp > CMakeFiles/Aeromatic++.dir/AeroFighterJet.cpp.i
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/AeroFighterJet.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Aeromatic++.dir/AeroFighterJet.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/Aeromatic++.dir/AeroFighterJet.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/AeroFighterJet.cpp -o CMakeFiles/Aeromatic++.dir/AeroFighterJet.cpp.s
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/AeroHighPerformance.cpp.o: utils/aeromatic++/CMakeFiles/Aeromatic++.dir/flags.make
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/AeroHighPerformance.cpp.o: utils/aeromatic++/AeroHighPerformance.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object utils/aeromatic++/CMakeFiles/Aeromatic++.dir/AeroHighPerformance.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object utils/aeromatic++/CMakeFiles/Aeromatic++.dir/AeroHighPerformance.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Aeromatic++.dir/AeroHighPerformance.cpp.o -c /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/AeroHighPerformance.cpp
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/AeroHighPerformance.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Aeromatic++.dir/AeroHighPerformance.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/Aeromatic++.dir/AeroHighPerformance.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/AeroHighPerformance.cpp > CMakeFiles/Aeromatic++.dir/AeroHighPerformance.cpp.i
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/AeroHighPerformance.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Aeromatic++.dir/AeroHighPerformance.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/Aeromatic++.dir/AeroHighPerformance.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/AeroHighPerformance.cpp -o CMakeFiles/Aeromatic++.dir/AeroHighPerformance.cpp.s
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/AeroJetTransport.cpp.o: utils/aeromatic++/CMakeFiles/Aeromatic++.dir/flags.make
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/AeroJetTransport.cpp.o: utils/aeromatic++/AeroJetTransport.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object utils/aeromatic++/CMakeFiles/Aeromatic++.dir/AeroJetTransport.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object utils/aeromatic++/CMakeFiles/Aeromatic++.dir/AeroJetTransport.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Aeromatic++.dir/AeroJetTransport.cpp.o -c /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/AeroJetTransport.cpp
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/AeroJetTransport.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Aeromatic++.dir/AeroJetTransport.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/Aeromatic++.dir/AeroJetTransport.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/AeroJetTransport.cpp > CMakeFiles/Aeromatic++.dir/AeroJetTransport.cpp.i
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/AeroJetTransport.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Aeromatic++.dir/AeroJetTransport.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/Aeromatic++.dir/AeroJetTransport.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/AeroJetTransport.cpp -o CMakeFiles/Aeromatic++.dir/AeroJetTransport.cpp.s
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/AeroPropTransport.cpp.o: utils/aeromatic++/CMakeFiles/Aeromatic++.dir/flags.make
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/AeroPropTransport.cpp.o: utils/aeromatic++/AeroPropTransport.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object utils/aeromatic++/CMakeFiles/Aeromatic++.dir/AeroPropTransport.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object utils/aeromatic++/CMakeFiles/Aeromatic++.dir/AeroPropTransport.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Aeromatic++.dir/AeroPropTransport.cpp.o -c /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/AeroPropTransport.cpp
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/AeroPropTransport.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Aeromatic++.dir/AeroPropTransport.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/Aeromatic++.dir/AeroPropTransport.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/AeroPropTransport.cpp > CMakeFiles/Aeromatic++.dir/AeroPropTransport.cpp.i
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/AeroPropTransport.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Aeromatic++.dir/AeroPropTransport.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/Aeromatic++.dir/AeroPropTransport.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/AeroPropTransport.cpp -o CMakeFiles/Aeromatic++.dir/AeroPropTransport.cpp.s
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Controls.cpp.o: utils/aeromatic++/CMakeFiles/Aeromatic++.dir/flags.make
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Controls.cpp.o: utils/aeromatic++/Systems/Controls.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Controls.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Controls.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Aeromatic++.dir/Systems/Controls.cpp.o -c /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/Systems/Controls.cpp
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Controls.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Aeromatic++.dir/Systems/Controls.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/Aeromatic++.dir/Systems/Controls.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/Systems/Controls.cpp > CMakeFiles/Aeromatic++.dir/Systems/Controls.cpp.i
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Controls.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Aeromatic++.dir/Systems/Controls.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/Aeromatic++.dir/Systems/Controls.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/Systems/Controls.cpp -o CMakeFiles/Aeromatic++.dir/Systems/Controls.cpp.s
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Flaps.cpp.o: utils/aeromatic++/CMakeFiles/Aeromatic++.dir/flags.make
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Flaps.cpp.o: utils/aeromatic++/Systems/Flaps.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Flaps.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Flaps.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Aeromatic++.dir/Systems/Flaps.cpp.o -c /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/Systems/Flaps.cpp
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Flaps.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Aeromatic++.dir/Systems/Flaps.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/Aeromatic++.dir/Systems/Flaps.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/Systems/Flaps.cpp > CMakeFiles/Aeromatic++.dir/Systems/Flaps.cpp.i
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Flaps.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Aeromatic++.dir/Systems/Flaps.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/Aeromatic++.dir/Systems/Flaps.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/Systems/Flaps.cpp -o CMakeFiles/Aeromatic++.dir/Systems/Flaps.cpp.s
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/LandingGear.cpp.o: utils/aeromatic++/CMakeFiles/Aeromatic++.dir/flags.make
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/LandingGear.cpp.o: utils/aeromatic++/Systems/LandingGear.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/LandingGear.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/LandingGear.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Aeromatic++.dir/Systems/LandingGear.cpp.o -c /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/Systems/LandingGear.cpp
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/LandingGear.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Aeromatic++.dir/Systems/LandingGear.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/Aeromatic++.dir/Systems/LandingGear.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/Systems/LandingGear.cpp > CMakeFiles/Aeromatic++.dir/Systems/LandingGear.cpp.i
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/LandingGear.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Aeromatic++.dir/Systems/LandingGear.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/Aeromatic++.dir/Systems/LandingGear.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/Systems/LandingGear.cpp -o CMakeFiles/Aeromatic++.dir/Systems/LandingGear.cpp.s
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Propulsion.cpp.o: utils/aeromatic++/CMakeFiles/Aeromatic++.dir/flags.make
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Propulsion.cpp.o: utils/aeromatic++/Systems/Propulsion.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Propulsion.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Propulsion.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Aeromatic++.dir/Systems/Propulsion.cpp.o -c /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/Systems/Propulsion.cpp
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Propulsion.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Aeromatic++.dir/Systems/Propulsion.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/Aeromatic++.dir/Systems/Propulsion.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/Systems/Propulsion.cpp > CMakeFiles/Aeromatic++.dir/Systems/Propulsion.cpp.i
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Propulsion.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Aeromatic++.dir/Systems/Propulsion.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/Aeromatic++.dir/Systems/Propulsion.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/Systems/Propulsion.cpp -o CMakeFiles/Aeromatic++.dir/Systems/Propulsion.cpp.s
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Speedbrake.cpp.o: utils/aeromatic++/CMakeFiles/Aeromatic++.dir/flags.make
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Speedbrake.cpp.o: utils/aeromatic++/Systems/Speedbrake.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Speedbrake.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Speedbrake.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Aeromatic++.dir/Systems/Speedbrake.cpp.o -c /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/Systems/Speedbrake.cpp
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Speedbrake.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Aeromatic++.dir/Systems/Speedbrake.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/Aeromatic++.dir/Systems/Speedbrake.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/Systems/Speedbrake.cpp > CMakeFiles/Aeromatic++.dir/Systems/Speedbrake.cpp.i
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Speedbrake.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Aeromatic++.dir/Systems/Speedbrake.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/Aeromatic++.dir/Systems/Speedbrake.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/Systems/Speedbrake.cpp -o CMakeFiles/Aeromatic++.dir/Systems/Speedbrake.cpp.s
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Chute.cpp.o: utils/aeromatic++/CMakeFiles/Aeromatic++.dir/flags.make
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Chute.cpp.o: utils/aeromatic++/Systems/Chute.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Chute.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Chute.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Aeromatic++.dir/Systems/Chute.cpp.o -c /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/Systems/Chute.cpp
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Chute.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Aeromatic++.dir/Systems/Chute.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/Aeromatic++.dir/Systems/Chute.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/Systems/Chute.cpp > CMakeFiles/Aeromatic++.dir/Systems/Chute.cpp.i
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Chute.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Aeromatic++.dir/Systems/Chute.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/Aeromatic++.dir/Systems/Chute.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/Systems/Chute.cpp -o CMakeFiles/Aeromatic++.dir/Systems/Chute.cpp.s
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/ArrestorHook.cpp.o: utils/aeromatic++/CMakeFiles/Aeromatic++.dir/flags.make
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/ArrestorHook.cpp.o: utils/aeromatic++/Systems/ArrestorHook.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/ArrestorHook.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/ArrestorHook.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Aeromatic++.dir/Systems/ArrestorHook.cpp.o -c /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/Systems/ArrestorHook.cpp
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/ArrestorHook.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Aeromatic++.dir/Systems/ArrestorHook.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/Aeromatic++.dir/Systems/ArrestorHook.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/Systems/ArrestorHook.cpp > CMakeFiles/Aeromatic++.dir/Systems/ArrestorHook.cpp.i
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/ArrestorHook.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Aeromatic++.dir/Systems/ArrestorHook.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/Aeromatic++.dir/Systems/ArrestorHook.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/Systems/ArrestorHook.cpp -o CMakeFiles/Aeromatic++.dir/Systems/ArrestorHook.cpp.s
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Spoilers.cpp.o: utils/aeromatic++/CMakeFiles/Aeromatic++.dir/flags.make
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Spoilers.cpp.o: utils/aeromatic++/Systems/Spoilers.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Spoilers.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Spoilers.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Aeromatic++.dir/Systems/Spoilers.cpp.o -c /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/Systems/Spoilers.cpp
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Spoilers.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Aeromatic++.dir/Systems/Spoilers.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/Aeromatic++.dir/Systems/Spoilers.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/Systems/Spoilers.cpp > CMakeFiles/Aeromatic++.dir/Systems/Spoilers.cpp.i
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Spoilers.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Aeromatic++.dir/Systems/Spoilers.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/Aeromatic++.dir/Systems/Spoilers.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/Systems/Spoilers.cpp -o CMakeFiles/Aeromatic++.dir/Systems/Spoilers.cpp.s
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Thruster.cpp.o: utils/aeromatic++/CMakeFiles/Aeromatic++.dir/flags.make
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Thruster.cpp.o: utils/aeromatic++/Systems/Thruster.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Thruster.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Thruster.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Aeromatic++.dir/Systems/Thruster.cpp.o -c /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/Systems/Thruster.cpp
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Thruster.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Aeromatic++.dir/Systems/Thruster.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/Aeromatic++.dir/Systems/Thruster.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/Systems/Thruster.cpp > CMakeFiles/Aeromatic++.dir/Systems/Thruster.cpp.i
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Thruster.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Aeromatic++.dir/Systems/Thruster.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/Aeromatic++.dir/Systems/Thruster.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/Systems/Thruster.cpp -o CMakeFiles/Aeromatic++.dir/Systems/Thruster.cpp.s
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/ThrustReverse.cpp.o: utils/aeromatic++/CMakeFiles/Aeromatic++.dir/flags.make
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/ThrustReverse.cpp.o: utils/aeromatic++/Systems/ThrustReverse.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/ThrustReverse.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/ThrustReverse.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Aeromatic++.dir/Systems/ThrustReverse.cpp.o -c /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/Systems/ThrustReverse.cpp
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/ThrustReverse.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Aeromatic++.dir/Systems/ThrustReverse.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/Aeromatic++.dir/Systems/ThrustReverse.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/Systems/ThrustReverse.cpp > CMakeFiles/Aeromatic++.dir/Systems/ThrustReverse.cpp.i
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/ThrustReverse.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Aeromatic++.dir/Systems/ThrustReverse.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/Aeromatic++.dir/Systems/ThrustReverse.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/Systems/ThrustReverse.cpp -o CMakeFiles/Aeromatic++.dir/Systems/ThrustReverse.cpp.s
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Catapult.cpp.o: utils/aeromatic++/CMakeFiles/Aeromatic++.dir/flags.make
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Catapult.cpp.o: utils/aeromatic++/Systems/Catapult.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Catapult.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Catapult.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Aeromatic++.dir/Systems/Catapult.cpp.o -c /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/Systems/Catapult.cpp
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Catapult.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Aeromatic++.dir/Systems/Catapult.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/Aeromatic++.dir/Systems/Catapult.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/Systems/Catapult.cpp > CMakeFiles/Aeromatic++.dir/Systems/Catapult.cpp.i
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Catapult.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Aeromatic++.dir/Systems/Catapult.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/Aeromatic++.dir/Systems/Catapult.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/Systems/Catapult.cpp -o CMakeFiles/Aeromatic++.dir/Systems/Catapult.cpp.s
 
 # Object files for target Aeromatic++
@@ -335,7 +335,7 @@ utils/aeromatic++/libAeromatic++.a: utils/aeromatic++/CMakeFiles/Aeromatic++.dir
 utils/aeromatic++/libAeromatic++.a: utils/aeromatic++/CMakeFiles/Aeromatic++.dir/Systems/Catapult.cpp.o
 utils/aeromatic++/libAeromatic++.a: utils/aeromatic++/CMakeFiles/Aeromatic++.dir/build.make
 utils/aeromatic++/libAeromatic++.a: utils/aeromatic++/CMakeFiles/Aeromatic++.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX static library libAeromatic++.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX static library libAeromatic++.a"
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && $(CMAKE_COMMAND) -P CMakeFiles/Aeromatic++.dir/cmake_clean_target.cmake
 	cd /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Aeromatic++.dir/link.txt --verbose=$(VERBOSE)
 
@@ -349,6 +349,6 @@ utils/aeromatic++/CMakeFiles/Aeromatic++.dir/clean:
 .PHONY : utils/aeromatic++/CMakeFiles/Aeromatic++.dir/clean
 
 utils/aeromatic++/CMakeFiles/Aeromatic++.dir/depend:
-	cd /Users/alexandrequintart/soft/jsbsim && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/CMakeFiles/Aeromatic++.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/alexandrequintart/soft/jsbsim && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++ /Users/alexandrequintart/soft/jsbsim/utils/aeromatic++/CMakeFiles/Aeromatic++.dir/DependInfo.cmake
 .PHONY : utils/aeromatic++/CMakeFiles/Aeromatic++.dir/depend
 

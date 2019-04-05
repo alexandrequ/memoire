@@ -44,6 +44,8 @@ INCLUDES
 #include "models/FGPropagate.h"
 #include "models/FGOutput.h"
 #include "math/FGTemplateFunc.h"
+#include "models/gridWAPT.hpp"
+#include "models/setDataWAPT.hpp"
 
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 FORWARD DECLARATIONS
@@ -191,7 +193,7 @@ class FGFDMExec : public FGJSBBase
       mated = true;
       internal = false;
     }
-    
+
     void Run(void) {exec->Run();}
     void AssignState(FGPropagate* source_prop) {
       exec->GetPropagate()->SetVState(source_prop->GetVState());
@@ -296,7 +298,7 @@ public:
                     the script file itself.
       @param initfile The initialization file that will override the initialization file
                       specified in the script file. If no file name is given on the command line,
-                      the file specified in the script will be used. If an initialization file 
+                      the file specified in the script will be used. If an initialization file
                       is not given in either place, an error will result.
       @return true if successfully loads; false otherwise. */
   bool LoadScript(const SGPath& Script, double deltaT=0.0,
@@ -318,7 +320,7 @@ public:
     AircraftPath = GetFullPath(path);
     return true;
   }
-  
+
   /** Sets the path to the systems config file directories.
       @param path path to the directory under which systems config
       files are kept, for instance "systems"  */
@@ -326,7 +328,7 @@ public:
     SystemsPath = GetFullPath(path);
     return true;
   }
-  
+
   /// @name Top-level executive State and Model retrieval mechanism
   ///@{
   /// Returns the FGAtmosphere pointer.

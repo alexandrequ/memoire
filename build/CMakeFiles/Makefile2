@@ -203,10 +203,6 @@ clean: src/CMakeFiles/JSBSim.dir/clean
 # Target rules for target src/CMakeFiles/libJSBSim.dir
 
 # All Build rule for target.
-src/CMakeFiles/libJSBSim.dir/all: src/initialization/CMakeFiles/Init.dir/all
-src/CMakeFiles/libJSBSim.dir/all: src/input_output/CMakeFiles/InputOutput.dir/all
-src/CMakeFiles/libJSBSim.dir/all: src/math/CMakeFiles/Math.dir/all
-src/CMakeFiles/libJSBSim.dir/all: src/models/CMakeFiles/Models.dir/all
 src/CMakeFiles/libJSBSim.dir/all: src/models/atmosphere/CMakeFiles/Atmosphere.dir/all
 src/CMakeFiles/libJSBSim.dir/all: src/models/propulsion/CMakeFiles/Propulsion.dir/all
 src/CMakeFiles/libJSBSim.dir/all: src/models/flight_control/CMakeFiles/FlightControl.dir/all
@@ -215,6 +211,10 @@ src/CMakeFiles/libJSBSim.dir/all: src/simgear/magvar/CMakeFiles/Magvar.dir/all
 src/CMakeFiles/libJSBSim.dir/all: src/simgear/misc/CMakeFiles/Misc.dir/all
 src/CMakeFiles/libJSBSim.dir/all: src/simgear/xml/CMakeFiles/Xml.dir/all
 src/CMakeFiles/libJSBSim.dir/all: src/simgear/io/iostreams/CMakeFiles/IOStreams.dir/all
+src/CMakeFiles/libJSBSim.dir/all: src/initialization/CMakeFiles/Init.dir/all
+src/CMakeFiles/libJSBSim.dir/all: src/input_output/CMakeFiles/InputOutput.dir/all
+src/CMakeFiles/libJSBSim.dir/all: src/math/CMakeFiles/Math.dir/all
+src/CMakeFiles/libJSBSim.dir/all: src/models/CMakeFiles/Models.dir/all
 	$(MAKE) -f src/CMakeFiles/libJSBSim.dir/build.make src/CMakeFiles/libJSBSim.dir/depend
 	$(MAKE) -f src/CMakeFiles/libJSBSim.dir/build.make src/CMakeFiles/libJSBSim.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/build/CMakeFiles --progress-num=98,99,100 "Built target libJSBSim"

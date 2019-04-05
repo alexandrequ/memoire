@@ -40,12 +40,14 @@ INCLUDES
 #include <iostream>
 #include "FGAircraft.h"
 #include "FGAuxiliary.h"
+#include "FGAtmosphere.h"
 #include "initialization/FGInitialCondition.h"
 #include "FGFDMExec.h"
 #include "input_output/FGXMLElement.h"
 #define _USE_MATH_DEFINES
 #include <math.h>
 #include "gridWAPT.hpp"
+#include "setDataWAPT.hpp"
 #include <iostream>
 using namespace std;
 
@@ -95,37 +97,6 @@ namespace JSBSim {
 
 
   // Modifié par Alex
-
-
-  ////////////////////////
-  ///  Structure Data  ///
-  ////////////////////////
-
-
-
-  //Remplissage
-  void FGAircraft::setData(MyGrid *data) {
-
-    int *size = (*data).getsize();
-    int nt = size[0];
-    int nx = size[1];
-    int ny = size[2];
-    int nz = size[3];
-
-    for(int t = 0; t<nt; t++){
-      for(int i = 0; i<nx; i++){
-        for(int j = 0; j<ny; j++){
-          for(int k = 0; k<nz; k++){
-            for(int l = 0; l<3; l++){
-              double val = rand() % 100 + 1;
-              (*data).set(t,i,j,k,l, val);
-
-            }
-          }
-        }
-      }
-    }
-  };
 
   ///////////////////////////
   ///  Aircraft position  ///
@@ -305,9 +276,8 @@ namespace JSBSim {
     double phi = GetPhi();
     double psi = GetPsi();
     double theta = GetTheta();
-    double dens = Density;
-    double surf = in.Wingarea/inter;
-    double lambda = b*b/in.Wingarea;
+    double surf = WingArea/inter;
+    double lambda = b*b/WingArea;
     double dy = b/inter;
     double integv = 0, integu =0, integw =0 ,oldu =0,oldv=0,oldw=0;
 
@@ -328,7 +298,11 @@ namespace JSBSim {
 
       Velocity vel = dataInterpolation(&data, t, xWing, yWing, zWing);
 
-      FGColumnVector3 veloECEF(vel.u,vel.v,vel.w);
+      double velu = vel.u*3.28084; // m to fts
+      double velv = vel.v*3.28084; // m to fts
+      double velw = vel.w*3.28084; // m to fts
+      FGColumnVector3 veloECEF(velu,velv,velw);
+      printf("vitesseECEF %f %f %f \n",velu,velv,velw);
       FGColumnVector3 velNED = Tec2l*veloECEF;
 
       integu = integu + (oldu + velNED(1))/2 * dy;
@@ -342,7 +316,12 @@ namespace JSBSim {
     windvel.v = integv/b;
     windvel.w = integw/b;
 
+    if(integu < 0 || integv < 0 || integw <0)
+    {
+      printf("vitesseNED %f %f %f \n",integu,integv,integw);
+    }
     return windvel;
+
   }
 
 
@@ -354,20 +333,26 @@ namespace JSBSim {
   {
 
     FGAuxiliary* Auxiliary = FDMExec->GetAuxiliary();
+    FGAtmosphere* Atmosphere = FDMExec->GetAtmosphere();
     double alpha = Auxiliary->Getalpha();
+    double Vground = -Auxiliary->GetVground()*0.3048;
+    double Density = Atmosphere->GetDensity();
+
     double MomentL;
     double MomentR;
     const double pi = M_PI;
     int inter = 20;
-    double b = WingSpan;//in.Wingspan; //FDMExec->Aircraft->GetWingSpan(); // Envergure de l'aile
+    double b = WingSpan*0.3048;//in.Wingspan; //FDMExec->Aircraft->GetWingSpan(); // Envergure de l'aile
     // double surface = FDMExec->Aircraft->GetWingArea();
     double phi = GetPhi();
     double psi = GetPsi();
     double theta = GetTheta();
-    double dens = Density;
-    double surf = in.Wingarea/inter;
-    double lambda = b*b/in.Wingarea;
-
+    double dens = Density*515.378818;
+    double surf = WingArea/inter*0.092903;
+    double lambda = WingSpan*WingSpan/WingArea;
+    double cTip = 0;
+    double cRoot = 0;
+    double WingStyle = 1;
     //  orientation = FGQuaternion(phi, theta, psi);
     //const FGMatrix33& _Tl2b  = orientation.GetT();     // local to body frame
     //const FGMatrix33& _Tb2l  = orientation.GetTInv();  // body to local
@@ -383,28 +368,63 @@ namespace JSBSim {
 
     for(int i = 0; i<=interLeft; i++) {
 
+      // Calcule de la surface de chaque morceau d'aile si les cordes sont spécifiés Ajouter eliptique
+        if(cTip != 0 && cRoot != 0){
+          double y = -b/2+i*b/inter;
+          double rapport = cTip/cRoot;
+          double c = 2*WingArea/((1+rapport)*b)*(1-((1-rapport)/b)*abs(y));
+          surf = c*b/inter;
+        }
+
       FGColumnVector3 coordBODY(0, -b/2+i*b/inter, 0);
       FGColumnVector3 coordECEF = Tb2ec*coordBODY;//transform(0, -b/2+i*b/inter, 0);
       double xWing = coordECEF(1);
       double yWing = coordECEF(2);
       double zWing = coordECEF(3);
-      printf("moment1 %f %f %f %f\n",xWing,yWing,zWing,t);
       Velocity vel = dataInterpolation(&data, t, xWing, yWing, zWing);
-      printf("moment3 %f %f %f %f\n",xWing,yWing,zWing,t);
 
 
       FGColumnVector3 veloECEF(vel.u,vel.v,vel.w);
       FGColumnVector3 velL = Tec2b*veloECEF;
-      double velRoll = velL(3);
-      double CL = 2*pi*alpha*lambda/(lambda+2);
+
+double velLocalU = velL(1);
+double velLocalW = velL(3);
+double velRoll = sqrt((velLocalU+Vground)*(velLocalU+Vground)+velLocalW*velLocalW);
+//printf("Vground %f \n",Vground);
+//printf("velLocalU %f \n",velLocalU);
+
+double alphaWind = atan (velLocalW/(velLocalU+Vground));
+      double alphaLocal = alpha + alphaWind;
+      double CL = 2*pi*alphaLocal*lambda/(lambda+4);
       double LiftL = 0.5*dens*(velRoll)*(velRoll)*surf*CL;
-      MomentL = MomentL+LiftL*(-b/2+i*b/(2*inter));
+      //printf("dens %f \n",dens);
+      MomentL = MomentL+LiftL*(-b/2+i*b/(inter));
+      //printf("MomentL%f \n",MomentL);
     }
 
     // Right wing
     double interRight = inter/2; //Nmbre d'interval
     Velocity velRight[inter+1];
     for(int i = 0; i<=interRight; i++) {
+
+      // Calcule de la surface de chaque morceau d'aile si les cordes sont spécifiés
+      // Aile linéaire
+        if(WingStyle == 1 && cTip != 0 && cRoot != 0){
+          double y = -b/2+i*b/inter;
+          double rapport = cTip/cRoot;
+          double c = 2*WingArea/((1+rapport)*b)*(1-((1-rapport)/b)*abs(y));
+          surf = c*b/inter;
+        }
+        // Elliptical Wing
+          if(WingStyle == 2 && cRoot != 0){
+            double y = -b/2+i*b/inter;
+            double rapport = cTip/cRoot;
+            double c = cRoot*sqrt(1-4*(y/b)*(y/b));
+            surf = c*b/inter;
+          }
+
+
+
 
       FGColumnVector3 coordBODY(0, -b/2+i*b/inter, 0);
       FGColumnVector3 coordECEF = Tb2ec*coordBODY;//transform(0, -b/2+i*b/inter, 0);
@@ -416,14 +436,19 @@ namespace JSBSim {
 
       FGColumnVector3 veloECEF(vel.u,vel.v,vel.w);
       FGColumnVector3 velR = Tec2b*veloECEF;
-      double velRoll = velR(3);
-      double CL = 2*pi*alpha*lambda/(lambda+2);
+      double velLocalU = velR(1);
+      double velLocalW = velR(3);
+      double velRoll = sqrt((velLocalU+Vground)*(velLocalU+Vground)+velLocalW*velLocalW); // +vground changer le nom velRol en VelNorm
+
+      double alphaWind = atan (velLocalW/(velLocalU+Vground));
+      double alphaLocal = alpha + alphaWind;
+      double CL = 2*pi*alphaLocal*lambda/(lambda+4); // (lambda+4) pour un moment;
       double LiftR = 0.5*dens*(velRoll)*(velRoll)*surf*CL;
-      MomentR = MomentR+LiftR*(i*b/(2*inter));
+      MomentR = MomentR+LiftR*(i*b/inter);
     }
 
 
-    double moment = MomentR-MomentL;
+    double moment = (MomentR-MomentL)*0.7375621493; //Nm ->ft*lbf
     return moment;
   }
 
@@ -431,7 +456,6 @@ namespace JSBSim {
 
   bool FGAircraft::Run(bool Holding)
   {
-    printf("Run : %d \n", Holding);
     if (FGModel::Run(Holding)) return true;
     if (Holding) return false;
 
@@ -439,64 +463,68 @@ namespace JSBSim {
 
     // START : Modifié par Alex
     FGColumnVector3 myMoment;
-
+    FGColumnVector3 myPosition;
     FGAuxiliary* Auxiliary = FDMExec->GetAuxiliary();
     FGPropagate* Propagate = FDMExec->GetPropagate();
 
     double alpha = Auxiliary->Getalpha();
-
     double t = FDMExec->GetSimTime();
 
-    int num[4] = {30,100,100,100};
-    MyGrid data(num);
-    setData(&data); // Pose probleme : Il faur setdata en dehors de la fonction et une seul fois
+    //int num[4] = {30,100,100,100};
+  //  MyGrid data(num);
+    //setData(&data); // Pose probleme : Il faut setdata en dehors de la fonction et une seul fois
 
 
-    double lat = Propagate->GetLatitude();
-    double lon = Propagate->GetLongitude();
-    double alt = Propagate->GetRadius();
-
-
-    double xECEF, yECEF, zECEF;
-    loc pos = latLonAltToEcef(lat, lon, alt); // FAUX
-    xECEF = pos.x;
-    yECEF = pos.y;
-    zECEF = pos.z;
+    myPosition = Propagate->GetLocation();
+    double xECEF = myPosition(eX)*0.3048; // metre
+    double yECEF = myPosition(eY)*0.3048; // metre
+    double zECEF = myPosition(eZ)*0.3048; // metre
 
     //printf("position %f %f %f %f\n",xECEF,yECEF,zECEF,t);
     //int *size = (**data).getsize();
     int nt = 30;//size[0];
     int nx = 100;//size[1];
     int ny = 100;//size[2];
-    int nz = 100;//size[3];
+    int nz = 300;//size[3];
 
-    double xECEF_data_origine = 21725650;
-    double yECEF_data_origine = -40;
-    double zECEF_data_origine = 0;
+    double xECEF_data_origine = 6378088; //metre
+    double yECEF_data_origine = -50; // metre
+    double zECEF_data_origine = 1000; //1000
 
-    double mz;
+    int num[4] = {nt,nx,ny,nz};
+    static MyGrid data(num);
+    static bool initData = 0;
+
+if(initData == 0)
+{
+    setDataWaPT(&data);
+    printf("Je m'initialise");
+    initData = 1;
+}
+
+    double mx;
     Velocity windvel;
 
     if( xECEF>=xECEF_data_origine && xECEF<=(xECEF_data_origine+nx) &&\
     yECEF>=yECEF_data_origine && yECEF<=(yECEF_data_origine+ny) &&\
     zECEF>=zECEF_data_origine && zECEF<=(zECEF_data_origine+nz))
     {
-      mz = myMomentFunction(&data , t, xECEF, yECEF, zECEF);
+      mx = myMomentFunction(&data , t, xECEF, yECEF, zECEF);
       windvel = myWindFunction(&data , t, xECEF, yECEF, zECEF);
     }
     else
     {
-      mz = 0;
+      mx = 0;
       windvel.u = 0;
       windvel.v = 0;
       windvel.w = 0;
     }
 
-    //printf("moment1 %f \n",mz);
+    //printf("moment1 %f \n",mx);
 
-    myMoment(eX) = 0; //mx;
+    myMoment(eX) = mx; //mx;
     myMoment(eY) = 0; //my;
-    myMoment(eZ) = mz;
+    myMoment(eZ) = 0;
 
     FGColumnVector3 myWindNED;
 
@@ -504,7 +532,7 @@ namespace JSBSim {
     myWindNED(eEast) = windvel.v;
     myWindNED(eDown) = windvel.w;
 
-    WakeTotalWindNED = in.TotalWindNED + myWindNED;
+    WakeTotalWindNED = in.TotalWindNED + myWindNED; // Pas sur du signe
 
     vForces = in.AeroForce;
     vForces += in.PropForce;
@@ -521,8 +549,18 @@ namespace JSBSim {
 
     // END : Modifié par Alex
     RunPostFunctions();
+/*
+    if(mx != 0)
+    {
     printf("time %f \n",t);
+    printf("xECEF,yECEF,zECEF %f %f %f \n",xECEF,yECEF,zECEF);
+    printf("moment %f \n",mx);
+    double printvel = (double) windvel.u;
+    printf("velocity %f \n",printvel);
+  }
+  */
     return false;
+
   }
 
   // END : Modifié par Alex

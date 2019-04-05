@@ -54,7 +54,7 @@ FORWARD DECLARATIONS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 
 namespace JSBSim {
-  
+
   /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   CLASS DOCUMENTATION
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
@@ -200,12 +200,11 @@ namespace JSBSim {
     void SetWingArea(double S) {WingArea = S;}
 
 
-    // START : MODIF ALEX
-    double GetPhi(void) const { return phi; }
-    double GetPsi(void) const { return psi; }
-    double GetTheta(void) const { return theta; }
-    double GetAlphaW(void) const { return alphaw; }
-    virtual double GetDensity(void)  const {return Density;}
+    // START : MODIF ALEX Faux
+    double GetPhi(void) const { return phi; }//Faux
+    double GetPsi(void) const { return psi; }//Faux
+    double GetTheta(void) const { return theta; }//Faux
+    double GetAlphaW(void) const { return alphaw; }//Faux
     // END : MODIF ALEX
 
     void bind(void);
@@ -242,7 +241,7 @@ namespace JSBSim {
 
     // START : MODIF ALEX
     FGColumnVector3 WakeTotalWindNED;
-    double alphaw, psi, phi, theta,  Density;
+    double alphaw, psi, phi, theta;
     FGQuaternion orientation;
     // START : MODIF ALEX
     double HTailArea, VTailArea, HTailArm, VTailArm;

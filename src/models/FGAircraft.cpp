@@ -302,6 +302,7 @@ namespace JSBSim {
       double velv = vel.v*3.28084; // m to fts
       double velw = vel.w*3.28084; // m to fts
       FGColumnVector3 veloECEF(velu,velv,velw);
+      printf("vitesseECEF %f %f %f \n",velu,velv,velw);
       FGColumnVector3 velNED = Tec2l*veloECEF;
 
       integu = integu + (oldu + velNED(1))/2 * dy;
@@ -315,7 +316,12 @@ namespace JSBSim {
     windvel.v = integv/b;
     windvel.w = integw/b;
 
+    if(integu < 0 || integv < 0 || integw <0)
+    {
+      printf("vitesseNED %f %f %f \n",integu,integv,integw);
+    }
     return windvel;
+
   }
 
 
@@ -329,7 +335,7 @@ namespace JSBSim {
     FGAuxiliary* Auxiliary = FDMExec->GetAuxiliary();
     FGAtmosphere* Atmosphere = FDMExec->GetAtmosphere();
     double alpha = Auxiliary->Getalpha();
-    double Vground = Auxiliary->GetVground()*0.3048;
+    double Vground = -Auxiliary->GetVground()*0.3048;
     double Density = Atmosphere->GetDensity();
 
     double MomentL;
@@ -346,6 +352,7 @@ namespace JSBSim {
     double lambda = WingSpan*WingSpan/WingArea;
     double cTip = 0;
     double cRoot = 0;
+    double WingStyle = 1;
     //  orientation = FGQuaternion(phi, theta, psi);
     //const FGMatrix33& _Tl2b  = orientation.GetT();     // local to body frame
     //const FGMatrix33& _Tb2l  = orientation.GetTInv();  // body to local
@@ -361,7 +368,7 @@ namespace JSBSim {
 
     for(int i = 0; i<=interLeft; i++) {
 
-      // Calcule de la surface de chaque morceau d'aile si les cordes sont spécifiés
+      // Calcule de la surface de chaque morceau d'aile si les cordes sont spécifiés Ajouter eliptique
         if(cTip != 0 && cRoot != 0){
           double y = -b/2+i*b/inter;
           double rapport = cTip/cRoot;
@@ -382,16 +389,17 @@ namespace JSBSim {
 
 double velLocalU = velL(1);
 double velLocalW = velL(3);
-double velRoll = sqrt(velLocalU*velLocalU+velLocalW*velLocalW);
-printf("velRoll%f \n",velRoll);
+double velRoll = sqrt((velLocalU+Vground)*(velLocalU+Vground)+velLocalW*velLocalW);
+//printf("Vground %f \n",Vground);
+//printf("velLocalU %f \n",velLocalU);
 
 double alphaWind = atan (velLocalW/(velLocalU+Vground));
       double alphaLocal = alpha + alphaWind;
-      double CL = 2*pi*alphaLocal*lambda/(lambda+2);
+      double CL = 2*pi*alphaLocal*lambda/(lambda+4);
       double LiftL = 0.5*dens*(velRoll)*(velRoll)*surf*CL;
-      printf("dens %f \n",dens);
-      MomentL = MomentL+LiftL*(-b/2+i*b/(2*inter));
-      printf("MomentL%f \n",MomentL);
+      //printf("dens %f \n",dens);
+      MomentL = MomentL+LiftL*(-b/2+i*b/(inter));
+      //printf("MomentL%f \n",MomentL);
     }
 
     // Right wing
@@ -400,12 +408,23 @@ double alphaWind = atan (velLocalW/(velLocalU+Vground));
     for(int i = 0; i<=interRight; i++) {
 
       // Calcule de la surface de chaque morceau d'aile si les cordes sont spécifiés
-        if(cTip != 0 && cRoot != 0){
+      // Aile linéaire
+        if(WingStyle == 1 && cTip != 0 && cRoot != 0){
           double y = -b/2+i*b/inter;
           double rapport = cTip/cRoot;
           double c = 2*WingArea/((1+rapport)*b)*(1-((1-rapport)/b)*abs(y));
           surf = c*b/inter;
         }
+        // Elliptical Wing
+          if(WingStyle == 2 && cRoot != 0){
+            double y = -b/2+i*b/inter;
+            double rapport = cTip/cRoot;
+            double c = cRoot*sqrt(1-4*(y/b)*(y/b));
+            surf = c*b/inter;
+          }
+
+
+
 
       FGColumnVector3 coordBODY(0, -b/2+i*b/inter, 0);
       FGColumnVector3 coordECEF = Tb2ec*coordBODY;//transform(0, -b/2+i*b/inter, 0);
@@ -419,13 +438,13 @@ double alphaWind = atan (velLocalW/(velLocalU+Vground));
       FGColumnVector3 velR = Tec2b*veloECEF;
       double velLocalU = velR(1);
       double velLocalW = velR(3);
-      double velRoll = sqrt(velLocalU*velLocalU+velLocalW*velLocalW);
+      double velRoll = sqrt((velLocalU+Vground)*(velLocalU+Vground)+velLocalW*velLocalW); // +vground changer le nom velRol en VelNorm
 
       double alphaWind = atan (velLocalW/(velLocalU+Vground));
       double alphaLocal = alpha + alphaWind;
-      double CL = 2*pi*alphaLocal*lambda/(lambda+2);
+      double CL = 2*pi*alphaLocal*lambda/(lambda+4); // (lambda+4) pour un moment;
       double LiftR = 0.5*dens*(velRoll)*(velRoll)*surf*CL;
-      MomentR = MomentR+LiftR*(i*b/(2*inter));
+      MomentR = MomentR+LiftR*(i*b/inter);
     }
 
 
@@ -457,22 +476,22 @@ double alphaWind = atan (velLocalW/(velLocalU+Vground));
 
 
     myPosition = Propagate->GetLocation();
-    double xECEF = myPosition(eX);
-    double yECEF = myPosition(eY);
-    double zECEF = myPosition(eZ);
+    double xECEF = myPosition(eX)*0.3048; // metre
+    double yECEF = myPosition(eY)*0.3048; // metre
+    double zECEF = myPosition(eZ)*0.3048; // metre
 
     //printf("position %f %f %f %f\n",xECEF,yECEF,zECEF,t);
     //int *size = (**data).getsize();
     int nt = 30;//size[0];
     int nx = 100;//size[1];
-    int ny = 100;//size[2];
+    int ny = 100;//size[2]3
     int nz = 100;//size[3];
 
-    double xECEF_data_origine = 20925650;
-    double yECEF_data_origine = -40;
-    double zECEF_data_origine = 3335; //1000
+    double xECEF_data_origine = 6378088; //metre
+    double yECEF_data_origine = -50; // metre
+    double zECEF_data_origine = 1000; //1000
 
-    int num[4] = {30,100,200,200};
+    int num[4] = {nt,nx,ny,nz};
     static MyGrid data(num);
     static bool initData = 0;
 
@@ -483,29 +502,29 @@ if(initData == 0)
     initData = 1;
 }
 
-    double mz;
+    double mx;
     Velocity windvel;
 
     if( xECEF>=xECEF_data_origine && xECEF<=(xECEF_data_origine+nx) &&\
     yECEF>=yECEF_data_origine && yECEF<=(yECEF_data_origine+ny) &&\
     zECEF>=zECEF_data_origine && zECEF<=(zECEF_data_origine+nz))
     {
-      mz = myMomentFunction(&data , t, xECEF, yECEF, zECEF);
+      mx = myMomentFunction(&data , t, xECEF, yECEF, zECEF);
       windvel = myWindFunction(&data , t, xECEF, yECEF, zECEF);
     }
     else
     {
-      mz = 0;
+      mx = 0;
       windvel.u = 0;
       windvel.v = 0;
       windvel.w = 0;
     }
 
-    //printf("moment1 %f \n",mz);
+    //printf("moment1 %f \n",mx);
 
-    myMoment(eX) = 0; //mx;
+    myMoment(eX) = mx; //mx;
     myMoment(eY) = 0; //my;
-    myMoment(eZ) = mz;
+    myMoment(eZ) = 0;
 
     FGColumnVector3 myWindNED;
 
@@ -513,7 +532,7 @@ if(initData == 0)
     myWindNED(eEast) = windvel.v;
     myWindNED(eDown) = windvel.w;
 
-    WakeTotalWindNED = in.TotalWindNED + myWindNED;
+    WakeTotalWindNED = in.TotalWindNED + myWindNED; // Pas sur du signe
 
     vForces = in.AeroForce;
     vForces += in.PropForce;
@@ -530,14 +549,16 @@ if(initData == 0)
 
     // END : Modifié par Alex
     RunPostFunctions();
-    if(mz != 0)
+/*
+    if(mx != 0)
     {
     printf("time %f \n",t);
     printf("xECEF,yECEF,zECEF %f %f %f \n",xECEF,yECEF,zECEF);
-    printf("moment %f \n",mz);
+    printf("moment %f \n",mx);
     double printvel = (double) windvel.u;
     printf("velocity %f \n",printvel);
   }
+  */
     return false;
 
   }

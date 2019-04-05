@@ -59,13 +59,13 @@ python/CMakeFiles/PythonJSBSim: tests/jsbsim.cpython-37m-darwin.so
 tests/jsbsim.cpython-37m-darwin.so: python/setup.py
 tests/jsbsim.cpython-37m-darwin.so: python/jsbsim.cxx
 tests/jsbsim.cpython-37m-darwin.so: src/libJSBSim.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building Python modules..."
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building Python modules..."
 	cd /Users/alexandrequintart/soft/jsbsim/python && /Users/alexandrequintart/anaconda3/bin/python /Users/alexandrequintart/soft/jsbsim/python/setup.py build_ext -b /Users/alexandrequintart/soft/jsbsim/tests --force  
 
 python/jsbsim.cxx: python/jsbsim.pyx
 python/jsbsim.cxx: python/jsbsim.pxd
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Compiling Cython CXX source for jsbsim..."
-	cd /Users/alexandrequintart/soft/jsbsim/python && /Users/alexandrequintart/anaconda3/bin/cython --cplus --output-file /Users/alexandrequintart/soft/jsbsim/python/jsbsim.cxx /Users/alexandrequintart/soft/jsbsim/python/jsbsim.pyx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Compiling Cython CXX source for jsbsim..."
+	cd /Users/alexandrequintart/soft/jsbsim/python && /Users/alexandrequintart/anaconda3/bin/cython --cplus --gdb --output-file /Users/alexandrequintart/soft/jsbsim/python/jsbsim.cxx /Users/alexandrequintart/soft/jsbsim/python/jsbsim.pyx
 
 PythonJSBSim: python/CMakeFiles/PythonJSBSim
 PythonJSBSim: tests/jsbsim.cpython-37m-darwin.so
@@ -84,6 +84,6 @@ python/CMakeFiles/PythonJSBSim.dir/clean:
 .PHONY : python/CMakeFiles/PythonJSBSim.dir/clean
 
 python/CMakeFiles/PythonJSBSim.dir/depend:
-	cd /Users/alexandrequintart/soft/jsbsim && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/python /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/python /Users/alexandrequintart/soft/jsbsim/python/CMakeFiles/PythonJSBSim.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/alexandrequintart/soft/jsbsim && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/python /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/python /Users/alexandrequintart/soft/jsbsim/python/CMakeFiles/PythonJSBSim.dir/DependInfo.cmake
 .PHONY : python/CMakeFiles/PythonJSBSim.dir/depend
 

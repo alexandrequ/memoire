@@ -52,7 +52,6 @@ double MyGrid::get(int itime, int i, int j, int k, VelType dim){
     return mydata[dim][GET_N(itime,i,j,k)];
 }
 void MyGrid::set(int itime, int i, int j, int k, VelType dim,double val){
-  printf("Hello from setting data\n");
     mydata[dim][GET_N(itime,i,j,k)] = val;
 }
 

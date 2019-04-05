@@ -63,7 +63,6 @@ tests/jsbsim.cpython-37m-darwin.so: src/libJSBSim.a
 	cd /Users/alexandrequintart/soft/jsbsim/build/python && /Users/alexandrequintart/anaconda3/bin/python /Users/alexandrequintart/soft/jsbsim/build/python/setup.py build_ext -b /Users/alexandrequintart/soft/jsbsim/build/tests --force  
 
 python/jsbsim.cxx: python/jsbsim.pyx
-python/jsbsim.cxx: python/jsbsim.pxd
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/alexandrequintart/soft/jsbsim/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Compiling Cython CXX source for jsbsim..."
 	cd /Users/alexandrequintart/soft/jsbsim/build/python && /Users/alexandrequintart/anaconda3/bin/cython --cplus --gdb --output-file /Users/alexandrequintart/soft/jsbsim/build/python/jsbsim.cxx /Users/alexandrequintart/soft/jsbsim/build/python/jsbsim.pyx
 

@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = /Users/alexandrequintart/soft/jsbsim
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"devel\" \"runtime\""
+	@echo "Available install components are: \"devel\" \"runtime\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -68,19 +68,19 @@ list_install_components/fast: list_install_components
 
 # Special rule for the target install/local
 install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	@echo "Installing only the local directory..."
 	/Applications/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	@echo "Installing only the local directory..."
 	/Applications/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target test
 test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	@echo "Running tests..."
 	/Applications/CMake.app/Contents/bin/ctest --force-new-ctest-process $(ARGS)
 .PHONY : test
 
@@ -91,7 +91,7 @@ test/fast: test
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	@echo "Running CMake cache editor..."
 	/Applications/CMake.app/Contents/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
@@ -102,7 +102,7 @@ edit_cache/fast: edit_cache
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	@echo "Running CMake to regenerate build system..."
 	/Applications/CMake.app/Contents/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
@@ -113,7 +113,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target package_source
 package_source:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
+	@echo "Run CPack packaging tool for source..."
 	cd /Users/alexandrequintart/soft/jsbsim && /Applications/CMake.app/Contents/bin/cpack --config ./CPackSourceConfig.cmake /Users/alexandrequintart/soft/jsbsim/CPackSourceConfig.cmake
 .PHONY : package_source
 
@@ -124,7 +124,7 @@ package_source/fast: package_source
 
 # Special rule for the target package
 package: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
+	@echo "Run CPack packaging tool..."
 	cd /Users/alexandrequintart/soft/jsbsim && /Applications/CMake.app/Contents/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
@@ -135,25 +135,25 @@ package/fast: package
 
 # Special rule for the target install/strip
 install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	@echo "Installing the project stripped..."
 	/Applications/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	@echo "Installing the project stripped..."
 	/Applications/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target install
 install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	@echo "Install the project..."
 	/Applications/CMake.app/Contents/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	@echo "Install the project..."
 	/Applications/CMake.app/Contents/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 

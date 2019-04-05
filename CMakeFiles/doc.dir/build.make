@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /Users/alexandrequintart/soft/jsbsim
 include CMakeFiles/doc.dir/progress.make
 
 CMakeFiles/doc:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating API documentation with Doxygen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating API documentation with Doxygen"
 	/usr/local/bin/doxygen /Users/alexandrequintart/soft/jsbsim/Doxyfile
 
 doc: CMakeFiles/doc
@@ -72,6 +72,6 @@ CMakeFiles/doc.dir/clean:
 .PHONY : CMakeFiles/doc.dir/clean
 
 CMakeFiles/doc.dir/depend:
-	cd /Users/alexandrequintart/soft/jsbsim && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/CMakeFiles/doc.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/alexandrequintart/soft/jsbsim && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/CMakeFiles/doc.dir/DependInfo.cmake
 .PHONY : CMakeFiles/doc.dir/depend
 

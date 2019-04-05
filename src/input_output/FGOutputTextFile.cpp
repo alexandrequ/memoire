@@ -147,7 +147,7 @@ bool FGOutputTextFile::OpenFile(void)
   }
   if (SubSystems & ssForces) {
     outstream << delimeter;
-    outstream << "F_{Drag} (lbs)" + delimeter + "F_{Side} (lbs)" + delimeter + "F_{Lift} (lbs)" + delimeter;
+    outstream << "F_Drag_lbs" + delimeter + "F_Side_lbs" + delimeter + "F_Lift_lbs" + delimeter;
     outstream << "L/D" + delimeter;
     outstream << "F_{Aero x} (lbs)" + delimeter + "F_{Aero y} (lbs)" + delimeter + "F_{Aero z} (lbs)" + delimeter;
     outstream << "F_{Prop x} (lbs)" + delimeter + "F_{Prop y} (lbs)" + delimeter + "F_{Prop z} (lbs)" + delimeter;

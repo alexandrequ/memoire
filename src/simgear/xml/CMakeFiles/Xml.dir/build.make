@@ -59,54 +59,54 @@ include src/simgear/xml/CMakeFiles/Xml.dir/flags.make
 
 src/simgear/xml/CMakeFiles/Xml.dir/easyxml.cxx.o: src/simgear/xml/CMakeFiles/Xml.dir/flags.make
 src/simgear/xml/CMakeFiles/Xml.dir/easyxml.cxx.o: src/simgear/xml/easyxml.cxx
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/simgear/xml/CMakeFiles/Xml.dir/easyxml.cxx.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/simgear/xml/CMakeFiles/Xml.dir/easyxml.cxx.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/simgear/xml && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Xml.dir/easyxml.cxx.o -c /Users/alexandrequintart/soft/jsbsim/src/simgear/xml/easyxml.cxx
 
 src/simgear/xml/CMakeFiles/Xml.dir/easyxml.cxx.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Xml.dir/easyxml.cxx.i"
+	@echo "Preprocessing CXX source to CMakeFiles/Xml.dir/easyxml.cxx.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/simgear/xml && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/simgear/xml/easyxml.cxx > CMakeFiles/Xml.dir/easyxml.cxx.i
 
 src/simgear/xml/CMakeFiles/Xml.dir/easyxml.cxx.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Xml.dir/easyxml.cxx.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/Xml.dir/easyxml.cxx.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/simgear/xml && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/simgear/xml/easyxml.cxx -o CMakeFiles/Xml.dir/easyxml.cxx.s
 
 src/simgear/xml/CMakeFiles/Xml.dir/xmlparse.c.o: src/simgear/xml/CMakeFiles/Xml.dir/flags.make
 src/simgear/xml/CMakeFiles/Xml.dir/xmlparse.c.o: src/simgear/xml/xmlparse.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/simgear/xml/CMakeFiles/Xml.dir/xmlparse.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/simgear/xml/CMakeFiles/Xml.dir/xmlparse.c.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/simgear/xml && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Xml.dir/xmlparse.c.o   -c /Users/alexandrequintart/soft/jsbsim/src/simgear/xml/xmlparse.c
 
 src/simgear/xml/CMakeFiles/Xml.dir/xmlparse.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Xml.dir/xmlparse.c.i"
+	@echo "Preprocessing C source to CMakeFiles/Xml.dir/xmlparse.c.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/simgear/xml && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/simgear/xml/xmlparse.c > CMakeFiles/Xml.dir/xmlparse.c.i
 
 src/simgear/xml/CMakeFiles/Xml.dir/xmlparse.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Xml.dir/xmlparse.c.s"
+	@echo "Compiling C source to assembly CMakeFiles/Xml.dir/xmlparse.c.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/simgear/xml && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/simgear/xml/xmlparse.c -o CMakeFiles/Xml.dir/xmlparse.c.s
 
 src/simgear/xml/CMakeFiles/Xml.dir/xmltok.c.o: src/simgear/xml/CMakeFiles/Xml.dir/flags.make
 src/simgear/xml/CMakeFiles/Xml.dir/xmltok.c.o: src/simgear/xml/xmltok.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object src/simgear/xml/CMakeFiles/Xml.dir/xmltok.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object src/simgear/xml/CMakeFiles/Xml.dir/xmltok.c.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/simgear/xml && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Xml.dir/xmltok.c.o   -c /Users/alexandrequintart/soft/jsbsim/src/simgear/xml/xmltok.c
 
 src/simgear/xml/CMakeFiles/Xml.dir/xmltok.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Xml.dir/xmltok.c.i"
+	@echo "Preprocessing C source to CMakeFiles/Xml.dir/xmltok.c.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/simgear/xml && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/simgear/xml/xmltok.c > CMakeFiles/Xml.dir/xmltok.c.i
 
 src/simgear/xml/CMakeFiles/Xml.dir/xmltok.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Xml.dir/xmltok.c.s"
+	@echo "Compiling C source to assembly CMakeFiles/Xml.dir/xmltok.c.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/simgear/xml && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/simgear/xml/xmltok.c -o CMakeFiles/Xml.dir/xmltok.c.s
 
 src/simgear/xml/CMakeFiles/Xml.dir/xmlrole.c.o: src/simgear/xml/CMakeFiles/Xml.dir/flags.make
 src/simgear/xml/CMakeFiles/Xml.dir/xmlrole.c.o: src/simgear/xml/xmlrole.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object src/simgear/xml/CMakeFiles/Xml.dir/xmlrole.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object src/simgear/xml/CMakeFiles/Xml.dir/xmlrole.c.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/simgear/xml && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Xml.dir/xmlrole.c.o   -c /Users/alexandrequintart/soft/jsbsim/src/simgear/xml/xmlrole.c
 
 src/simgear/xml/CMakeFiles/Xml.dir/xmlrole.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Xml.dir/xmlrole.c.i"
+	@echo "Preprocessing C source to CMakeFiles/Xml.dir/xmlrole.c.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/simgear/xml && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/simgear/xml/xmlrole.c > CMakeFiles/Xml.dir/xmlrole.c.i
 
 src/simgear/xml/CMakeFiles/Xml.dir/xmlrole.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Xml.dir/xmlrole.c.s"
+	@echo "Compiling C source to assembly CMakeFiles/Xml.dir/xmlrole.c.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/simgear/xml && /Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/simgear/xml/xmlrole.c -o CMakeFiles/Xml.dir/xmlrole.c.s
 
 Xml: src/simgear/xml/CMakeFiles/Xml.dir/easyxml.cxx.o
@@ -127,6 +127,6 @@ src/simgear/xml/CMakeFiles/Xml.dir/clean:
 .PHONY : src/simgear/xml/CMakeFiles/Xml.dir/clean
 
 src/simgear/xml/CMakeFiles/Xml.dir/depend:
-	cd /Users/alexandrequintart/soft/jsbsim && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/src/simgear/xml /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/src/simgear/xml /Users/alexandrequintart/soft/jsbsim/src/simgear/xml/CMakeFiles/Xml.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/alexandrequintart/soft/jsbsim && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/src/simgear/xml /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/src/simgear/xml /Users/alexandrequintart/soft/jsbsim/src/simgear/xml/CMakeFiles/Xml.dir/DependInfo.cmake
 .PHONY : src/simgear/xml/CMakeFiles/Xml.dir/depend
 

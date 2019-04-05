@@ -59,158 +59,158 @@ include src/math/CMakeFiles/Math.dir/flags.make
 
 src/math/CMakeFiles/Math.dir/FGColumnVector3.cpp.o: src/math/CMakeFiles/Math.dir/flags.make
 src/math/CMakeFiles/Math.dir/FGColumnVector3.cpp.o: src/math/FGColumnVector3.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/math/CMakeFiles/Math.dir/FGColumnVector3.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/math/CMakeFiles/Math.dir/FGColumnVector3.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/math && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Math.dir/FGColumnVector3.cpp.o -c /Users/alexandrequintart/soft/jsbsim/src/math/FGColumnVector3.cpp
 
 src/math/CMakeFiles/Math.dir/FGColumnVector3.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Math.dir/FGColumnVector3.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/Math.dir/FGColumnVector3.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/math && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/math/FGColumnVector3.cpp > CMakeFiles/Math.dir/FGColumnVector3.cpp.i
 
 src/math/CMakeFiles/Math.dir/FGColumnVector3.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Math.dir/FGColumnVector3.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/Math.dir/FGColumnVector3.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/math && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/math/FGColumnVector3.cpp -o CMakeFiles/Math.dir/FGColumnVector3.cpp.s
 
 src/math/CMakeFiles/Math.dir/FGFunction.cpp.o: src/math/CMakeFiles/Math.dir/flags.make
 src/math/CMakeFiles/Math.dir/FGFunction.cpp.o: src/math/FGFunction.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/math/CMakeFiles/Math.dir/FGFunction.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/math/CMakeFiles/Math.dir/FGFunction.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/math && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Math.dir/FGFunction.cpp.o -c /Users/alexandrequintart/soft/jsbsim/src/math/FGFunction.cpp
 
 src/math/CMakeFiles/Math.dir/FGFunction.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Math.dir/FGFunction.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/Math.dir/FGFunction.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/math && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/math/FGFunction.cpp > CMakeFiles/Math.dir/FGFunction.cpp.i
 
 src/math/CMakeFiles/Math.dir/FGFunction.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Math.dir/FGFunction.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/Math.dir/FGFunction.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/math && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/math/FGFunction.cpp -o CMakeFiles/Math.dir/FGFunction.cpp.s
 
 src/math/CMakeFiles/Math.dir/FGLocation.cpp.o: src/math/CMakeFiles/Math.dir/flags.make
 src/math/CMakeFiles/Math.dir/FGLocation.cpp.o: src/math/FGLocation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/math/CMakeFiles/Math.dir/FGLocation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/math/CMakeFiles/Math.dir/FGLocation.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/math && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Math.dir/FGLocation.cpp.o -c /Users/alexandrequintart/soft/jsbsim/src/math/FGLocation.cpp
 
 src/math/CMakeFiles/Math.dir/FGLocation.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Math.dir/FGLocation.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/Math.dir/FGLocation.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/math && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/math/FGLocation.cpp > CMakeFiles/Math.dir/FGLocation.cpp.i
 
 src/math/CMakeFiles/Math.dir/FGLocation.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Math.dir/FGLocation.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/Math.dir/FGLocation.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/math && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/math/FGLocation.cpp -o CMakeFiles/Math.dir/FGLocation.cpp.s
 
 src/math/CMakeFiles/Math.dir/FGMatrix33.cpp.o: src/math/CMakeFiles/Math.dir/flags.make
 src/math/CMakeFiles/Math.dir/FGMatrix33.cpp.o: src/math/FGMatrix33.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/math/CMakeFiles/Math.dir/FGMatrix33.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/math/CMakeFiles/Math.dir/FGMatrix33.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/math && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Math.dir/FGMatrix33.cpp.o -c /Users/alexandrequintart/soft/jsbsim/src/math/FGMatrix33.cpp
 
 src/math/CMakeFiles/Math.dir/FGMatrix33.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Math.dir/FGMatrix33.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/Math.dir/FGMatrix33.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/math && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/math/FGMatrix33.cpp > CMakeFiles/Math.dir/FGMatrix33.cpp.i
 
 src/math/CMakeFiles/Math.dir/FGMatrix33.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Math.dir/FGMatrix33.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/Math.dir/FGMatrix33.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/math && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/math/FGMatrix33.cpp -o CMakeFiles/Math.dir/FGMatrix33.cpp.s
 
 src/math/CMakeFiles/Math.dir/FGPropertyValue.cpp.o: src/math/CMakeFiles/Math.dir/flags.make
 src/math/CMakeFiles/Math.dir/FGPropertyValue.cpp.o: src/math/FGPropertyValue.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/math/CMakeFiles/Math.dir/FGPropertyValue.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/math/CMakeFiles/Math.dir/FGPropertyValue.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/math && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Math.dir/FGPropertyValue.cpp.o -c /Users/alexandrequintart/soft/jsbsim/src/math/FGPropertyValue.cpp
 
 src/math/CMakeFiles/Math.dir/FGPropertyValue.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Math.dir/FGPropertyValue.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/Math.dir/FGPropertyValue.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/math && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/math/FGPropertyValue.cpp > CMakeFiles/Math.dir/FGPropertyValue.cpp.i
 
 src/math/CMakeFiles/Math.dir/FGPropertyValue.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Math.dir/FGPropertyValue.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/Math.dir/FGPropertyValue.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/math && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/math/FGPropertyValue.cpp -o CMakeFiles/Math.dir/FGPropertyValue.cpp.s
 
 src/math/CMakeFiles/Math.dir/FGQuaternion.cpp.o: src/math/CMakeFiles/Math.dir/flags.make
 src/math/CMakeFiles/Math.dir/FGQuaternion.cpp.o: src/math/FGQuaternion.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/math/CMakeFiles/Math.dir/FGQuaternion.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/math/CMakeFiles/Math.dir/FGQuaternion.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/math && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Math.dir/FGQuaternion.cpp.o -c /Users/alexandrequintart/soft/jsbsim/src/math/FGQuaternion.cpp
 
 src/math/CMakeFiles/Math.dir/FGQuaternion.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Math.dir/FGQuaternion.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/Math.dir/FGQuaternion.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/math && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/math/FGQuaternion.cpp > CMakeFiles/Math.dir/FGQuaternion.cpp.i
 
 src/math/CMakeFiles/Math.dir/FGQuaternion.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Math.dir/FGQuaternion.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/Math.dir/FGQuaternion.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/math && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/math/FGQuaternion.cpp -o CMakeFiles/Math.dir/FGQuaternion.cpp.s
 
 src/math/CMakeFiles/Math.dir/FGRealValue.cpp.o: src/math/CMakeFiles/Math.dir/flags.make
 src/math/CMakeFiles/Math.dir/FGRealValue.cpp.o: src/math/FGRealValue.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/math/CMakeFiles/Math.dir/FGRealValue.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/math/CMakeFiles/Math.dir/FGRealValue.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/math && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Math.dir/FGRealValue.cpp.o -c /Users/alexandrequintart/soft/jsbsim/src/math/FGRealValue.cpp
 
 src/math/CMakeFiles/Math.dir/FGRealValue.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Math.dir/FGRealValue.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/Math.dir/FGRealValue.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/math && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/math/FGRealValue.cpp > CMakeFiles/Math.dir/FGRealValue.cpp.i
 
 src/math/CMakeFiles/Math.dir/FGRealValue.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Math.dir/FGRealValue.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/Math.dir/FGRealValue.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/math && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/math/FGRealValue.cpp -o CMakeFiles/Math.dir/FGRealValue.cpp.s
 
 src/math/CMakeFiles/Math.dir/FGTable.cpp.o: src/math/CMakeFiles/Math.dir/flags.make
 src/math/CMakeFiles/Math.dir/FGTable.cpp.o: src/math/FGTable.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/math/CMakeFiles/Math.dir/FGTable.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/math/CMakeFiles/Math.dir/FGTable.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/math && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Math.dir/FGTable.cpp.o -c /Users/alexandrequintart/soft/jsbsim/src/math/FGTable.cpp
 
 src/math/CMakeFiles/Math.dir/FGTable.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Math.dir/FGTable.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/Math.dir/FGTable.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/math && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/math/FGTable.cpp > CMakeFiles/Math.dir/FGTable.cpp.i
 
 src/math/CMakeFiles/Math.dir/FGTable.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Math.dir/FGTable.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/Math.dir/FGTable.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/math && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/math/FGTable.cpp -o CMakeFiles/Math.dir/FGTable.cpp.s
 
 src/math/CMakeFiles/Math.dir/FGCondition.cpp.o: src/math/CMakeFiles/Math.dir/flags.make
 src/math/CMakeFiles/Math.dir/FGCondition.cpp.o: src/math/FGCondition.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/math/CMakeFiles/Math.dir/FGCondition.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/math/CMakeFiles/Math.dir/FGCondition.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/math && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Math.dir/FGCondition.cpp.o -c /Users/alexandrequintart/soft/jsbsim/src/math/FGCondition.cpp
 
 src/math/CMakeFiles/Math.dir/FGCondition.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Math.dir/FGCondition.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/Math.dir/FGCondition.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/math && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/math/FGCondition.cpp > CMakeFiles/Math.dir/FGCondition.cpp.i
 
 src/math/CMakeFiles/Math.dir/FGCondition.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Math.dir/FGCondition.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/Math.dir/FGCondition.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/math && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/math/FGCondition.cpp -o CMakeFiles/Math.dir/FGCondition.cpp.s
 
 src/math/CMakeFiles/Math.dir/FGRungeKutta.cpp.o: src/math/CMakeFiles/Math.dir/flags.make
 src/math/CMakeFiles/Math.dir/FGRungeKutta.cpp.o: src/math/FGRungeKutta.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/math/CMakeFiles/Math.dir/FGRungeKutta.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/math/CMakeFiles/Math.dir/FGRungeKutta.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/math && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Math.dir/FGRungeKutta.cpp.o -c /Users/alexandrequintart/soft/jsbsim/src/math/FGRungeKutta.cpp
 
 src/math/CMakeFiles/Math.dir/FGRungeKutta.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Math.dir/FGRungeKutta.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/Math.dir/FGRungeKutta.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/math && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/math/FGRungeKutta.cpp > CMakeFiles/Math.dir/FGRungeKutta.cpp.i
 
 src/math/CMakeFiles/Math.dir/FGRungeKutta.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Math.dir/FGRungeKutta.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/Math.dir/FGRungeKutta.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/math && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/math/FGRungeKutta.cpp -o CMakeFiles/Math.dir/FGRungeKutta.cpp.s
 
 src/math/CMakeFiles/Math.dir/FGModelFunctions.cpp.o: src/math/CMakeFiles/Math.dir/flags.make
 src/math/CMakeFiles/Math.dir/FGModelFunctions.cpp.o: src/math/FGModelFunctions.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/math/CMakeFiles/Math.dir/FGModelFunctions.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/math/CMakeFiles/Math.dir/FGModelFunctions.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/math && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Math.dir/FGModelFunctions.cpp.o -c /Users/alexandrequintart/soft/jsbsim/src/math/FGModelFunctions.cpp
 
 src/math/CMakeFiles/Math.dir/FGModelFunctions.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Math.dir/FGModelFunctions.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/Math.dir/FGModelFunctions.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/math && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/math/FGModelFunctions.cpp > CMakeFiles/Math.dir/FGModelFunctions.cpp.i
 
 src/math/CMakeFiles/Math.dir/FGModelFunctions.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Math.dir/FGModelFunctions.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/Math.dir/FGModelFunctions.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/math && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/math/FGModelFunctions.cpp -o CMakeFiles/Math.dir/FGModelFunctions.cpp.s
 
 src/math/CMakeFiles/Math.dir/FGTemplateFunc.cpp.o: src/math/CMakeFiles/Math.dir/flags.make
 src/math/CMakeFiles/Math.dir/FGTemplateFunc.cpp.o: src/math/FGTemplateFunc.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object src/math/CMakeFiles/Math.dir/FGTemplateFunc.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object src/math/CMakeFiles/Math.dir/FGTemplateFunc.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/math && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Math.dir/FGTemplateFunc.cpp.o -c /Users/alexandrequintart/soft/jsbsim/src/math/FGTemplateFunc.cpp
 
 src/math/CMakeFiles/Math.dir/FGTemplateFunc.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Math.dir/FGTemplateFunc.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/Math.dir/FGTemplateFunc.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/math && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/math/FGTemplateFunc.cpp > CMakeFiles/Math.dir/FGTemplateFunc.cpp.i
 
 src/math/CMakeFiles/Math.dir/FGTemplateFunc.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Math.dir/FGTemplateFunc.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/Math.dir/FGTemplateFunc.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/math && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/math/FGTemplateFunc.cpp -o CMakeFiles/Math.dir/FGTemplateFunc.cpp.s
 
 Math: src/math/CMakeFiles/Math.dir/FGColumnVector3.cpp.o
@@ -239,6 +239,6 @@ src/math/CMakeFiles/Math.dir/clean:
 .PHONY : src/math/CMakeFiles/Math.dir/clean
 
 src/math/CMakeFiles/Math.dir/depend:
-	cd /Users/alexandrequintart/soft/jsbsim && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/src/math /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/src/math /Users/alexandrequintart/soft/jsbsim/src/math/CMakeFiles/Math.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/alexandrequintart/soft/jsbsim && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/src/math /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/src/math /Users/alexandrequintart/soft/jsbsim/src/math/CMakeFiles/Math.dir/DependInfo.cmake
 .PHONY : src/math/CMakeFiles/Math.dir/depend
 

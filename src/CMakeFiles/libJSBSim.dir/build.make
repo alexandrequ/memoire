@@ -59,28 +59,28 @@ include src/CMakeFiles/libJSBSim.dir/flags.make
 
 src/CMakeFiles/libJSBSim.dir/FGFDMExec.cpp.o: src/CMakeFiles/libJSBSim.dir/flags.make
 src/CMakeFiles/libJSBSim.dir/FGFDMExec.cpp.o: src/FGFDMExec.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/libJSBSim.dir/FGFDMExec.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/libJSBSim.dir/FGFDMExec.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libJSBSim.dir/FGFDMExec.cpp.o -c /Users/alexandrequintart/soft/jsbsim/src/FGFDMExec.cpp
 
 src/CMakeFiles/libJSBSim.dir/FGFDMExec.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libJSBSim.dir/FGFDMExec.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/libJSBSim.dir/FGFDMExec.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/FGFDMExec.cpp > CMakeFiles/libJSBSim.dir/FGFDMExec.cpp.i
 
 src/CMakeFiles/libJSBSim.dir/FGFDMExec.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libJSBSim.dir/FGFDMExec.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/libJSBSim.dir/FGFDMExec.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/FGFDMExec.cpp -o CMakeFiles/libJSBSim.dir/FGFDMExec.cpp.s
 
 src/CMakeFiles/libJSBSim.dir/FGJSBBase.cpp.o: src/CMakeFiles/libJSBSim.dir/flags.make
 src/CMakeFiles/libJSBSim.dir/FGJSBBase.cpp.o: src/FGJSBBase.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/libJSBSim.dir/FGJSBBase.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/libJSBSim.dir/FGJSBBase.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libJSBSim.dir/FGJSBBase.cpp.o -c /Users/alexandrequintart/soft/jsbsim/src/FGJSBBase.cpp
 
 src/CMakeFiles/libJSBSim.dir/FGJSBBase.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libJSBSim.dir/FGJSBBase.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/libJSBSim.dir/FGJSBBase.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/FGJSBBase.cpp > CMakeFiles/libJSBSim.dir/FGJSBBase.cpp.i
 
 src/CMakeFiles/libJSBSim.dir/FGJSBBase.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libJSBSim.dir/FGJSBBase.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/libJSBSim.dir/FGJSBBase.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/FGJSBBase.cpp -o CMakeFiles/libJSBSim.dir/FGJSBBase.cpp.s
 
 # Object files for target libJSBSim
@@ -293,7 +293,7 @@ src/libJSBSim.a: src/simgear/misc/CMakeFiles/Misc.dir/strutils.cxx.o
 src/libJSBSim.a: src/simgear/io/iostreams/CMakeFiles/IOStreams.dir/sgstream.cxx.o
 src/libJSBSim.a: src/CMakeFiles/libJSBSim.dir/build.make
 src/libJSBSim.a: src/CMakeFiles/libJSBSim.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libJSBSim.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libJSBSim.a"
 	cd /Users/alexandrequintart/soft/jsbsim/src && $(CMAKE_COMMAND) -P CMakeFiles/libJSBSim.dir/cmake_clean_target.cmake
 	cd /Users/alexandrequintart/soft/jsbsim/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libJSBSim.dir/link.txt --verbose=$(VERBOSE)
 
@@ -307,6 +307,6 @@ src/CMakeFiles/libJSBSim.dir/clean:
 .PHONY : src/CMakeFiles/libJSBSim.dir/clean
 
 src/CMakeFiles/libJSBSim.dir/depend:
-	cd /Users/alexandrequintart/soft/jsbsim && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/src /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/src /Users/alexandrequintart/soft/jsbsim/src/CMakeFiles/libJSBSim.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/alexandrequintart/soft/jsbsim && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/src /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/src /Users/alexandrequintart/soft/jsbsim/src/CMakeFiles/libJSBSim.dir/DependInfo.cmake
 .PHONY : src/CMakeFiles/libJSBSim.dir/depend
 

@@ -59,15 +59,15 @@ include src/simgear/io/iostreams/CMakeFiles/IOStreams.dir/flags.make
 
 src/simgear/io/iostreams/CMakeFiles/IOStreams.dir/sgstream.cxx.o: src/simgear/io/iostreams/CMakeFiles/IOStreams.dir/flags.make
 src/simgear/io/iostreams/CMakeFiles/IOStreams.dir/sgstream.cxx.o: src/simgear/io/iostreams/sgstream.cxx
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/simgear/io/iostreams/CMakeFiles/IOStreams.dir/sgstream.cxx.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/simgear/io/iostreams/CMakeFiles/IOStreams.dir/sgstream.cxx.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/simgear/io/iostreams && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/IOStreams.dir/sgstream.cxx.o -c /Users/alexandrequintart/soft/jsbsim/src/simgear/io/iostreams/sgstream.cxx
 
 src/simgear/io/iostreams/CMakeFiles/IOStreams.dir/sgstream.cxx.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/IOStreams.dir/sgstream.cxx.i"
+	@echo "Preprocessing CXX source to CMakeFiles/IOStreams.dir/sgstream.cxx.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/simgear/io/iostreams && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/simgear/io/iostreams/sgstream.cxx > CMakeFiles/IOStreams.dir/sgstream.cxx.i
 
 src/simgear/io/iostreams/CMakeFiles/IOStreams.dir/sgstream.cxx.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/IOStreams.dir/sgstream.cxx.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/IOStreams.dir/sgstream.cxx.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/simgear/io/iostreams && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/simgear/io/iostreams/sgstream.cxx -o CMakeFiles/IOStreams.dir/sgstream.cxx.s
 
 IOStreams: src/simgear/io/iostreams/CMakeFiles/IOStreams.dir/sgstream.cxx.o
@@ -85,6 +85,6 @@ src/simgear/io/iostreams/CMakeFiles/IOStreams.dir/clean:
 .PHONY : src/simgear/io/iostreams/CMakeFiles/IOStreams.dir/clean
 
 src/simgear/io/iostreams/CMakeFiles/IOStreams.dir/depend:
-	cd /Users/alexandrequintart/soft/jsbsim && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/src/simgear/io/iostreams /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/src/simgear/io/iostreams /Users/alexandrequintart/soft/jsbsim/src/simgear/io/iostreams/CMakeFiles/IOStreams.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/alexandrequintart/soft/jsbsim && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/src/simgear/io/iostreams /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/src/simgear/io/iostreams /Users/alexandrequintart/soft/jsbsim/src/simgear/io/iostreams/CMakeFiles/IOStreams.dir/DependInfo.cmake
 .PHONY : src/simgear/io/iostreams/CMakeFiles/IOStreams.dir/depend
 

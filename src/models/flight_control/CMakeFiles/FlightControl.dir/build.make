@@ -59,236 +59,236 @@ include src/models/flight_control/CMakeFiles/FlightControl.dir/flags.make
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGDeadBand.cpp.o: src/models/flight_control/CMakeFiles/FlightControl.dir/flags.make
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGDeadBand.cpp.o: src/models/flight_control/FGDeadBand.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/models/flight_control/CMakeFiles/FlightControl.dir/FGDeadBand.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/models/flight_control/CMakeFiles/FlightControl.dir/FGDeadBand.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FlightControl.dir/FGDeadBand.cpp.o -c /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGDeadBand.cpp
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGDeadBand.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FlightControl.dir/FGDeadBand.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/FlightControl.dir/FGDeadBand.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGDeadBand.cpp > CMakeFiles/FlightControl.dir/FGDeadBand.cpp.i
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGDeadBand.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FlightControl.dir/FGDeadBand.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/FlightControl.dir/FGDeadBand.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGDeadBand.cpp -o CMakeFiles/FlightControl.dir/FGDeadBand.cpp.s
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGFCSComponent.cpp.o: src/models/flight_control/CMakeFiles/FlightControl.dir/flags.make
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGFCSComponent.cpp.o: src/models/flight_control/FGFCSComponent.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/models/flight_control/CMakeFiles/FlightControl.dir/FGFCSComponent.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/models/flight_control/CMakeFiles/FlightControl.dir/FGFCSComponent.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FlightControl.dir/FGFCSComponent.cpp.o -c /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGFCSComponent.cpp
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGFCSComponent.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FlightControl.dir/FGFCSComponent.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/FlightControl.dir/FGFCSComponent.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGFCSComponent.cpp > CMakeFiles/FlightControl.dir/FGFCSComponent.cpp.i
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGFCSComponent.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FlightControl.dir/FGFCSComponent.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/FlightControl.dir/FGFCSComponent.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGFCSComponent.cpp -o CMakeFiles/FlightControl.dir/FGFCSComponent.cpp.s
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGFilter.cpp.o: src/models/flight_control/CMakeFiles/FlightControl.dir/flags.make
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGFilter.cpp.o: src/models/flight_control/FGFilter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/models/flight_control/CMakeFiles/FlightControl.dir/FGFilter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/models/flight_control/CMakeFiles/FlightControl.dir/FGFilter.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FlightControl.dir/FGFilter.cpp.o -c /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGFilter.cpp
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGFilter.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FlightControl.dir/FGFilter.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/FlightControl.dir/FGFilter.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGFilter.cpp > CMakeFiles/FlightControl.dir/FGFilter.cpp.i
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGFilter.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FlightControl.dir/FGFilter.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/FlightControl.dir/FGFilter.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGFilter.cpp -o CMakeFiles/FlightControl.dir/FGFilter.cpp.s
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGGain.cpp.o: src/models/flight_control/CMakeFiles/FlightControl.dir/flags.make
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGGain.cpp.o: src/models/flight_control/FGGain.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/models/flight_control/CMakeFiles/FlightControl.dir/FGGain.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/models/flight_control/CMakeFiles/FlightControl.dir/FGGain.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FlightControl.dir/FGGain.cpp.o -c /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGGain.cpp
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGGain.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FlightControl.dir/FGGain.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/FlightControl.dir/FGGain.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGGain.cpp > CMakeFiles/FlightControl.dir/FGGain.cpp.i
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGGain.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FlightControl.dir/FGGain.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/FlightControl.dir/FGGain.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGGain.cpp -o CMakeFiles/FlightControl.dir/FGGain.cpp.s
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGKinemat.cpp.o: src/models/flight_control/CMakeFiles/FlightControl.dir/flags.make
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGKinemat.cpp.o: src/models/flight_control/FGKinemat.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/models/flight_control/CMakeFiles/FlightControl.dir/FGKinemat.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/models/flight_control/CMakeFiles/FlightControl.dir/FGKinemat.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FlightControl.dir/FGKinemat.cpp.o -c /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGKinemat.cpp
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGKinemat.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FlightControl.dir/FGKinemat.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/FlightControl.dir/FGKinemat.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGKinemat.cpp > CMakeFiles/FlightControl.dir/FGKinemat.cpp.i
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGKinemat.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FlightControl.dir/FGKinemat.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/FlightControl.dir/FGKinemat.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGKinemat.cpp -o CMakeFiles/FlightControl.dir/FGKinemat.cpp.s
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGSummer.cpp.o: src/models/flight_control/CMakeFiles/FlightControl.dir/flags.make
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGSummer.cpp.o: src/models/flight_control/FGSummer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/models/flight_control/CMakeFiles/FlightControl.dir/FGSummer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/models/flight_control/CMakeFiles/FlightControl.dir/FGSummer.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FlightControl.dir/FGSummer.cpp.o -c /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGSummer.cpp
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGSummer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FlightControl.dir/FGSummer.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/FlightControl.dir/FGSummer.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGSummer.cpp > CMakeFiles/FlightControl.dir/FGSummer.cpp.i
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGSummer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FlightControl.dir/FGSummer.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/FlightControl.dir/FGSummer.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGSummer.cpp -o CMakeFiles/FlightControl.dir/FGSummer.cpp.s
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGSwitch.cpp.o: src/models/flight_control/CMakeFiles/FlightControl.dir/flags.make
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGSwitch.cpp.o: src/models/flight_control/FGSwitch.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/models/flight_control/CMakeFiles/FlightControl.dir/FGSwitch.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/models/flight_control/CMakeFiles/FlightControl.dir/FGSwitch.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FlightControl.dir/FGSwitch.cpp.o -c /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGSwitch.cpp
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGSwitch.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FlightControl.dir/FGSwitch.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/FlightControl.dir/FGSwitch.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGSwitch.cpp > CMakeFiles/FlightControl.dir/FGSwitch.cpp.i
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGSwitch.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FlightControl.dir/FGSwitch.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/FlightControl.dir/FGSwitch.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGSwitch.cpp -o CMakeFiles/FlightControl.dir/FGSwitch.cpp.s
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGFCSFunction.cpp.o: src/models/flight_control/CMakeFiles/FlightControl.dir/flags.make
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGFCSFunction.cpp.o: src/models/flight_control/FGFCSFunction.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/models/flight_control/CMakeFiles/FlightControl.dir/FGFCSFunction.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/models/flight_control/CMakeFiles/FlightControl.dir/FGFCSFunction.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FlightControl.dir/FGFCSFunction.cpp.o -c /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGFCSFunction.cpp
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGFCSFunction.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FlightControl.dir/FGFCSFunction.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/FlightControl.dir/FGFCSFunction.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGFCSFunction.cpp > CMakeFiles/FlightControl.dir/FGFCSFunction.cpp.i
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGFCSFunction.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FlightControl.dir/FGFCSFunction.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/FlightControl.dir/FGFCSFunction.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGFCSFunction.cpp -o CMakeFiles/FlightControl.dir/FGFCSFunction.cpp.s
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGSensor.cpp.o: src/models/flight_control/CMakeFiles/FlightControl.dir/flags.make
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGSensor.cpp.o: src/models/flight_control/FGSensor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/models/flight_control/CMakeFiles/FlightControl.dir/FGSensor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/models/flight_control/CMakeFiles/FlightControl.dir/FGSensor.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FlightControl.dir/FGSensor.cpp.o -c /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGSensor.cpp
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGSensor.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FlightControl.dir/FGSensor.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/FlightControl.dir/FGSensor.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGSensor.cpp > CMakeFiles/FlightControl.dir/FGSensor.cpp.i
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGSensor.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FlightControl.dir/FGSensor.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/FlightControl.dir/FGSensor.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGSensor.cpp -o CMakeFiles/FlightControl.dir/FGSensor.cpp.s
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGPID.cpp.o: src/models/flight_control/CMakeFiles/FlightControl.dir/flags.make
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGPID.cpp.o: src/models/flight_control/FGPID.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/models/flight_control/CMakeFiles/FlightControl.dir/FGPID.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/models/flight_control/CMakeFiles/FlightControl.dir/FGPID.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FlightControl.dir/FGPID.cpp.o -c /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGPID.cpp
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGPID.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FlightControl.dir/FGPID.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/FlightControl.dir/FGPID.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGPID.cpp > CMakeFiles/FlightControl.dir/FGPID.cpp.i
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGPID.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FlightControl.dir/FGPID.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/FlightControl.dir/FGPID.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGPID.cpp -o CMakeFiles/FlightControl.dir/FGPID.cpp.s
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGActuator.cpp.o: src/models/flight_control/CMakeFiles/FlightControl.dir/flags.make
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGActuator.cpp.o: src/models/flight_control/FGActuator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/models/flight_control/CMakeFiles/FlightControl.dir/FGActuator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/models/flight_control/CMakeFiles/FlightControl.dir/FGActuator.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FlightControl.dir/FGActuator.cpp.o -c /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGActuator.cpp
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGActuator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FlightControl.dir/FGActuator.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/FlightControl.dir/FGActuator.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGActuator.cpp > CMakeFiles/FlightControl.dir/FGActuator.cpp.i
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGActuator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FlightControl.dir/FGActuator.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/FlightControl.dir/FGActuator.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGActuator.cpp -o CMakeFiles/FlightControl.dir/FGActuator.cpp.s
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGAccelerometer.cpp.o: src/models/flight_control/CMakeFiles/FlightControl.dir/flags.make
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGAccelerometer.cpp.o: src/models/flight_control/FGAccelerometer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object src/models/flight_control/CMakeFiles/FlightControl.dir/FGAccelerometer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object src/models/flight_control/CMakeFiles/FlightControl.dir/FGAccelerometer.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FlightControl.dir/FGAccelerometer.cpp.o -c /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGAccelerometer.cpp
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGAccelerometer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FlightControl.dir/FGAccelerometer.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/FlightControl.dir/FGAccelerometer.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGAccelerometer.cpp > CMakeFiles/FlightControl.dir/FGAccelerometer.cpp.i
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGAccelerometer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FlightControl.dir/FGAccelerometer.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/FlightControl.dir/FGAccelerometer.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGAccelerometer.cpp -o CMakeFiles/FlightControl.dir/FGAccelerometer.cpp.s
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGGyro.cpp.o: src/models/flight_control/CMakeFiles/FlightControl.dir/flags.make
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGGyro.cpp.o: src/models/flight_control/FGGyro.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object src/models/flight_control/CMakeFiles/FlightControl.dir/FGGyro.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object src/models/flight_control/CMakeFiles/FlightControl.dir/FGGyro.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FlightControl.dir/FGGyro.cpp.o -c /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGGyro.cpp
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGGyro.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FlightControl.dir/FGGyro.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/FlightControl.dir/FGGyro.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGGyro.cpp > CMakeFiles/FlightControl.dir/FGGyro.cpp.i
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGGyro.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FlightControl.dir/FGGyro.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/FlightControl.dir/FGGyro.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGGyro.cpp -o CMakeFiles/FlightControl.dir/FGGyro.cpp.s
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGMagnetometer.cpp.o: src/models/flight_control/CMakeFiles/FlightControl.dir/flags.make
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGMagnetometer.cpp.o: src/models/flight_control/FGMagnetometer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object src/models/flight_control/CMakeFiles/FlightControl.dir/FGMagnetometer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object src/models/flight_control/CMakeFiles/FlightControl.dir/FGMagnetometer.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FlightControl.dir/FGMagnetometer.cpp.o -c /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGMagnetometer.cpp
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGMagnetometer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FlightControl.dir/FGMagnetometer.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/FlightControl.dir/FGMagnetometer.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGMagnetometer.cpp > CMakeFiles/FlightControl.dir/FGMagnetometer.cpp.i
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGMagnetometer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FlightControl.dir/FGMagnetometer.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/FlightControl.dir/FGMagnetometer.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGMagnetometer.cpp -o CMakeFiles/FlightControl.dir/FGMagnetometer.cpp.s
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGAngles.cpp.o: src/models/flight_control/CMakeFiles/FlightControl.dir/flags.make
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGAngles.cpp.o: src/models/flight_control/FGAngles.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object src/models/flight_control/CMakeFiles/FlightControl.dir/FGAngles.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object src/models/flight_control/CMakeFiles/FlightControl.dir/FGAngles.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FlightControl.dir/FGAngles.cpp.o -c /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGAngles.cpp
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGAngles.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FlightControl.dir/FGAngles.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/FlightControl.dir/FGAngles.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGAngles.cpp > CMakeFiles/FlightControl.dir/FGAngles.cpp.i
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGAngles.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FlightControl.dir/FGAngles.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/FlightControl.dir/FGAngles.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGAngles.cpp -o CMakeFiles/FlightControl.dir/FGAngles.cpp.s
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGWaypoint.cpp.o: src/models/flight_control/CMakeFiles/FlightControl.dir/flags.make
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGWaypoint.cpp.o: src/models/flight_control/FGWaypoint.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object src/models/flight_control/CMakeFiles/FlightControl.dir/FGWaypoint.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object src/models/flight_control/CMakeFiles/FlightControl.dir/FGWaypoint.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FlightControl.dir/FGWaypoint.cpp.o -c /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGWaypoint.cpp
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGWaypoint.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FlightControl.dir/FGWaypoint.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/FlightControl.dir/FGWaypoint.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGWaypoint.cpp > CMakeFiles/FlightControl.dir/FGWaypoint.cpp.i
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGWaypoint.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FlightControl.dir/FGWaypoint.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/FlightControl.dir/FGWaypoint.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGWaypoint.cpp -o CMakeFiles/FlightControl.dir/FGWaypoint.cpp.s
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGDistributor.cpp.o: src/models/flight_control/CMakeFiles/FlightControl.dir/flags.make
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGDistributor.cpp.o: src/models/flight_control/FGDistributor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object src/models/flight_control/CMakeFiles/FlightControl.dir/FGDistributor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object src/models/flight_control/CMakeFiles/FlightControl.dir/FGDistributor.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FlightControl.dir/FGDistributor.cpp.o -c /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGDistributor.cpp
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGDistributor.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FlightControl.dir/FGDistributor.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/FlightControl.dir/FGDistributor.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGDistributor.cpp > CMakeFiles/FlightControl.dir/FGDistributor.cpp.i
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGDistributor.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FlightControl.dir/FGDistributor.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/FlightControl.dir/FGDistributor.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGDistributor.cpp -o CMakeFiles/FlightControl.dir/FGDistributor.cpp.s
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGLinearActuator.cpp.o: src/models/flight_control/CMakeFiles/FlightControl.dir/flags.make
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGLinearActuator.cpp.o: src/models/flight_control/FGLinearActuator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object src/models/flight_control/CMakeFiles/FlightControl.dir/FGLinearActuator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexandrequintart/soft/jsbsim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object src/models/flight_control/CMakeFiles/FlightControl.dir/FGLinearActuator.cpp.o"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FlightControl.dir/FGLinearActuator.cpp.o -c /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGLinearActuator.cpp
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGLinearActuator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FlightControl.dir/FGLinearActuator.cpp.i"
+	@echo "Preprocessing CXX source to CMakeFiles/FlightControl.dir/FGLinearActuator.cpp.i"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGLinearActuator.cpp > CMakeFiles/FlightControl.dir/FGLinearActuator.cpp.i
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/FGLinearActuator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FlightControl.dir/FGLinearActuator.cpp.s"
+	@echo "Compiling CXX source to assembly CMakeFiles/FlightControl.dir/FGLinearActuator.cpp.s"
 	cd /Users/alexandrequintart/soft/jsbsim/src/models/flight_control && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/FGLinearActuator.cpp -o CMakeFiles/FlightControl.dir/FGLinearActuator.cpp.s
 
 FlightControl: src/models/flight_control/CMakeFiles/FlightControl.dir/FGDeadBand.cpp.o
@@ -323,6 +323,6 @@ src/models/flight_control/CMakeFiles/FlightControl.dir/clean:
 .PHONY : src/models/flight_control/CMakeFiles/FlightControl.dir/clean
 
 src/models/flight_control/CMakeFiles/FlightControl.dir/depend:
-	cd /Users/alexandrequintart/soft/jsbsim && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/src/models/flight_control /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/src/models/flight_control /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/CMakeFiles/FlightControl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/alexandrequintart/soft/jsbsim && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/src/models/flight_control /Users/alexandrequintart/soft/jsbsim /Users/alexandrequintart/soft/jsbsim/src/models/flight_control /Users/alexandrequintart/soft/jsbsim/src/models/flight_control/CMakeFiles/FlightControl.dir/DependInfo.cmake
 .PHONY : src/models/flight_control/CMakeFiles/FlightControl.dir/depend
 
