@@ -144,7 +144,7 @@ bool FGWinds::Run(bool Holding)
 
   if (turbType != ttNone) Turbulence(in.AltitudeASL);
 
-  vTotalWindNED = vWindNED + vGustNED + vCosineGust + vTurbulenceNED;
+  vTotalWindNED = vWindNED; //+ vGustNED + vCosineGust + vTurbulenceNED;
 
    // psiw (Wind heading) is the direction the wind is blowing towards
   if (vWindNED(eX) != 0.0) psiw = atan2( vWindNED(eY), vWindNED(eX) );

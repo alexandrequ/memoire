@@ -140,7 +140,7 @@ bool FGOutputTextFile::OpenFile(void)
     outstream << "UdotBody" + delimeter + "VdotBody" + delimeter + "WdotBody" + delimeter;
     outstream << "UdotBody_i" + delimeter + "VdotBody_i" + delimeter + "WdotBody_i" + delimeter;
     outstream << "BodyAccel_X" + delimeter + "BodyAccel_Y" + delimeter + "BodyAccel_Z" + delimeter;
-    outstream << "Aero V_{X Body} (ft/s)" + delimeter + "Aero V_{Y Body} (ft/s)" + delimeter + "Aero V_{Z Body} (ft/s)" + delimeter;
+    outstream << "AeroV_XBody_ft_s" + delimeter + "AeroV_YBody_ft_s" + delimeter + "AeroV_Z_Body_ft_s" + delimeter;
     outstream << "V_{X_{inertial}} (ft/s)" + delimeter + "V_{Y_{inertial}} (ft/s)" + delimeter + "V_{Z_{inertial}} (ft/s)" + delimeter;
     outstream << "V_{X_{ecef}} (ft/s)" + delimeter + "V_{Y_{ecef}} (ft/s)" + delimeter + "V_{Z_{ecef}} (ft/s)" + delimeter;
     outstream << "V_{North} (ft/s)" + delimeter + "V_{East} (ft/s)" + delimeter + "V_{Down} (ft/s)";
@@ -169,7 +169,7 @@ bool FGOutputTextFile::OpenFile(void)
   }
   if (SubSystems & ssAtmosphere) {
     outstream << delimeter;
-    outstream << "Rho (slugs/ft^3)" + delimeter;
+    outstream << "Rho_slugs_ft_3" + delimeter;
     outstream << "Absolute Viscosity" + delimeter;
     outstream << "Kinematic Viscosity" + delimeter;
     outstream << "Temperature (R)" + delimeter;

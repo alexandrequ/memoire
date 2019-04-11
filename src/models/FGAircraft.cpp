@@ -302,7 +302,6 @@ namespace JSBSim {
       double velv = vel.v*3.28084; // m to fts
       double velw = vel.w*3.28084; // m to fts
       FGColumnVector3 veloECEF(velu,velv,velw);
-      printf("vitesseECEF %f %f %f \n",velu,velv,velw);
       FGColumnVector3 velNED = Tec2l*veloECEF;
 
       integu = integu + (oldu + velNED(1))/2 * dy;
@@ -334,8 +333,16 @@ namespace JSBSim {
 
     FGAuxiliary* Auxiliary = FDMExec->GetAuxiliary();
     FGAtmosphere* Atmosphere = FDMExec->GetAtmosphere();
+    FGPropagate* Propagate = FDMExec->GetPropagate();
+    const FGMatrix33& Tec2b = Propagate->GetTec2b();
+    const FGMatrix33& Tb2ec = Propagate->GetTb2ec();
+    const FGMatrix33& Tl2b = Propagate->GetTl2b();
     double alpha = Auxiliary->Getalpha();
-    double Vground = -Auxiliary->GetVground()*0.3048;
+
+    FGColumnVector3 trueVel = Tl2b*Propagate->GetVel();
+    double Utrue = trueVel(1)*0.3048;
+    double Vtrue = trueVel(2)*0.3048;
+    double Wtrue = trueVel(3)*0.3048;
     double Density = Atmosphere->GetDensity();
 
     double MomentL;
@@ -343,7 +350,6 @@ namespace JSBSim {
     const double pi = M_PI;
     int inter = 20;
     double b = WingSpan*0.3048;//in.Wingspan; //FDMExec->Aircraft->GetWingSpan(); // Envergure de l'aile
-    // double surface = FDMExec->Aircraft->GetWingArea();
     double phi = GetPhi();
     double psi = GetPsi();
     double theta = GetTheta();
@@ -357,101 +363,54 @@ namespace JSBSim {
     //const FGMatrix33& _Tl2b  = orientation.GetT();     // local to body frame
     //const FGMatrix33& _Tb2l  = orientation.GetTInv();  // body to local
 
-    FGPropagate* Propagate = FDMExec->GetPropagate();
-    const FGMatrix33& Tec2b = Propagate->GetTec2b();
-    const FGMatrix33& Tb2ec = Propagate->GetTb2ec();
 
+      // Total wing
+      double MomentTotal = 0;
 
-    // Left wing
-    double interLeft = inter/2; //Nmbre d'interval
-    Velocity velLeft[inter+1];
+      for(int i = -(inter-1)/2; i<=(inter-1)/2; i++) {
 
-    for(int i = 0; i<=interLeft; i++) {
-
-      // Calcule de la surface de chaque morceau d'aile si les cordes sont spécifiés Ajouter eliptique
-        if(cTip != 0 && cRoot != 0){
-          double y = -b/2+i*b/inter;
-          double rapport = cTip/cRoot;
-          double c = 2*WingArea/((1+rapport)*b)*(1-((1-rapport)/b)*abs(y));
-          surf = c*b/inter;
-        }
-
-      FGColumnVector3 coordBODY(0, -b/2+i*b/inter, 0);
-      FGColumnVector3 coordECEF = Tb2ec*coordBODY;//transform(0, -b/2+i*b/inter, 0);
-      double xWing = coordECEF(1);
-      double yWing = coordECEF(2);
-      double zWing = coordECEF(3);
-      Velocity vel = dataInterpolation(&data, t, xWing, yWing, zWing);
-
-
-      FGColumnVector3 veloECEF(vel.u,vel.v,vel.w);
-      FGColumnVector3 velL = Tec2b*veloECEF;
-
-double velLocalU = velL(1);
-double velLocalW = velL(3);
-double velRoll = sqrt((velLocalU+Vground)*(velLocalU+Vground)+velLocalW*velLocalW);
-//printf("Vground %f \n",Vground);
-//printf("velLocalU %f \n",velLocalU);
-
-double alphaWind = atan (velLocalW/(velLocalU+Vground));
-      double alphaLocal = alpha + alphaWind;
-      double CL = 2*pi*alphaLocal*lambda/(lambda+4);
-      double LiftL = 0.5*dens*(velRoll)*(velRoll)*surf*CL;
-      //printf("dens %f \n",dens);
-      MomentL = MomentL+LiftL*(-b/2+i*b/(inter));
-      //printf("MomentL%f \n",MomentL);
-    }
-
-    // Right wing
-    double interRight = inter/2; //Nmbre d'interval
-    Velocity velRight[inter+1];
-    for(int i = 0; i<=interRight; i++) {
-
-      // Calcule de la surface de chaque morceau d'aile si les cordes sont spécifiés
-      // Aile linéaire
-        if(WingStyle == 1 && cTip != 0 && cRoot != 0){
-          double y = -b/2+i*b/inter;
-          double rapport = cTip/cRoot;
-          double c = 2*WingArea/((1+rapport)*b)*(1-((1-rapport)/b)*abs(y));
-          surf = c*b/inter;
-        }
-        // Elliptical Wing
-          if(WingStyle == 2 && cRoot != 0){
-            double y = -b/2+i*b/inter;
+        // Calcule de la surface de chaque morceau d'aile si les cordes sont spécifiés
+        // Aile linéaire
+          if(WingStyle == 1 && cTip != 0 && cRoot != 0){
+            double y = i*b/inter;
             double rapport = cTip/cRoot;
-            double c = cRoot*sqrt(1-4*(y/b)*(y/b));
+            double c = 2*WingArea/((1+rapport)*b)*(1-((1-rapport)/b)*abs(y));
             surf = c*b/inter;
           }
+          // Elliptical Wing
+            if(WingStyle == 2 && cRoot != 0){
+              double y = i*b/inter;
+              double rapport = cTip/cRoot;
+              double c = cRoot*sqrt(1-4*(y/b)*(y/b));
+              surf = c*b/inter;
+            }
 
+        FGColumnVector3 coordBODY(0, i*b/inter, 0);
+        FGColumnVector3 coordECEF = Tb2ec*coordBODY;//transform(0, -b/2+i*b/inter, 0);
+        double xWing = coordECEF(1);
+        double yWing = coordECEF(2);
+        double zWing = coordECEF(3);
 
+        Velocity vel = dataInterpolation(&data, t, xWing, yWing, zWing);
 
+        FGColumnVector3 veloECEF(vel.u,vel.v,vel.w);
+        FGColumnVector3 velR = Tec2b*veloECEF;
+        double velLocalU = velR(1);
+        double velLocalW = velR(3);
+        double velResult = (velLocalU+Utrue);//cos(alpha); // /cos(alpha) car on passe dans le aerodynamic Frame
+  printf("velLocalU %f", velLocalU);
+  printf("velLocalW %f", velLocalW);
+        double alphaWind = atan ((velLocalW)/(velLocalU+Utrue));
+        double alphaLocal = alpha + alphaWind;
+        double CL = 2*pi*alphaLocal*lambda/(lambda+4); // (lambda+4) pour un moment;
+        double Lift = 0.5*dens*(velResult)*(velResult)*surf*CL;
+        MomentTotal = MomentTotal+Lift*(i*b/inter)*0.7375621493;
+      }
+double CM =  MomentTotal/(0.5*dens*(Utrue)*(Utrue)*WingArea*WingSpan);
+printf("CM %f %f %f", CM);
+      return MomentTotal;
 
-      FGColumnVector3 coordBODY(0, -b/2+i*b/inter, 0);
-      FGColumnVector3 coordECEF = Tb2ec*coordBODY;//transform(0, -b/2+i*b/inter, 0);
-      double xWing = coordECEF(1);
-      double yWing = coordECEF(2);
-      double zWing = coordECEF(3);
-
-      Velocity vel = dataInterpolation(&data, t, xWing, yWing, zWing);
-
-      FGColumnVector3 veloECEF(vel.u,vel.v,vel.w);
-      FGColumnVector3 velR = Tec2b*veloECEF;
-      double velLocalU = velR(1);
-      double velLocalW = velR(3);
-      double velRoll = sqrt((velLocalU+Vground)*(velLocalU+Vground)+velLocalW*velLocalW); // +vground changer le nom velRol en VelNorm
-
-      double alphaWind = atan (velLocalW/(velLocalU+Vground));
-      double alphaLocal = alpha + alphaWind;
-      double CL = 2*pi*alphaLocal*lambda/(lambda+4); // (lambda+4) pour un moment;
-      double LiftR = 0.5*dens*(velRoll)*(velRoll)*surf*CL;
-      MomentR = MomentR+LiftR*(i*b/inter);
-    }
-
-
-    double moment = (MomentR-MomentL)*0.7375621493; //Nm ->ft*lbf
-    return moment;
-  }
-
+}
   // END : Modifié par Alex
 
   bool FGAircraft::Run(bool Holding)
@@ -480,14 +439,14 @@ double alphaWind = atan (velLocalW/(velLocalU+Vground));
     double yECEF = myPosition(eY)*0.3048; // metre
     double zECEF = myPosition(eZ)*0.3048; // metre
 
-    //printf("position %f %f %f %f\n",xECEF,yECEF,zECEF,t);
+    printf("position %f %f %f %f\n",xECEF,yECEF,zECEF,t);
     //int *size = (**data).getsize();
     int nt = 30;//size[0];
     int nx = 100;//size[1];
     int ny = 100;//size[2]3
-    int nz = 100;//size[3];
+    int nz = 300;//size[3];
 
-    double xECEF_data_origine = 6378088; //metre
+    double xECEF_data_origine = 6379306; //metre
     double yECEF_data_origine = -50; // metre
     double zECEF_data_origine = 1000; //1000
 
