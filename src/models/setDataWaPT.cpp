@@ -20,30 +20,27 @@ void setDataWaPT(MyGrid *data) {
   int nz = size[3];
 
 
-  double x01 = 50;
-  double y01 = 50;
+  double x01 = 50.1;
+  double y01 = 50.1;
 
   double x02 = 50;
   double y02 = 50;
 
-  double circ0 = 565;
-  double b = 64.43;
-  double rc = 3.75+0.0582*b;
+  double circ0 = 275.5861;//154.8798;//565; //250; //6;//60.20; // 170.20;//
+  double b = 0.8*64.43;//26.7;//43;//43.4;//
+  double rc = 0.06*b;//3.75+0.0582*b;
+
+  double visco = 1.338*pow(10,-5); //0.16;// A checker
+  double time = 15*60*60;
 
 
 
-// Simple vortex
-  for(int t = 0; t<nt; t++){
+// Simple vortex Paralle
+  /*for(int t = 0; t<nt; t++){
     for(int i = 0; i<nx; i++){
       for(int j = 0; j<ny; j++){
         for(int k = 0; k<nz; k++){
 
-          double r1=sqrt((i-x01)*(i-x01)+(j-y01)*(j-y01));
-
-          double v1 = circ0/(2*M_PI*r1)*(r1*r1/(rc*rc+r1*r1));
- /*
-          double v1 = circ0/(2*M_PI*r1)*(1-exp(-1.2564*(r1/rc)*(r1/rc)));
-*/
           double u = -(j-y01)/r1*v1;
           double v = (i-x01)/r1*v1;
           double w = 0;
@@ -54,7 +51,93 @@ void setDataWaPT(MyGrid *data) {
       }
     }
   }
-  };
+};
+*/
+/*
+for(int t = 0; t<nt; t++){
+  for(int i = 0; i<nx; i++){
+    for(int j = 0; j<ny; j++){
+      for(int k = 0; k<nz; k++){
+        double u = 8;
+        double v = 0;
+        double w = 0;
+        (*data).set(t,i,j,k,U, u);
+        (*data).set(t,i,j,k,V, v);
+        (*data).set(t,i,j,k,W, w);
+      }
+    }
+  }
+}
+};
+*/
+/*
+// Simple vortex Paralle Time dependance LambOseen
+  for(int t = 0; t<nt; t++){
+    for(int i = 0; i<nx; i++){
+      for(int j = 0; j<ny; j++){
+        for(int k = 0; k<nz; k++){
+          double rc_t = sqrt(rc*rc+4*visco*time);
+          double r1=sqrt((i-x01)*(i-x01)+(j-y01)*(j-y01));
+          double circ = circ0*(1-exp(-r1*r1/(4*visco*time)));
+          double v1 = (circ0/(2*M_PI*r1))*(1-exp(-1.2564*(r1/rc)*(r1/rc)));
+
+          double u = ((j-y01)/r1)*v1;
+          double v = -((i-x01)/r1)*v1;
+          double w = 0;
+          (*data).set(t,i,j,k,U, u);
+          (*data).set(t,i,j,k,V, v);
+          (*data).set(t,i,j,k,W, w);
+        }
+      }
+    }
+  }
+};
+*/
+/*
+// Simple vortex Paralle Time dependance LambOseen
+  for(int t = 0; t<nt; t++){
+    for(int i = 0; i<nx; i++){
+      for(int j = 0; j<ny; j++){
+        for(int k = 0; k<nz; k++){
+          double rc_t = sqrt(rc*rc);//+4*visco*time);
+          double r1=sqrt((i-x01)*(i-x01)+(j-y01)*(j-y01));
+          double circ = circ0;//*(1-exp(-r1*r1/(4*visco*time)));
+          double v1 = circ/(2*M_PI*r1)*(1-exp(-1.2564*(r1/rc_t)*(r1/rc_t)));
+
+          double u = -(j-y01)/r1*v1;
+          double v = (i-x01)/r1*v1;
+          double w = 0;
+          (*data).set(t,i,j,k,U, u);
+          (*data).set(t,i,j,k,V, v);
+          (*data).set(t,i,j,k,W, w);
+        }
+      }
+    }
+  }
+};*/
+
+// Simple vortex Parallele Time dependance Burnham-Hallock
+  for(int t = 0; t<nt; t++){
+    for(int i = 0; i<nx; i++){
+      for(int j = 0; j<ny; j++){
+        for(int k = 0; k<nz; k++){
+          double rc_t = sqrt(rc*rc);//+4*visco*time);
+          double r1=sqrt((i-x01)*(i-x01)+(j-y01)*(j-y01));
+          double circ = circ0;//*(1-exp(-r1*r1/(4*visco*time)));
+          double v1 = circ/(2*M_PI*r1)*((r1*r1)/(rc*rc+r1*r1));
+
+          double u = (j-y01)/r1*v1;
+          double v = -(i-x01)/r1*v1;
+          double w = 0;
+          (*data).set(t,i,j,k,U, u);
+          (*data).set(t,i,j,k,V, v);
+          (*data).set(t,i,j,k,W, w);
+        }
+      }
+    }
+  }
+};
+
 /*
   for(int t = 0; t<nt; t++){
     for(int i = 0; i<nx/2; i++){

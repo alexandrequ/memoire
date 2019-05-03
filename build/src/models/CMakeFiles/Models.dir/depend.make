@@ -81,6 +81,7 @@ src/models/CMakeFiles/Models.dir/FGAircraft.cpp.o: ../src/simgear/props/property
 src/models/CMakeFiles/Models.dir/FGAircraft.cpp.o: ../src/simgear/props/props.hxx
 src/models/CMakeFiles/Models.dir/FGAircraft.cpp.o: ../src/simgear/structure/SGReferenced.hxx
 src/models/CMakeFiles/Models.dir/FGAircraft.cpp.o: ../src/simgear/structure/SGSharedPtr.hxx
+src/models/CMakeFiles/Models.dir/FGAircraft.cpp.o: ../src/models/FGAerodynamics.h
 src/models/CMakeFiles/Models.dir/FGAircraft.cpp.o: ../src/models/FGAircraft.cpp
 src/models/CMakeFiles/Models.dir/FGAircraft.cpp.o: ../src/models/FGAircraft.h
 src/models/CMakeFiles/Models.dir/FGAircraft.cpp.o: ../src/models/FGAtmosphere.h

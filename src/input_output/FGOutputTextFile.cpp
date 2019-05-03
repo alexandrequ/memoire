@@ -118,11 +118,11 @@ bool FGOutputTextFile::OpenFile(void)
     outstream << "Elevator Command (norm)" + delimeter;
     outstream << "Rudder Command (norm)" + delimeter;
     outstream << "Flap Command (norm)" + delimeter;
-    outstream << "Left Aileron Position (deg)" + delimeter;
-    outstream << "Right Aileron Position (deg)" + delimeter;
-    outstream << "Elevator Position (deg)" + delimeter;
-    outstream << "Rudder Position (deg)" + delimeter;
-    outstream << "Flap Position (deg)";
+    outstream << "Left_Aileron_Position_deg" + delimeter;
+    outstream << "Right_Aileron_Position_deg" + delimeter;
+    outstream << "Elevator_Position_deg" + delimeter;
+    outstream << "Rudder_Position_deg" + delimeter;
+    outstream << "Flap_Position_deg";
   }
   if (SubSystems & ssRates) {
     outstream << delimeter;
@@ -197,17 +197,17 @@ bool FGOutputTextFile::OpenFile(void)
   }
   if (SubSystems & ssPropagate) {
     outstream << delimeter;
-    outstream << "Altitude ASL (ft)" + delimeter;
-    outstream << "Altitude AGL (ft)" + delimeter;
-    outstream << "Phi (deg)" + delimeter + "Theta (deg)" + delimeter + "Psi (deg)" + delimeter;
+    outstream << "Altitude_ASL_ft" + delimeter;
+    outstream << "Altitude_AGL_ft" + delimeter;
+    outstream << "Phi_deg" + delimeter + "Theta_deg" + delimeter + "Psi_deg" + delimeter;
     outstream << "Q(1)_{LOCAL}" + delimeter + "Q(2)_{LOCAL}" + delimeter + "Q(3)_{LOCAL}" + delimeter + "Q(4)_{LOCAL}" +  delimeter;
     outstream << "Q(1)_{ECEF}" + delimeter + "Q(2)_{ECEF}" + delimeter + "Q(3)_{ECEF}" + delimeter + "Q(4)_{ECEF}" +  delimeter;
     outstream << "Q(1)_{ECI}" + delimeter + "Q(2)_{ECI}" + delimeter + "Q(3)_{ECI}" + delimeter + "Q(4)_{ECI}" +  delimeter;
     outstream << "Alpha (deg)" + delimeter;
     outstream << "Beta (deg)" + delimeter;
-    outstream << "Latitude (deg)" + delimeter;
-    outstream << "Latitude Geodetic (deg)" + delimeter;
-    outstream << "Longitude (deg)" + delimeter;
+    outstream << "Latitude_deg" + delimeter;
+    outstream << "Latitude_Geodetic_deg" + delimeter;
+    outstream << "Longitude_deg" + delimeter;
     outstream << "X_{ECI} (ft)" + delimeter + "Y_{ECI} (ft)" + delimeter + "Z_{ECI} (ft)" + delimeter;
     outstream << "X_ECEF_ft" + delimeter + "Y_ECEF_ft" + delimeter + "Z_ECEF_ft" + delimeter;
     outstream << "Earth Position Angle (deg)" + delimeter;

@@ -148,9 +148,9 @@ namespace JSBSim {
     // START : Modif Alex
 
     void setData(MyGrid* data);
-    double myMomentFunction(MyGrid* data , double t, double xNED, double yNED, double zNED);
+    double myMomentFunction(MyGrid* data , double t, double xNED, double yNED, double zNED, double xECEF_data_origine, double yECEF_data_origine,double zECEF_data_origine);
     Velocity dataInterpolation(MyGrid** data, double time, double x, double y, double z);
-    Velocity myWindFunction( MyGrid* data, double t, double xNED, double yNED, double zNED);
+    Velocity myWindFunction( MyGrid* data, double t, double xNED, double yNED, double zNED,double xECEF_data_origine, double yECEF_data_origine, double zECEF_data_origine);
     /** Gets the initial orientation
     @return Initial orientation */
     const FGQuaternion& GetOrientation(void) const { return orientation; }
@@ -204,7 +204,6 @@ namespace JSBSim {
     double GetPhi(void) const { return phi; }//Faux
     double GetPsi(void) const { return psi; }//Faux
     double GetTheta(void) const { return theta; }//Faux
-    double GetAlphaW(void) const { return alphaw; }//Faux
     // END : MODIF ALEX
 
     void bind(void);
@@ -241,7 +240,7 @@ namespace JSBSim {
 
     // START : MODIF ALEX
     FGColumnVector3 WakeTotalWindNED;
-    double alphaw, psi, phi, theta;
+    double  psi, phi, theta;
     FGQuaternion orientation;
     // START : MODIF ALEX
     double HTailArea, VTailArea, HTailArm, VTailArm;
