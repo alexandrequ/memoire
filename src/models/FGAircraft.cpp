@@ -351,20 +351,15 @@ namespace JSBSim {
     double Wtrue = -trueVel(3)*0.3048;
     double Density = Atmosphere->GetDensity();
 
-    double MomentL;
-    double MomentR;
     const double pi = M_PI;
     int inter = 20;
     double b = WingSpan*0.3048;//in.Wingspan; //FDMExec->Aircraft->GetWingSpan(); // Envergure de l'aile
-    double phi = GetPhi();
-    double psi = GetPsi();
-    double theta = GetTheta();
     double dens = Density*515.378818;
     double surf = WingArea/inter*0.092903;
     double lambda = WingSpan*WingSpan/WingArea;
-    double cTip = 0;
-    double cRoot = 0;
-    double WingStyle = 1;
+    double cTip = 1.1;
+    double cRoot = 3.6;
+    double WingStyle = 0;
     //  orientation = FGQuaternion(phi, theta, psi);
     //const FGMatrix33& _Tl2b  = orientation.GetT();     // local to body frame
     //const FGMatrix33& _Tb2l  = orientation.GetTInv();  // body to local
@@ -386,9 +381,10 @@ namespace JSBSim {
       // Elliptical Wing
       if(WingStyle == 2 && cRoot != 0){
         double y = i*b/inter;
-        double rapport = cTip/cRoot;
         double c = cRoot*sqrt(1-4*(y/b)*(y/b));
         surf = c*b/inter;
+        printf("OK1");
+
       }
       /*
       // Elliptical Wing
@@ -432,7 +428,6 @@ namespace JSBSim {
   }
   double RMC1 =  vMoments(eX)/(0.7375621493*0.5*dens*(Utrue)*(Utrue)*WingArea*0.092903*WingSpan*0.3048);
   printf("RMC1 %f \n", RMC1);
-  printf("dens %f \n", dens);
   return MomentTotal;
 
 }
@@ -470,8 +465,8 @@ bool FGAircraft::Run(bool Holding)
   int ny = 100;//size[2]3
   int nz = 300;//size[3];
 
-  double xECEF_data_origine = 6379306.223956; //metre
-  double yECEF_data_origine = -50-0.000008; // metre 1050;//
+  double xECEF_data_origine = 6379356.170232-50; //metre
+  double yECEF_data_origine = -50+0.061676; // metre 1050;//
   double zECEF_data_origine = 1000;
 
   int num[4] = {nt,nx,ny,nz};
@@ -492,9 +487,8 @@ bool FGAircraft::Run(bool Holding)
   yECEF>=yECEF_data_origine && yECEF<=(yECEF_data_origine+ny) &&\
   zECEF>=zECEF_data_origine && zECEF<=(zECEF_data_origine+nz))
   {
-    printf("OK1");
+
     mx = myMomentFunction(&data , temps, xECEF, yECEF, zECEF,xECEF_data_origine,yECEF_data_origine,zECEF_data_origine);
-    printf("OK2");
     windvel = myWindFunction(&data , temps, xECEF, yECEF, zECEF,xECEF_data_origine,yECEF_data_origine,zECEF_data_origine);
 
   }
@@ -533,12 +527,13 @@ bool FGAircraft::Run(bool Holding)
   vMoments += in.BuoyantMoment;
   vMoments += myMoment;
 
-  FGColumnVector3 AircraftVel = Propagate->GetVel()*0.3048;
+  FGColumnVector3 AircraftVel = Propagate->GetVel();
   double AircraftVelU = AircraftVel(1);
   FGAtmosphere* Atmosphere = FDMExec->GetAtmosphere();
   const FGMatrix33& Tl2b = Propagate->GetTl2b();
   FGColumnVector3 trueVel = Tl2b*Propagate->GetVel();
-  double Utrue = -trueVel(1);
+  //double Utrue = -trueVel(1);
+  double Utrue = Auxiliary->GetAeroUVW(1);
   double Density = Atmosphere->GetDensity();
   double RMC2 =  vMoments(eX)/(0.5*Density*(AircraftVelU)*(AircraftVelU)*WingArea*WingSpan);
   printf("RMC2 %f \n", RMC2);

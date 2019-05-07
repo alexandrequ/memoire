@@ -159,7 +159,8 @@ bool FGOutputTextFile::OpenFile(void)
   }
   if (SubSystems & ssMoments) {
     outstream << delimeter;
-    outstream << "L_{Aero} (ft-lbs)" + delimeter + "M_{Aero} (ft-lbs)" + delimeter + "N_{Aero} (ft-lbs)" + delimeter;
+    outstream << "L_Aircraft_ft_lbs" + delimeter + "M_Aircraft_ft_lbs" + delimeter + "N_Aircraft_ft_lbs" + delimeter;
+    outstream << "L_Aero_ft_lbs" + delimeter + "M_Aero_ft_lbs" + delimeter + "N_Aero_ft_lbs" + delimeter;
     outstream << "L_{Aero MRC} (ft-lbs)" + delimeter + "M_{Aero MRC} (ft-lbs)" + delimeter + "N_{Aero MRC} (ft-lbs)" + delimeter;
     outstream << "L_{Prop} (ft-lbs)" + delimeter + "M_{Prop} (ft-lbs)" + delimeter + "N_{Prop} (ft-lbs)" + delimeter;
     outstream << "L_{Gear} (ft-lbs)" + delimeter + "M_{Gear} (ft-lbs)" + delimeter + "N_{Gear} (ft-lbs)" + delimeter;
@@ -318,6 +319,7 @@ void FGOutputTextFile::Print(void)
   }
   if (SubSystems & ssMoments) {
     outstream << delimeter;
+    outstream << Aircraft->GetMoments().Dump(delimeter) << delimeter;
     outstream << Aerodynamics->GetMoments().Dump(delimeter) << delimeter;
     outstream << Aerodynamics->GetMomentsMRC().Dump(delimeter) << delimeter;
     outstream << Propulsion->GetMoments().Dump(delimeter) << delimeter;

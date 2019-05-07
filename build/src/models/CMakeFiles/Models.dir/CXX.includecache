@@ -342,3 +342,19 @@ gridWAPT.hpp
 stdio.h
 -
 
+/Users/alexandrequintart/soft/jsbsim/src/models/setDataWaPT.cpp
+setDataWaPT.hpp
+/Users/alexandrequintart/soft/jsbsim/src/models/setDataWaPT.hpp
+gridWAPT.hpp
+/Users/alexandrequintart/soft/jsbsim/src/models/gridWAPT.hpp
+cstdlib
+-
+math.h
+-
+
+/Users/alexandrequintart/soft/jsbsim/src/models/setDataWaPT.hpp
+gridWAPT.hpp
+/Users/alexandrequintart/soft/jsbsim/src/models/gridWAPT.hpp
+stdio.h
+-
+
