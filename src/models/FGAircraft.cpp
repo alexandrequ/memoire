@@ -357,8 +357,8 @@ namespace JSBSim {
     double dens = Density*515.378818;
     double surf = WingArea/inter*0.092903;
     double lambda = WingSpan*WingSpan/WingArea;
-    double cTip = 1.1;
-    double cRoot = 3.6;
+    double cTip = 1.41;
+    double cRoot = 5.9;
     double WingStyle = 0;
     //  orientation = FGQuaternion(phi, theta, psi);
     //const FGMatrix33& _Tl2b  = orientation.GetT();     // local to body frame
@@ -426,8 +426,14 @@ namespace JSBSim {
     com = com +1;
     MomentTotal = MomentTotal-Lift*(i*b/inter)*0.7375621493;
   }
-  double RMC1 =  vMoments(eX)/(0.7375621493*0.5*dens*(Utrue)*(Utrue)*WingArea*0.092903*WingSpan*0.3048);
+  double RMC1 =  MomentTotal/(0.7375621493*0.5*dens*(Utrue)*(Utrue)*WingArea*0.092903*WingSpan*0.3048);
+  RMCWake = RMC1;
   printf("RMC1 %f \n", RMC1);
+  printf("Moment %f \n", MomentTotal);
+  printf("dens %f \n", dens);
+  printf("Utrue %f \n", Utrue);
+  printf("WingArea %f \n", WingArea*0.092903);
+  printf("WingSpan %f \n", WingSpan*0.3048);
   return MomentTotal;
 
 }
@@ -452,7 +458,7 @@ bool FGAircraft::Run(bool Holding)
   //  MyGrid data(num);
   //setData(&data); // Pose probleme : Il faut setdata en dehors de la fonction et une seul fois
 
-
+  RMCWake = 0;
   myPosition = Propagate->GetLocation();
   double xECEF = myPosition(eX)*0.3048; // metre
   double yECEF = myPosition(eY)*0.3048; // metre
@@ -462,11 +468,11 @@ bool FGAircraft::Run(bool Holding)
   //int *size = (**data).getsize();
   int nt = 10;//size[0];
   int nx = 100;//size[1];
-  int ny = 100;//size[2]3
-  int nz = 300;//size[3];
+  int ny = 300;//size[2]3
+  int nz = 100;//size[3];
 
-  double xECEF_data_origine = 6379356.170232-50; //metre
-  double yECEF_data_origine = -50+0.061676; // metre 1050;//
+  double xECEF_data_origine = 6380136.968060-50; //metre
+  double yECEF_data_origine = 0.069397-50;// metre 1050;//
   double zECEF_data_origine = 1000;
 
   int num[4] = {nt,nx,ny,nz};
@@ -506,6 +512,8 @@ bool FGAircraft::Run(bool Holding)
   myMoment(eY) = 0; //my;
   myMoment(eZ) = 0;
 
+    RollMoment = mx;
+
   FGColumnVector3 myWindNED;
 
   myWindNED(eNorth) = windvel.u;
@@ -527,7 +535,7 @@ bool FGAircraft::Run(bool Holding)
   vMoments += in.BuoyantMoment;
   vMoments += myMoment;
 
-  FGColumnVector3 AircraftVel = Propagate->GetVel();
+  FGColumnVector3 AircraftVel = Auxiliary->GetAeroUVW();
   double AircraftVelU = AircraftVel(1);
   FGAtmosphere* Atmosphere = FDMExec->GetAtmosphere();
   const FGMatrix33& Tl2b = Propagate->GetTl2b();
@@ -537,6 +545,13 @@ bool FGAircraft::Run(bool Holding)
   double Density = Atmosphere->GetDensity();
   double RMC2 =  vMoments(eX)/(0.5*Density*(AircraftVelU)*(AircraftVelU)*WingArea*WingSpan);
   printf("RMC2 %f \n", RMC2);
+  double RMC3 =  RollMoment/(0.5*Density*(AircraftVelU)*(AircraftVelU)*WingArea*WingSpan);
+  printf("RMC3 %f \n", RMC3);
+  printf("RollMoment %f \n", RollMoment);
+  printf("Density %f \n", Density*515.378818);
+  printf("AircraftVelU %f \n", AircraftVelU*0.3048);
+  printf("WingArea %f \n", WingArea*0.092903);
+  printf("WingSpan %f \n", WingSpan*0.3048);
   // END : Modifié par Alex
   RunPostFunctions();
   /*

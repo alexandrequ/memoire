@@ -184,6 +184,8 @@ namespace JSBSim {
     double Getvbarh(void) const { return vbarh; } // H. Tail Volume
     double Getvbarv(void) const { return vbarv; } // V. Tail Volume
     const FGColumnVector3& GetMoments(void) const { return vMoments; }
+    double GetMyMoment(void) const { return RollMoment; }
+    double GetRMCWake(void) const { return RMCWake; }
     double GetMoments(int idx) const { return vMoments(idx); }
     const FGColumnVector3& GetForces(void) const { return vForces; }
     double GetForces(int idx) const { return vForces(idx); }
@@ -235,6 +237,8 @@ namespace JSBSim {
     FGColumnVector3 vXYZvrp;
     FGColumnVector3 vXYZep;
     FGColumnVector3 vDXYZcg;
+    double RollMoment;
+    double RMCWake;
 
     double WingArea, WingSpan, cbar, WingIncidence;
 

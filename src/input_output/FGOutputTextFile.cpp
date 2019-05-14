@@ -159,6 +159,8 @@ bool FGOutputTextFile::OpenFile(void)
   }
   if (SubSystems & ssMoments) {
     outstream << delimeter;
+    outstream << "RMCWake" + delimeter;
+    outstream << "MyMoment" + delimeter;
     outstream << "L_Aircraft_ft_lbs" + delimeter + "M_Aircraft_ft_lbs" + delimeter + "N_Aircraft_ft_lbs" + delimeter;
     outstream << "L_Aero_ft_lbs" + delimeter + "M_Aero_ft_lbs" + delimeter + "N_Aero_ft_lbs" + delimeter;
     outstream << "L_{Aero MRC} (ft-lbs)" + delimeter + "M_{Aero MRC} (ft-lbs)" + delimeter + "N_{Aero MRC} (ft-lbs)" + delimeter;
@@ -319,6 +321,8 @@ void FGOutputTextFile::Print(void)
   }
   if (SubSystems & ssMoments) {
     outstream << delimeter;
+    outstream << Aircraft->GetRMCWake()<< delimeter;
+    outstream << Aircraft->GetMyMoment()<< delimeter;
     outstream << Aircraft->GetMoments().Dump(delimeter) << delimeter;
     outstream << Aerodynamics->GetMoments().Dump(delimeter) << delimeter;
     outstream << Aerodynamics->GetMomentsMRC().Dump(delimeter) << delimeter;

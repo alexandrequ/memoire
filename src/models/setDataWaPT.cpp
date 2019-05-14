@@ -26,9 +26,9 @@ void setDataWaPT(MyGrid *data) {
   double x02 = 50;
   double y02 = 50;
 
-  double circ0 = 275.5861;//565; //250; //6;//60.20; // 170.20;//154.8798;//
-  double b = M_PI/4*64.43;//26.7;//43;//
-  double rc = 0.06*b;//3.75+0.0582*b;
+  double circ0 = 137.7931; //154.8798;//275.5861;//565; //250; //6;//60.20; // 170.20;//
+  double b = M_PI/4*64.43;//26.7;//43.4;//
+  double rc = 0.04*64.43;//3.75+0.0582*b;
 
   double visco = 1.338*pow(10,-5); //0.16;// A checker
   double time = 15*60*60;
@@ -137,6 +137,30 @@ for(int t = 0; t<nt; t++){
     }
   }
 };
+
+// Flight in  direction
+/*for(int t = 0; t<nt; t++){
+  for(int i = 0; i<nx; i++){
+    for(int j = 0; j<ny; j++){
+      for(int k = 0; k<nz; k++){
+        double rc_t = sqrt(rc*rc);//+4*visco*time);
+        double r1=sqrt((i-x01)*(i-x01)+(j-y01)*(j-y01));
+        double circ = circ0;//*(1-exp(-r1*r1/(4*visco*time)));
+        double v1 = circ/(2*M_PI*r1)*((r1*r1)/(rc*rc+r1*r1));
+
+        double u = (j-y01)/r1*v1;
+        double v = 0;
+        double w = -(i-x01)/r1*v1;
+        (*data).set(t,i,j,k,U, u);
+        (*data).set(t,i,j,k,V, v);
+        (*data).set(t,i,j,k,W, w);
+      }
+    }
+  }
+}
+};
+*/
+
 
 /*
   for(int t = 0; t<nt; t++){
