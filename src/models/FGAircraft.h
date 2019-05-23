@@ -148,9 +148,9 @@ namespace JSBSim {
     // START : Modif Alex
 
     void setData(MyGrid* data);
-    double myMomentFunction(MyGrid* data , double t, double xNED, double yNED, double zNED, double xECEF_data_origine, double yECEF_data_origine,double zECEF_data_origine);
+    double myMomentFunction(MyGrid* data , double t, double xNED, double yNED, double zNED, double xECEF_data_origine, double yECEF_data_origine,double zECEF_data_origine, double WingStyle, double cTip, double cRoot);
     Velocity dataInterpolation(MyGrid** data, double time, double x, double y, double z);
-    Velocity myWindFunction( MyGrid* data, double t, double xNED, double yNED, double zNED,double xECEF_data_origine, double yECEF_data_origine, double zECEF_data_origine);
+    Velocity myWindFunction( MyGrid* data, double t, double xNED, double yNED, double zNED,double xECEF_data_origine, double yECEF_data_origine, double zECEF_data_origine, double WingStyle, double cTip, double cRoot);
     /** Gets the initial orientation
     @return Initial orientation */
     const FGQuaternion& GetOrientation(void) const { return orientation; }

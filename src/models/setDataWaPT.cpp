@@ -22,11 +22,13 @@ void setDataWaPT(MyGrid *data) {
 
   double x01 = 50.1;
   double y01 = 50.1;
+  double z01 = 50.1;
 
-  double x02 = 50;
-  double y02 = 50;
+  double x02 = 50.1;
+  double y02 = 50.1;
+  double z02 = 50;
 
-  double circ0 = 137.7931; //154.8798;//275.5861;//565; //250; //6;//60.20; // 170.20;//
+  double circ0 = 150.5844; //154.8798;//275.5861;//565; //250; //6;//60.20; // 170.20;//
   double b = M_PI/4*64.43;//26.7;//43.4;//
   double rc = 0.04*64.43;//3.75+0.0582*b;
 
@@ -117,7 +119,7 @@ for(int t = 0; t<nt; t++){
 };*/
 
 // Simple vortex Parallele Time dependance Burnham-Hallock
-  for(int t = 0; t<nt; t++){
+ for(int t = 0; t<nt; t++){
     for(int i = 0; i<nx; i++){
       for(int j = 0; j<ny; j++){
         for(int k = 0; k<nz; k++){
@@ -144,11 +146,11 @@ for(int t = 0; t<nt; t++){
     for(int j = 0; j<ny; j++){
       for(int k = 0; k<nz; k++){
         double rc_t = sqrt(rc*rc);//+4*visco*time);
-        double r1=sqrt((i-x01)*(i-x01)+(j-y01)*(j-y01));
+        double r1=sqrt((i-x01)*(i-x01)+(k-z01)*(k-z01));
         double circ = circ0;//*(1-exp(-r1*r1/(4*visco*time)));
         double v1 = circ/(2*M_PI*r1)*((r1*r1)/(rc*rc+r1*r1));
 
-        double u = (j-y01)/r1*v1;
+        double u = (k-z01)/r1*v1;
         double v = 0;
         double w = -(i-x01)/r1*v1;
         (*data).set(t,i,j,k,U, u);
@@ -158,8 +160,7 @@ for(int t = 0; t<nt; t++){
     }
   }
 }
-};
-*/
+};*/
 
 
 /*
@@ -179,6 +180,9 @@ for(int t = 0; t<nt; t++){
         }
       }
     }
+
+
+
     for(int i = nx/2; i<nx; i++){
       for(int j = ny/2; j<ny; j++){
         for(int k = 0; k<nz; k++){
@@ -233,8 +237,8 @@ for(int t = 0; t<nt; t++){
         double v1 = circ0/(2*M_PI*r1)*(1-exp(-1.2564*(r1/rc)*(r1/rc)));
         double v2 = circ0/(2*M_PI*r2)*(1-exp(-1.2564*(r2/rc))*(r2/rc));
 
-        double u = -(j-y01)/r1*v1+(j-y02)/r2*v2;
-        double v = (i-x01)/r1*v1-(i-x02)/r2*v2;
+        double u = (j-y01)/r1*v1-(j-y02)/r2*v2;
+        double v = -(i-x01)/r1*v1+(i-x02)/r2*v2;
         double w = 0;
         (*data).set(t,i,j,k,U, u);
         (*data).set(t,i,j,k,V, v);
@@ -246,7 +250,29 @@ for(int t = 0; t<nt; t++){
 };
 */
 
+// Paralle à l'avion Burnham
+/*
+for(int t = 0; t<nt; t++){
+  for(int i = 0; i<nx; i++){
+    for(int j = 0; j<ny; j++){
+      for(int k = 0; k<nz; k++){
+        double r1=sqrt((i-x01)*(i-x01)+(j-y01)*(j-y01));
+        double r2=sqrt((i-x02)*(i-x02)+(j-y02)*(j-y02));
+        double v1 = circ0/(2*M_PI*r1)*((r1*r1)/(rc*rc+r1*r1));
+        double v2 = circ0/(2*M_PI*r2)*((r2*r2)/(rc*rc+r2*r2));;
 
+        double u = (j-y01)/r1*v1-(j-y02)/r2*v2;
+        double v = -(i-x01)/r1*v1+(i-x02)/r2*v2;
+        double w = 0;
+        (*data).set(t,i,j,k,U, u);
+        (*data).set(t,i,j,k,V, v);
+        (*data).set(t,i,j,k,W, w);
+      }
+    }
+  }
+}
+};
+*/
 
 
 /*
